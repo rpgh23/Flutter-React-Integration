@@ -1,0 +1,307 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "screen_protector",
+    "printedName": "screen_protector",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "screen_protector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Flutter",
+        "printedName": "Flutter",
+        "declKind": "Import",
+        "moduleName": "screen_protector"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "screen_protector"
+      },
+      {
+        "kind": "Import",
+        "name": "ScreenProtectorKit",
+        "printedName": "ScreenProtectorKit",
+        "declKind": "Import",
+        "moduleName": "screen_protector"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SwiftScreenProtectorPlugin",
+        "printedName": "SwiftScreenProtectorPlugin",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
+                "usr": "c:objc(pl)FlutterPluginRegistrar"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@screen_protector@objc(cs)SwiftScreenProtectorPlugin(cm)registerWithRegistrar:",
+            "mangledName": "$s16screen_protector26SwiftScreenProtectorPluginC8register4withySo07FlutterF9Registrar_p_tFZ",
+            "moduleName": "screen_protector",
+            "static": true,
+            "objc_name": "registerWithRegistrar:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "applicationWillResignActive",
+            "printedName": "applicationWillResignActive(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@screen_protector@objc(cs)SwiftScreenProtectorPlugin(im)applicationWillResignActive:",
+            "mangledName": "$s16screen_protector26SwiftScreenProtectorPluginC27applicationWillResignActiveyySo13UIApplicationCF",
+            "moduleName": "screen_protector",
+            "objc_name": "applicationWillResignActive:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "applicationDidBecomeActive",
+            "printedName": "applicationDidBecomeActive(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@screen_protector@objc(cs)SwiftScreenProtectorPlugin(im)applicationDidBecomeActive:",
+            "mangledName": "$s16screen_protector26SwiftScreenProtectorPluginC26applicationDidBecomeActiveyySo13UIApplicationCF",
+            "moduleName": "screen_protector",
+            "objc_name": "applicationDidBecomeActive:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handle",
+            "printedName": "handle(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterMethodCall",
+                "printedName": "Flutter.FlutterMethodCall",
+                "usr": "c:objc(cs)FlutterMethodCall"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@screen_protector@objc(cs)SwiftScreenProtectorPlugin(im)handleMethodCall:result:",
+            "mangledName": "$s16screen_protector26SwiftScreenProtectorPluginC6handle_6resultySo17FlutterMethodCallC_yypSgctF",
+            "moduleName": "screen_protector",
+            "objc_name": "handleMethodCall:result:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SwiftScreenProtectorPlugin",
+                "printedName": "screen_protector.SwiftScreenProtectorPlugin",
+                "usr": "c:@M@screen_protector@objc(cs)SwiftScreenProtectorPlugin"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@screen_protector@objc(cs)SwiftScreenProtectorPlugin(im)init",
+            "mangledName": "$s16screen_protector26SwiftScreenProtectorPluginCACycfc",
+            "moduleName": "screen_protector",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@screen_protector@objc(cs)SwiftScreenProtectorPlugin",
+        "mangledName": "$s16screen_protector26SwiftScreenProtectorPluginC",
+        "moduleName": "screen_protector",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/hosted\/pub.dev\/screen_protector-1.4.2+1\/ios\/Classes\/SwiftScreenProtectorPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 535,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/hosted\/pub.dev\/screen_protector-1.4.2+1\/ios\/Classes\/SwiftScreenProtectorPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 592,
+      "length": 2,
+      "value": "\"\""
+    }
+  ]
+}

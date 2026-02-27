@@ -1,0 +1,54 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/screen_protector/screen_protector.framework/screen_protector'
+relocations:
+  - { offset: 0x62318, size: 0x8, addend: 0x0, symName: _screen_protectorVersionString, symObjAddr: 0x0, symBinAddr: 0x7690, symSize: 0x0 }
+  - { offset: 0x6234D, size: 0x8, addend: 0x0, symName: _screen_protectorVersionNumber, symObjAddr: 0x30, symBinAddr: 0x76C0, symSize: 0x0 }
+  - { offset: 0x6238A, size: 0x8, addend: 0x0, symName: '+[ScreenProtectorPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xC }
+  - { offset: 0x62398, size: 0x8, addend: 0x0, symName: '+[ScreenProtectorPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xC }
+  - { offset: 0x624B9, size: 0x8, addend: 0x0, symName: ___swift_memcpy1_1, symObjAddr: 0x0, symBinAddr: 0x400C, symSize: 0xC }
+  - { offset: 0x624D1, size: 0x8, addend: 0x0, symName: ___swift_memcpy1_1, symObjAddr: 0x0, symBinAddr: 0x400C, symSize: 0xC }
+  - { offset: 0x624E5, size: 0x8, addend: 0x0, symName: ___swift_noop_void_return, symObjAddr: 0xC, symBinAddr: 0x4018, symSize: 0x4 }
+  - { offset: 0x624F9, size: 0x8, addend: 0x0, symName: '_$s16screen_protector13EnabledStatusOwet', symObjAddr: 0x10, symBinAddr: 0x401C, symSize: 0x90 }
+  - { offset: 0x6250D, size: 0x8, addend: 0x0, symName: '_$s16screen_protector13EnabledStatusOwst', symObjAddr: 0xA0, symBinAddr: 0x40AC, symSize: 0xB0 }
+  - { offset: 0x62521, size: 0x8, addend: 0x0, symName: '_$s16screen_protector13EnabledStatusOwug', symObjAddr: 0x150, symBinAddr: 0x415C, symSize: 0x8 }
+  - { offset: 0x62535, size: 0x8, addend: 0x0, symName: '_$s16screen_protector13EnabledStatusOwup', symObjAddr: 0x158, symBinAddr: 0x4164, symSize: 0x4 }
+  - { offset: 0x62549, size: 0x8, addend: 0x0, symName: '_$s16screen_protector13EnabledStatusOwui', symObjAddr: 0x15C, symBinAddr: 0x4168, symSize: 0x8 }
+  - { offset: 0x6255D, size: 0x8, addend: 0x0, symName: '_$s16screen_protector13EnabledStatusOMa', symObjAddr: 0x164, symBinAddr: 0x4170, symSize: 0x10 }
+  - { offset: 0x62571, size: 0x8, addend: 0x0, symName: '_$s16screen_protector13EnabledStatusOSHAASQWb', symObjAddr: 0x174, symBinAddr: 0x4180, symSize: 0x4 }
+  - { offset: 0x62585, size: 0x8, addend: 0x0, symName: '_$s16screen_protector13EnabledStatusOACSQAAWl', symObjAddr: 0x178, symBinAddr: 0x4184, symSize: 0x40 }
+  - { offset: 0x626B4, size: 0x8, addend: 0x0, symName: '_$s16screen_protector13EnabledStatusOSHAASH13_rawHashValue4seedS2i_tFTW', symObjAddr: 0x238, symBinAddr: 0x4244, symSize: 0x40 }
+  - { offset: 0x62769, size: 0x8, addend: 0x0, symName: '_$s16screen_protector13EnabledStatusOSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0x1B8, symBinAddr: 0x41C4, symSize: 0x14 }
+  - { offset: 0x627E5, size: 0x8, addend: 0x0, symName: '_$s16screen_protector13EnabledStatusOSHAASH9hashValueSivgTW', symObjAddr: 0x1CC, symBinAddr: 0x41D8, symSize: 0x44 }
+  - { offset: 0x628AB, size: 0x8, addend: 0x0, symName: '_$s16screen_protector13EnabledStatusOSHAASH4hash4intoys6HasherVz_tFTW', symObjAddr: 0x210, symBinAddr: 0x421C, symSize: 0x28 }
+  - { offset: 0x62A1C, size: 0x8, addend: 0x0, symName: '_$s16screen_protector26SwiftScreenProtectorPluginC7channel33_4B7C09DE123E634F64DA48C6CDBF557CLLSo20FlutterMethodChannelCSgvpZ', symObjAddr: 0x1D18, symBinAddr: 0x10ED0, symSize: 0x0 }
+  - { offset: 0x62D86, size: 0x8, addend: 0x0, symName: '_$s16screen_protector26SwiftScreenProtectorPluginCfETo', symObjAddr: 0xBAC, symBinAddr: 0x4E30, symSize: 0x50 }
+  - { offset: 0x62DD6, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4findys10_HashTableV6BucketV6bucket_Sb5foundtxSHRzlFSS_Tg5', symObjAddr: 0xC74, symBinAddr: 0x4EF8, symSize: 0x64 }
+  - { offset: 0x62E0E, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4find_9hashValues10_HashTableV6BucketV6bucket_Sb5foundtx_SitSHRzlFSS_Tg5', symObjAddr: 0xCD8, symBinAddr: 0x4F5C, symSize: 0xE0 }
+  - { offset: 0x62E86, size: 0x8, addend: 0x0, symName: '_$sypSgWOh', symObjAddr: 0x1280, symBinAddr: 0x5504, symSize: 0x40 }
+  - { offset: 0x62E9A, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledName, symObjAddr: 0x12C0, symBinAddr: 0x5544, symSize: 0x44 }
+  - { offset: 0x62EAE, size: 0x8, addend: 0x0, symName: '_$s16screen_protector26SwiftScreenProtectorPluginCMa', symObjAddr: 0x1304, symBinAddr: 0x5588, symSize: 0x20 }
+  - { offset: 0x62ECD, size: 0x8, addend: 0x0, symName: '_$sypSgWOc', symObjAddr: 0x1C78, symBinAddr: 0x5EFC, symSize: 0x48 }
+  - { offset: 0x62EE1, size: 0x8, addend: 0x0, symName: ___swift_project_boxed_opaque_existential_0, symObjAddr: 0x1CC0, symBinAddr: 0x5F44, symSize: 0x24 }
+  - { offset: 0x62EF5, size: 0x8, addend: 0x0, symName: ___swift_destroy_boxed_opaque_existential_0, symObjAddr: 0x1CE4, symBinAddr: 0x5F68, symSize: 0x20 }
+  - { offset: 0x62F09, size: 0x8, addend: 0x0, symName: '_$sSo8UIWindowCSgSgWOe', symObjAddr: 0x1D04, symBinAddr: 0x5F88, symSize: 0x10 }
+  - { offset: 0x6305A, size: 0x8, addend: 0x0, symName: '_$s16screen_protector26SwiftScreenProtectorPluginC8register4withySo07FlutterF9Registrar_p_tFZ', symObjAddr: 0x0, symBinAddr: 0x4284, symSize: 0x4 }
+  - { offset: 0x6307B, size: 0x8, addend: 0x0, symName: '_$s16screen_protector26SwiftScreenProtectorPluginC8register4withySo07FlutterF9Registrar_p_tFZTo', symObjAddr: 0x4, symBinAddr: 0x4288, symSize: 0x30 }
+  - { offset: 0x630C3, size: 0x8, addend: 0x0, symName: '_$s16screen_protector26SwiftScreenProtectorPluginC27applicationWillResignActiveyySo13UIApplicationCF', symObjAddr: 0x34, symBinAddr: 0x42B8, symSize: 0x4 }
+  - { offset: 0x630DE, size: 0x8, addend: 0x0, symName: '_$s16screen_protector26SwiftScreenProtectorPluginC27applicationWillResignActiveyySo13UIApplicationCFTo', symObjAddr: 0x38, symBinAddr: 0x42BC, symSize: 0x4C }
+  - { offset: 0x63108, size: 0x8, addend: 0x0, symName: '_$s16screen_protector26SwiftScreenProtectorPluginC26applicationDidBecomeActiveyySo13UIApplicationCF', symObjAddr: 0x84, symBinAddr: 0x4308, symSize: 0x4 }
+  - { offset: 0x63123, size: 0x8, addend: 0x0, symName: '_$s16screen_protector26SwiftScreenProtectorPluginC26applicationDidBecomeActiveyySo13UIApplicationCFTo', symObjAddr: 0x88, symBinAddr: 0x430C, symSize: 0x4C }
+  - { offset: 0x6323C, size: 0x8, addend: 0x0, symName: '_$s16screen_protector26SwiftScreenProtectorPluginC6handle_6resultySo17FlutterMethodCallC_yypSgctF', symObjAddr: 0xD4, symBinAddr: 0x4358, symSize: 0x868 }
+  - { offset: 0x63833, size: 0x8, addend: 0x0, symName: '_$s16screen_protector26SwiftScreenProtectorPluginC6handle_6resultySo17FlutterMethodCallC_yypSgctFyycfU_', symObjAddr: 0x93C, symBinAddr: 0x4BC0, symSize: 0x78 }
+  - { offset: 0x6384D, size: 0x8, addend: 0x0, symName: '_$s16screen_protector26SwiftScreenProtectorPluginC6handle_6resultySo17FlutterMethodCallC_yypSgctFySbcfU0_', symObjAddr: 0x9B4, symBinAddr: 0x4C38, symSize: 0xA8 }
+  - { offset: 0x63886, size: 0x8, addend: 0x0, symName: '_$s16screen_protector26SwiftScreenProtectorPluginC6handle_6resultySo17FlutterMethodCallC_yypSgctFTo', symObjAddr: 0xA5C, symBinAddr: 0x4CE0, symSize: 0x7C }
+  - { offset: 0x638B0, size: 0x8, addend: 0x0, symName: '_$s16screen_protector26SwiftScreenProtectorPluginCfD', symObjAddr: 0xAD8, symBinAddr: 0x4D5C, symSize: 0x60 }
+  - { offset: 0x638E3, size: 0x8, addend: 0x0, symName: '_$s16screen_protector26SwiftScreenProtectorPluginCfDTo', symObjAddr: 0xB38, symBinAddr: 0x4DBC, symSize: 0x74 }
+  - { offset: 0x6390E, size: 0x8, addend: 0x0, symName: '_$s16screen_protector26SwiftScreenProtectorPluginCACycfC', symObjAddr: 0xBFC, symBinAddr: 0x4E80, symSize: 0x20 }
+  - { offset: 0x63922, size: 0x8, addend: 0x0, symName: '_$s16screen_protector26SwiftScreenProtectorPluginCACycfc', symObjAddr: 0xC1C, symBinAddr: 0x4EA0, symSize: 0x2C }
+  - { offset: 0x6397B, size: 0x8, addend: 0x0, symName: '_$s16screen_protector26SwiftScreenProtectorPluginCACycfcTo', symObjAddr: 0xC48, symBinAddr: 0x4ECC, symSize: 0x2C }
+  - { offset: 0x63A5B, size: 0x8, addend: 0x0, symName: '_$s16screen_protector26SwiftScreenProtectorPluginC8register4withySo07FlutterF9Registrar_p_tFZTf4nd_n', symObjAddr: 0xDB8, symBinAddr: 0x503C, symSize: 0x270 }
+  - { offset: 0x63BB7, size: 0x8, addend: 0x0, symName: '_$s16screen_protector26SwiftScreenProtectorPluginC27applicationWillResignActiveyySo13UIApplicationCFTf4dn_n', symObjAddr: 0x1028, symBinAddr: 0x52AC, symSize: 0x15C }
+  - { offset: 0x63D08, size: 0x8, addend: 0x0, symName: '_$s16screen_protector26SwiftScreenProtectorPluginC26applicationDidBecomeActiveyySo13UIApplicationCFTf4dn_n', symObjAddr: 0x1184, symBinAddr: 0x5408, symSize: 0xFC }
+  - { offset: 0x63E1D, size: 0x8, addend: 0x0, symName: '_$s16screen_protector26SwiftScreenProtectorPluginC6handle_6resultySo17FlutterMethodCallC_yypSgctF015$syXlSgIeyBy_ypN7Iegn_TRyXlSgIeyBy_Tf1ncn_nTf4nng_n', symObjAddr: 0x1384, symBinAddr: 0x5608, symSize: 0x8F4 }
+...

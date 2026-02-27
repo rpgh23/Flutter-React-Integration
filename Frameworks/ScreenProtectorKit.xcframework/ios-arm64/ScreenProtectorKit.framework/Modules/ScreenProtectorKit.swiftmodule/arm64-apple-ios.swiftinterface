@@ -1,0 +1,32 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ScreenProtectorKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+@_exported import ScreenProtectorKit
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public class ScreenProtectorKit {
+  public init(window: UIKit.UIWindow?)
+  public func configurePreventionScreenshot()
+  public func enabledPreventScreenshot()
+  public func disablePreventScreenshot()
+  public func enabledBlurScreen(style: UIKit.UIBlurEffect.Style = UIBlurEffect.Style.light)
+  public func disableBlurScreen()
+  public func enabledColorScreen(hexColor: Swift.String)
+  public func disableColorScreen()
+  public func enabledImageScreen(named: Swift.String)
+  public func disableImageScreen()
+  public func removeObserver(observer: (any ObjectiveC.NSObjectProtocol)?)
+  public func removeScreenshotObserver()
+  public func removeScreenRecordObserver()
+  public func removeAllObserver()
+  public func screenshotObserver(using onScreenshot: @escaping () -> Swift.Void)
+  @available(iOS 11.0, *)
+  public func screenRecordObserver(using onScreenRecord: @escaping (Swift.Bool) -> Swift.Void)
+  @available(iOS 11.0, *)
+  public func screenIsRecording() -> Swift.Bool
+  @objc deinit
+}

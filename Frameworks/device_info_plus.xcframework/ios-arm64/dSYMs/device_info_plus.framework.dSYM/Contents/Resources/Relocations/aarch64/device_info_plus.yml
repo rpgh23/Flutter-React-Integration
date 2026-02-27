@@ -1,0 +1,11 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/device_info_plus/device_info_plus.framework/device_info_plus'
+relocations:
+  - { offset: 0x3D0A, size: 0x8, addend: 0x0, symName: _device_info_plusVersionString, symObjAddr: 0x0, symBinAddr: 0x4A90, symSize: 0x0 }
+  - { offset: 0x3D3E, size: 0x8, addend: 0x0, symName: _device_info_plusVersionNumber, symObjAddr: 0x30, symBinAddr: 0x4AC0, symSize: 0x0 }
+  - { offset: 0x3D7A, size: 0x8, addend: 0x0, symName: '+[FLTDeviceInfoPlusPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xA0 }
+  - { offset: 0x3D97, size: 0x8, addend: 0x0, symName: '+[FLTDeviceInfoPlusPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xA0 }
+  - { offset: 0x3DF0, size: 0x8, addend: 0x0, symName: '-[FLTDeviceInfoPlusPlugin handleMethodCall:result:]', symObjAddr: 0xA0, symBinAddr: 0x40A0, symSize: 0x468 }
+  - { offset: 0x3F0A, size: 0x8, addend: 0x0, symName: '-[FLTDeviceInfoPlusPlugin isDevicePhysical]', symObjAddr: 0x508, symBinAddr: 0x4508, symSize: 0xC }
+...

@@ -1,0 +1,1514 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "flutter_share_me",
+    "printedName": "flutter_share_me",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Flutter",
+        "printedName": "Flutter",
+        "declKind": "Import",
+        "moduleName": "flutter_share_me"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "flutter_share_me"
+      },
+      {
+        "kind": "Import",
+        "name": "FBSDKShareKit",
+        "printedName": "FBSDKShareKit",
+        "declKind": "Import",
+        "moduleName": "flutter_share_me"
+      },
+      {
+        "kind": "Import",
+        "name": "PhotosUI",
+        "printedName": "PhotosUI",
+        "declKind": "Import",
+        "moduleName": "flutter_share_me"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SwiftFlutterShareMePlugin",
+        "printedName": "SwiftFlutterShareMePlugin",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "_methodWhatsApp",
+            "printedName": "_methodWhatsApp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC15_methodWhatsAppSSvp",
+            "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC15_methodWhatsAppSSvp",
+            "moduleName": "flutter_share_me",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC15_methodWhatsAppSSvg",
+                "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC15_methodWhatsAppSSvg",
+                "moduleName": "flutter_share_me",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_methodWhatsAppPersonal",
+            "printedName": "_methodWhatsAppPersonal",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC23_methodWhatsAppPersonalSSvp",
+            "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC23_methodWhatsAppPersonalSSvp",
+            "moduleName": "flutter_share_me",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC23_methodWhatsAppPersonalSSvg",
+                "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC23_methodWhatsAppPersonalSSvg",
+                "moduleName": "flutter_share_me",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_methodWhatsAppBusiness",
+            "printedName": "_methodWhatsAppBusiness",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC23_methodWhatsAppBusinessSSvp",
+            "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC23_methodWhatsAppBusinessSSvp",
+            "moduleName": "flutter_share_me",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC23_methodWhatsAppBusinessSSvg",
+                "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC23_methodWhatsAppBusinessSSvg",
+                "moduleName": "flutter_share_me",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_methodFaceBook",
+            "printedName": "_methodFaceBook",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC15_methodFaceBookSSvp",
+            "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC15_methodFaceBookSSvp",
+            "moduleName": "flutter_share_me",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC15_methodFaceBookSSvg",
+                "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC15_methodFaceBookSSvg",
+                "moduleName": "flutter_share_me",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_methodTwitter",
+            "printedName": "_methodTwitter",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC14_methodTwitterSSvp",
+            "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC14_methodTwitterSSvp",
+            "moduleName": "flutter_share_me",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC14_methodTwitterSSvg",
+                "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC14_methodTwitterSSvg",
+                "moduleName": "flutter_share_me",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_methodInstagram",
+            "printedName": "_methodInstagram",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC16_methodInstagramSSvp",
+            "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC16_methodInstagramSSvp",
+            "moduleName": "flutter_share_me",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC16_methodInstagramSSvg",
+                "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC16_methodInstagramSSvg",
+                "moduleName": "flutter_share_me",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_methodSystemShare",
+            "printedName": "_methodSystemShare",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC013_methodSystemF0SSvp",
+            "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC013_methodSystemF0SSvp",
+            "moduleName": "flutter_share_me",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC013_methodSystemF0SSvg",
+                "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC013_methodSystemF0SSvg",
+                "moduleName": "flutter_share_me",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_methodTelegramShare",
+            "printedName": "_methodTelegramShare",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC015_methodTelegramF0SSvp",
+            "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC015_methodTelegramF0SSvp",
+            "moduleName": "flutter_share_me",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC015_methodTelegramF0SSvg",
+                "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC015_methodTelegramF0SSvg",
+                "moduleName": "flutter_share_me",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "result",
+            "printedName": "result",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Any?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Any?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Any?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC6resultyypSgcSgvp",
+            "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC6resultyypSgcSgvp",
+            "moduleName": "flutter_share_me",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Any?) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Any?) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Any?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC6resultyypSgcSgvg",
+                "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC6resultyypSgcSgvg",
+                "moduleName": "flutter_share_me",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Any?) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Any?) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Any?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC6resultyypSgcSgvs",
+                "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC6resultyypSgcSgvs",
+                "moduleName": "flutter_share_me",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC6resultyypSgcSgvM",
+                "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC6resultyypSgcSgvM",
+                "moduleName": "flutter_share_me",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "documentInteractionController",
+            "printedName": "documentInteractionController",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIDocumentInteractionController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIDocumentInteractionController",
+                    "printedName": "UIKit.UIDocumentInteractionController",
+                    "usr": "c:objc(cs)UIDocumentInteractionController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC29documentInteractionControllerSo010UIDocumentjK0CSgvp",
+            "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC29documentInteractionControllerSo010UIDocumentjK0CSgvp",
+            "moduleName": "flutter_share_me",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIDocumentInteractionController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIDocumentInteractionController",
+                        "printedName": "UIKit.UIDocumentInteractionController",
+                        "usr": "c:objc(cs)UIDocumentInteractionController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC29documentInteractionControllerSo010UIDocumentjK0CSgvg",
+                "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC29documentInteractionControllerSo010UIDocumentjK0CSgvg",
+                "moduleName": "flutter_share_me",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIDocumentInteractionController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIDocumentInteractionController",
+                        "printedName": "UIKit.UIDocumentInteractionController",
+                        "usr": "c:objc(cs)UIDocumentInteractionController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC29documentInteractionControllerSo010UIDocumentjK0CSgvs",
+                "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC29documentInteractionControllerSo010UIDocumentjK0CSgvs",
+                "moduleName": "flutter_share_me",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC29documentInteractionControllerSo010UIDocumentjK0CSgvM",
+                "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC29documentInteractionControllerSo010UIDocumentjK0CSgvM",
+                "moduleName": "flutter_share_me",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
+                "usr": "c:objc(pl)FlutterPluginRegistrar"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@flutter_share_me@objc(cs)SwiftFlutterShareMePlugin(cm)registerWithRegistrar:",
+            "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC8register4withySo0eH9Registrar_p_tFZ",
+            "moduleName": "flutter_share_me",
+            "static": true,
+            "objc_name": "registerWithRegistrar:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handle",
+            "printedName": "handle(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterMethodCall",
+                "printedName": "Flutter.FlutterMethodCall",
+                "usr": "c:objc(cs)FlutterMethodCall"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@flutter_share_me@objc(cs)SwiftFlutterShareMePlugin(im)handleMethodCall:result:",
+            "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC6handle_6resultySo0E10MethodCallC_yypSgctF",
+            "moduleName": "flutter_share_me",
+            "isOpen": true,
+            "objc_name": "handleMethodCall:result:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shareWhatsApp",
+            "printedName": "shareWhatsApp(message:imageUrl:type:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC0B8WhatsApp7message8imageUrl4type6resultySS_S2SyypSgctF",
+            "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC0B8WhatsApp7message8imageUrl4type6resultySS_S2SyypSgctF",
+            "moduleName": "flutter_share_me",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shareWhatsAppPersonal",
+            "printedName": "shareWhatsAppPersonal(message:phoneNumber:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC0B16WhatsAppPersonal7message11phoneNumber6resultySS_SSyypSgctF",
+            "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC0B16WhatsAppPersonal7message11phoneNumber6resultySS_SSyypSgctF",
+            "moduleName": "flutter_share_me",
+            "isOpen": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shareWhatsApp4Biz",
+            "printedName": "shareWhatsApp4Biz(message:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC0B12WhatsApp4Biz7message6resultySS_yypSgctF",
+            "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC0B12WhatsApp4Biz7message6resultySS_yypSgctF",
+            "moduleName": "flutter_share_me",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sharefacebook",
+            "printedName": "sharefacebook(message:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC13sharefacebook7message6resultySDySSypG_yypSgctF",
+            "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC13sharefacebook7message6resultySDySSypG_yypSgctF",
+            "moduleName": "flutter_share_me",
+            "isOpen": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shareTwitter",
+            "printedName": "shareTwitter(message:url:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC0B7Twitter7message3url6resultySS_SSyypSgctF",
+            "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC0B7Twitter7message3url6resultySS_SSyypSgctF",
+            "moduleName": "flutter_share_me",
+            "isOpen": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shareToTelegram",
+            "printedName": "shareToTelegram(message:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC0B10ToTelegram7message6resultySS_yypSgctF",
+            "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC0B10ToTelegram7message6resultySS_yypSgctF",
+            "moduleName": "flutter_share_me",
+            "isOpen": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "systemShare",
+            "printedName": "systemShare(message:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC06systemF07message6resultySS_yypSgctF",
+            "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC06systemF07message6resultySS_yypSgctF",
+            "moduleName": "flutter_share_me",
+            "isOpen": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shareInstagram",
+            "printedName": "shareInstagram(args:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16flutter_share_me25SwiftFlutterShareMePluginC0B9Instagram4argsySDySSypG_tF",
+            "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC0B9Instagram4argsySDySSypG_tF",
+            "moduleName": "flutter_share_me",
+            "isOpen": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sharer",
+            "printedName": "sharer(_:didCompleteWithResults:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Sharing",
+                "printedName": "any FBSDKShareKit.Sharing",
+                "usr": "c:@M@FBSDKShareKit@objc(pl)FBSDKSharing"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@flutter_share_me@objc(cs)SwiftFlutterShareMePlugin(im)sharer:didCompleteWithResults:",
+            "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC6sharer_22didCompleteWithResultsy13FBSDKShareKit7Sharing_p_SDySSypGtF",
+            "moduleName": "flutter_share_me",
+            "isOpen": true,
+            "objc_name": "sharer:didCompleteWithResults:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sharer",
+            "printedName": "sharer(_:didFailWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Sharing",
+                "printedName": "any FBSDKShareKit.Sharing",
+                "usr": "c:@M@FBSDKShareKit@objc(pl)FBSDKSharing"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@flutter_share_me@objc(cs)SwiftFlutterShareMePlugin(im)sharer:didFailWithError:",
+            "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC6sharer_16didFailWithErrory13FBSDKShareKit7Sharing_p_s0M0_ptF",
+            "moduleName": "flutter_share_me",
+            "isOpen": true,
+            "objc_name": "sharer:didFailWithError:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sharerDidCancel",
+            "printedName": "sharerDidCancel(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Sharing",
+                "printedName": "any FBSDKShareKit.Sharing",
+                "usr": "c:@M@FBSDKShareKit@objc(pl)FBSDKSharing"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@flutter_share_me@objc(cs)SwiftFlutterShareMePlugin(im)sharerDidCancel:",
+            "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC15sharerDidCancelyy13FBSDKShareKit7Sharing_pF",
+            "moduleName": "flutter_share_me",
+            "isOpen": true,
+            "objc_name": "sharerDidCancel:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SwiftFlutterShareMePlugin",
+                "printedName": "flutter_share_me.SwiftFlutterShareMePlugin",
+                "usr": "c:@M@flutter_share_me@objc(cs)SwiftFlutterShareMePlugin"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@flutter_share_me@objc(cs)SwiftFlutterShareMePlugin(im)init",
+            "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginCACycfc",
+            "moduleName": "flutter_share_me",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@flutter_share_me@objc(cs)SwiftFlutterShareMePlugin",
+        "mangledName": "$s16flutter_share_me25SwiftFlutterShareMePluginC",
+        "moduleName": "flutter_share_me",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "SharingDelegate",
+            "printedName": "SharingDelegate",
+            "usr": "c:@M@FBSDKShareKit@objc(pl)FBSDKSharingDelegate",
+            "mangledName": "$s13FBSDKShareKit15SharingDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/salespanda\/rahul_work_space\/sp-sdk\/flutter_share_me-master\/ios\/Classes\/SwiftFlutterShareMePlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 184,
+      "length": 16,
+      "value": "\"whatsapp_share\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/rahul_work_space\/sp-sdk\/flutter_share_me-master\/ios\/Classes\/SwiftFlutterShareMePlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 236,
+      "length": 19,
+      "value": "\"whatsapp_personal\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/rahul_work_space\/sp-sdk\/flutter_share_me-master\/ios\/Classes\/SwiftFlutterShareMePlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 291,
+      "length": 25,
+      "value": "\"whatsapp_business_share\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/rahul_work_space\/sp-sdk\/flutter_share_me-master\/ios\/Classes\/SwiftFlutterShareMePlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 344,
+      "length": 16,
+      "value": "\"facebook_share\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/rahul_work_space\/sp-sdk\/flutter_share_me-master\/ios\/Classes\/SwiftFlutterShareMePlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 387,
+      "length": 15,
+      "value": "\"twitter_share\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/rahul_work_space\/sp-sdk\/flutter_share_me-master\/ios\/Classes\/SwiftFlutterShareMePlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 431,
+      "length": 17,
+      "value": "\"instagram_share\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/rahul_work_space\/sp-sdk\/flutter_share_me-master\/ios\/Classes\/SwiftFlutterShareMePlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 479,
+      "length": 14,
+      "value": "\"system_share\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/rahul_work_space\/sp-sdk\/flutter_share_me-master\/ios\/Classes\/SwiftFlutterShareMePlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 526,
+      "length": 16,
+      "value": "\"telegram_share\""
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+framework module MyPrivateSDK {
+  umbrella header "MyPrivateSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

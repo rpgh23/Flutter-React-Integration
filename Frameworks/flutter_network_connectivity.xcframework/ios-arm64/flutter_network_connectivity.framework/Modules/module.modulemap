@@ -1,0 +1,11 @@
+framework module flutter_network_connectivity {
+  umbrella header "flutter_network_connectivity-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module flutter_network_connectivity.Swift {
+  header "flutter_network_connectivity-Swift.h"
+  requires objc
+}

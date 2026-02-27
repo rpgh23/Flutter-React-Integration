@@ -1,0 +1,135 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SwiftyGif
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+import Foundation
+import ImageIO
+import Swift
+@_exported import SwiftyGif
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public typealias PlatformImageView = UIKit.UIImageView
+open class SwiftyGifManager {
+  public static var defaultManager: SwiftyGif.SwiftyGifManager
+  open var haveCache: Swift.Bool
+  open var remoteCache: [Foundation.URL : Foundation.Data]
+  public var mode: Foundation.RunLoop.Mode
+  public init(memoryLimit: Swift.Int)
+  @objc deinit
+  public func startTimerIfNeeded()
+  public func stopTimer()
+  open func addImageView(_ imageView: SwiftyGif.PlatformImageView) -> Swift.Bool
+  open func deleteImageView(_ imageView: SwiftyGif.PlatformImageView)
+  open func updateCacheSize(for imageView: SwiftyGif.PlatformImageView, add: Swift.Bool)
+  open func clear()
+  open func containsImageView(_ imageView: SwiftyGif.PlatformImageView) -> Swift.Bool
+  open func hasCache(_ imageView: SwiftyGif.PlatformImageView) -> Swift.Bool
+}
+public typealias GifLevelOfIntegrity = Swift.Float
+extension Swift.Float {
+  public static let highestNoFrameSkipping: SwiftyGif.GifLevelOfIntegrity
+  public static let `default`: SwiftyGif.GifLevelOfIntegrity
+  public static let lowForManyGifs: SwiftyGif.GifLevelOfIntegrity
+  public static let lowForTooManyGifs: SwiftyGif.GifLevelOfIntegrity
+  public static let superLowForSlideShow: SwiftyGif.GifLevelOfIntegrity
+}
+extension UIKit.UIImage {
+  convenience public init?(imageData: Foundation.Data, levelOfIntegrity: SwiftyGif.GifLevelOfIntegrity = .default) throws
+  convenience public init?(imageName: Swift.String, levelOfIntegrity: SwiftyGif.GifLevelOfIntegrity = .default, bundle: Foundation.Bundle = Bundle.main) throws
+}
+extension UIKit.UIImage {
+  convenience public init(gifData: Foundation.Data, levelOfIntegrity: SwiftyGif.GifLevelOfIntegrity = .default) throws
+  convenience public init(gifName: Swift.String, levelOfIntegrity: SwiftyGif.GifLevelOfIntegrity = .default, bundle: Foundation.Bundle = Bundle.main) throws
+  public func setGifFromData(_ data: Foundation.Data, levelOfIntegrity: SwiftyGif.GifLevelOfIntegrity) throws
+  public func setGif(_ name: Swift.String, bundle: Foundation.Bundle = Bundle.main) throws
+  public func framesCount() -> Swift.Int
+  public func setGif(_ name: Swift.String, levelOfIntegrity: SwiftyGif.GifLevelOfIntegrity, bundle: Foundation.Bundle = Bundle.main) throws
+  public func clear()
+}
+extension UIKit.UIImage {
+  public var imageSource: ImageIO.CGImageSource? {
+    get
+    set
+  }
+  public var displayRefreshFactor: Swift.Int? {
+    get
+    set
+  }
+  public var imageSize: Swift.Int? {
+    get
+    set
+  }
+  public var imageCount: Swift.Int? {
+    get
+    set
+  }
+  public var displayOrder: [Swift.Int]? {
+    get
+    set
+  }
+  public var imageData: Foundation.Data? {
+    get
+    set
+  }
+}
+@objc public protocol SwiftyGifDelegate {
+  @objc optional func gifDidStart(sender: UIKit.UIImageView)
+  @objc optional func gifDidLoop(sender: UIKit.UIImageView)
+  @objc optional func gifDidStop(sender: UIKit.UIImageView)
+  @objc optional func gifURLDidFinish(sender: UIKit.UIImageView)
+  @objc optional func gifURLDidFail(sender: UIKit.UIImageView, url: Foundation.URL, error: (any Swift.Error)?)
+}
+extension UIKit.UIImageView {
+  @_Concurrency.MainActor @preconcurrency public func setImage(_ image: UIKit.UIImage, manager: SwiftyGif.SwiftyGifManager = .defaultManager, loopCount: Swift.Int = -1)
+}
+extension UIKit.UIImageView {
+  @_Concurrency.MainActor @preconcurrency convenience public init(gifImage: UIKit.UIImage, manager: SwiftyGif.SwiftyGifManager = .defaultManager, loopCount: Swift.Int = -1)
+  @_Concurrency.MainActor @preconcurrency convenience public init(gifURL: Foundation.URL, manager: SwiftyGif.SwiftyGifManager = .defaultManager, loopCount: Swift.Int = -1)
+  @_Concurrency.MainActor @preconcurrency public func setGifImage(_ gifImage: UIKit.UIImage, manager: SwiftyGif.SwiftyGifManager = .defaultManager, loopCount: Swift.Int = -1)
+}
+extension UIKit.UIImageView {
+  @discardableResult
+  @_Concurrency.MainActor @preconcurrency public func setGifFromURL(_ url: Foundation.URL, manager: SwiftyGif.SwiftyGifManager = .defaultManager, loopCount: Swift.Int = -1, levelOfIntegrity: SwiftyGif.GifLevelOfIntegrity = .default, session: Foundation.URLSession = URLSession.shared, showLoader: Swift.Bool = true, customLoader: UIKit.UIView? = nil) -> Foundation.URLSessionDataTask?
+}
+extension UIKit.UIImageView {
+  @_Concurrency.MainActor @preconcurrency public func startAnimatingGif()
+  @_Concurrency.MainActor @preconcurrency public func stopAnimatingGif()
+  @_Concurrency.MainActor @preconcurrency public func isAnimatingGif() -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func showFrameForIndexDelta(_ delta: Swift.Int)
+  @_Concurrency.MainActor @preconcurrency public func showFrameAtIndex(_ index: Swift.Int)
+  @_Concurrency.MainActor @preconcurrency public func updateCache()
+  @_Concurrency.MainActor @preconcurrency public func updateCurrentImage()
+  @_Concurrency.MainActor @preconcurrency public func currentFrameIndex() -> Swift.Int
+  @_Concurrency.MainActor @preconcurrency public func frameAtIndex(index: Swift.Int) -> UIKit.UIImage
+  @_Concurrency.MainActor @preconcurrency public func isDiscarded(_ imageView: UIKit.UIView?) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func isDisplayedInScreen(_ imageView: UIKit.UIView?) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func clear()
+}
+extension UIKit.UIImageView {
+  @_Concurrency.MainActor @preconcurrency public var gifImage: UIKit.UIImage? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var currentImage: UIKit.UIImage? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var loopCount: Swift.Int {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var animationManager: SwiftyGif.SwiftyGifManager? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var delegate: (any SwiftyGif.SwiftyGifDelegate)? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var displaying: Swift.Bool {
+    get
+    set
+  }
+}

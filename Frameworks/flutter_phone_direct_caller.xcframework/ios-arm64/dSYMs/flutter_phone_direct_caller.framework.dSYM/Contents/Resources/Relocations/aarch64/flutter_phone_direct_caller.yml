@@ -1,0 +1,14 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/flutter_phone_direct_caller/flutter_phone_direct_caller.framework/flutter_phone_direct_caller'
+relocations:
+  - { offset: 0x3D0A, size: 0x8, addend: 0x0, symName: _flutter_phone_direct_callerVersionString, symObjAddr: 0x0, symBinAddr: 0x4950, symSize: 0x0 }
+  - { offset: 0x3D3E, size: 0x8, addend: 0x0, symName: _flutter_phone_direct_callerVersionNumber, symObjAddr: 0x40, symBinAddr: 0x4990, symSize: 0x0 }
+  - { offset: 0x3D7A, size: 0x8, addend: 0x0, symName: '+[FlutterPhoneDirectCallerPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xA0 }
+  - { offset: 0x3D97, size: 0x8, addend: 0x0, symName: '+[FlutterPhoneDirectCallerPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xA0 }
+  - { offset: 0x3DF0, size: 0x8, addend: 0x0, symName: '-[FlutterPhoneDirectCallerPlugin handleMethodCall:result:]', symObjAddr: 0xA0, symBinAddr: 0x40A0, symSize: 0x1C4 }
+  - { offset: 0x3E95, size: 0x8, addend: 0x0, symName: '-[FlutterPhoneDirectCallerPlugin directCall:]', symObjAddr: 0x264, symBinAddr: 0x4264, symSize: 0x15C }
+  - { offset: 0x3EE3, size: 0x8, addend: 0x0, symName: '___45-[FlutterPhoneDirectCallerPlugin directCall:]_block_invoke', symObjAddr: 0x3C0, symBinAddr: 0x43C0, symSize: 0x30 }
+  - { offset: 0x3F4B, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s, symObjAddr: 0x3F0, symBinAddr: 0x43F0, symSize: 0x8 }
+  - { offset: 0x3F6F, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s, symObjAddr: 0x3F8, symBinAddr: 0x43F8, symSize: 0x8 }
+...

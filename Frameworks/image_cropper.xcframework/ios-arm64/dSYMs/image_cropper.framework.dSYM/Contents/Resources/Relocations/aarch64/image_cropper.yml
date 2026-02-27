@@ -1,0 +1,18 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/image_cropper/image_cropper.framework/image_cropper'
+relocations:
+  - { offset: 0x794C9, size: 0x8, addend: 0x0, symName: _image_cropperVersionString, symObjAddr: 0x0, symBinAddr: 0x6120, symSize: 0x0 }
+  - { offset: 0x794FE, size: 0x8, addend: 0x0, symName: _image_cropperVersionNumber, symObjAddr: 0x30, symBinAddr: 0x6150, symSize: 0x0 }
+  - { offset: 0x7953B, size: 0x8, addend: 0x0, symName: '+[FLTImageCropperPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x118 }
+  - { offset: 0x795E8, size: 0x8, addend: 0x0, symName: '+[FLTImageCropperPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x118 }
+  - { offset: 0x79657, size: 0x8, addend: 0x0, symName: '-[FLTImageCropperPlugin initWithViewController:]', symObjAddr: 0x118, symBinAddr: 0x4118, symSize: 0x78 }
+  - { offset: 0x7969E, size: 0x8, addend: 0x0, symName: '-[FLTImageCropperPlugin handleMethodCall:result:]', symObjAddr: 0x190, symBinAddr: 0x4190, symSize: 0x62C }
+  - { offset: 0x797CB, size: 0x8, addend: 0x0, symName: '-[FLTImageCropperPlugin setupUiCustomizedOptions:forViewController:]', symObjAddr: 0x7BC, symBinAddr: 0x47BC, symSize: 0x688 }
+  - { offset: 0x7993A, size: 0x8, addend: 0x0, symName: '-[FLTImageCropperPlugin parseAspectRatioPresetFromName:]', symObjAddr: 0xE44, symBinAddr: 0x4E44, symSize: 0x110 }
+  - { offset: 0x7997D, size: 0x8, addend: 0x0, symName: '-[FLTImageCropperPlugin cropViewController:didCropToImage:withRect:angle:]', symObjAddr: 0xF54, symBinAddr: 0x4F54, symSize: 0x2FC }
+  - { offset: 0x79B10, size: 0x8, addend: 0x0, symName: '-[FLTImageCropperPlugin cropViewController:didFinishCancelled:]', symObjAddr: 0x1250, symBinAddr: 0x5250, symSize: 0x50 }
+  - { offset: 0x79B72, size: 0x8, addend: 0x0, symName: '-[FLTImageCropperPlugin normalizedImage:]', symObjAddr: 0x12A0, symBinAddr: 0x52A0, symSize: 0xB0 }
+  - { offset: 0x79C29, size: 0x8, addend: 0x0, symName: '-[FLTImageCropperPlugin scaledImage:maxWidth:maxHeight:]', symObjAddr: 0x1350, symBinAddr: 0x5350, symSize: 0x1FC }
+  - { offset: 0x79DF1, size: 0x8, addend: 0x0, symName: '-[FLTImageCropperPlugin .cxx_destruct]', symObjAddr: 0x154C, symBinAddr: 0x554C, symSize: 0x48 }
+...

@@ -1,0 +1,55 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/ScreenProtectorKit/ScreenProtectorKit.framework/ScreenProtectorKit'
+relocations:
+  - { offset: 0x5AEF5, size: 0x8, addend: 0x0, symName: _ScreenProtectorKitVersionString, symObjAddr: 0x0, symBinAddr: 0x9380, symSize: 0x0 }
+  - { offset: 0x5AF2A, size: 0x8, addend: 0x0, symName: _ScreenProtectorKitVersionNumber, symObjAddr: 0x30, symBinAddr: 0x93B0, symSize: 0x0 }
+  - { offset: 0x5B453, size: 0x8, addend: 0x0, symName: '_$s10Foundation12NotificationVIeghn_So14NSNotificationCIeyBhy_TR', symObjAddr: 0x1044, symBinAddr: 0x5044, symSize: 0x94 }
+  - { offset: 0x5B46B, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAAC18screenshotObserver5usingyyyc_tFy10Foundation12NotificationVYbcfU_TA', symObjAddr: 0x13DC, symBinAddr: 0x53DC, symSize: 0x20 }
+  - { offset: 0x5B49F, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x13FC, symBinAddr: 0x53FC, symSize: 0x10 }
+  - { offset: 0x5B4B3, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x140C, symBinAddr: 0x540C, symSize: 0x8 }
+  - { offset: 0x5B4C7, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAAC20screenRecordObserver5usingyySbc_tFy10Foundation12NotificationVYbcfU_TA', symObjAddr: 0x1414, symBinAddr: 0x5414, symSize: 0x8 }
+  - { offset: 0x5B4DB, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAACMa', symObjAddr: 0x141C, symBinAddr: 0x541C, symSize: 0x20 }
+  - { offset: 0x5B591, size: 0x8, addend: 0x0, symName: '_$sSTsSQ7ElementRpzrlE8containsySbABFSaySo6UIViewCG_Tg5', symObjAddr: 0x540, symBinAddr: 0x4540, symSize: 0x1BC }
+  - { offset: 0x5B94F, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAAC6windowABSo8UIWindowCSg_tcfC', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x60 }
+  - { offset: 0x5B9B5, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAAC6windowABSo8UIWindowCSg_tcfc', symObjAddr: 0x60, symBinAddr: 0x4060, symSize: 0x54 }
+  - { offset: 0x5BA79, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAAC29configurePreventionScreenshotyyF', symObjAddr: 0xB4, symBinAddr: 0x40B4, symSize: 0x48C }
+  - { offset: 0x5BDEE, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAAC24enabledPreventScreenshotyyF', symObjAddr: 0x6FC, symBinAddr: 0x46FC, symSize: 0x14 }
+  - { offset: 0x5BE14, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAAC24enabledPreventScreenshotyyF', symObjAddr: 0x6FC, symBinAddr: 0x46FC, symSize: 0x14 }
+  - { offset: 0x5BE2F, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAAC24disablePreventScreenshotyyF', symObjAddr: 0x710, symBinAddr: 0x4710, symSize: 0x14 }
+  - { offset: 0x5BE55, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAAC24disablePreventScreenshotyyF', symObjAddr: 0x710, symBinAddr: 0x4710, symSize: 0x14 }
+  - { offset: 0x5BED8, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAAC011enabledBlurA05styleySo17UIBlurEffectStyleV_tF', symObjAddr: 0x724, symBinAddr: 0x4724, symSize: 0x174 }
+  - { offset: 0x5C03A, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAAC011disableBlurA0yyF', symObjAddr: 0x898, symBinAddr: 0x4898, symSize: 0x28 }
+  - { offset: 0x5C106, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAAC012enabledColorA003hexE0ySS_tF', symObjAddr: 0x8C0, symBinAddr: 0x48C0, symSize: 0x150 }
+  - { offset: 0x5C1F2, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAAC012disableColorA0yyF', symObjAddr: 0xA10, symBinAddr: 0x4A10, symSize: 0x28 }
+  - { offset: 0x5C2B2, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAAC012enabledImageA05namedySS_tF', symObjAddr: 0xA38, symBinAddr: 0x4A38, symSize: 0x1B8 }
+  - { offset: 0x5C3F3, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAAC012disableImageA0yyF', symObjAddr: 0xBF0, symBinAddr: 0x4BF0, symSize: 0x2C }
+  - { offset: 0x5C45E, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAAC14removeObserver8observerySo8NSObject_pSg_tF', symObjAddr: 0xC1C, symBinAddr: 0x4C1C, symSize: 0x74 }
+  - { offset: 0x5C565, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAAC24removeScreenshotObserveryyF', symObjAddr: 0xC90, symBinAddr: 0x4C90, symSize: 0x9C }
+  - { offset: 0x5C628, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAAC06removeA14RecordObserveryyF', symObjAddr: 0xD2C, symBinAddr: 0x4D2C, symSize: 0x9C }
+  - { offset: 0x5C6DF, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAAC17removeAllObserveryyF', symObjAddr: 0xDC8, symBinAddr: 0x4DC8, symSize: 0x10C }
+  - { offset: 0x5C81C, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAAC18screenshotObserver5usingyyyc_tF', symObjAddr: 0xED4, symBinAddr: 0x4ED4, symSize: 0x170 }
+  - { offset: 0x5C8A9, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAAC20screenRecordObserver5usingyySbc_tF', symObjAddr: 0x10D8, symBinAddr: 0x50D8, symSize: 0x170 }
+  - { offset: 0x5C903, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAAC20screenRecordObserver5usingyySbc_tFy10Foundation12NotificationVYbcfU_', symObjAddr: 0x1248, symBinAddr: 0x5248, symSize: 0x6C }
+  - { offset: 0x5C95E, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAAC17screenIsRecordingSbyF', symObjAddr: 0x12B4, symBinAddr: 0x52B4, symSize: 0x58 }
+  - { offset: 0x5C97F, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAACfd', symObjAddr: 0x130C, symBinAddr: 0x530C, symSize: 0x4C }
+  - { offset: 0x5C9A2, size: 0x8, addend: 0x0, symName: '_$s18ScreenProtectorKitAACfD', symObjAddr: 0x1358, symBinAddr: 0x5358, symSize: 0x20 }
+  - { offset: 0x5CAC4, size: 0x8, addend: 0x0, symName: '_$sSo7UIColorC18ScreenProtectorKitE9hexString5alphaABSS_12CoreGraphics7CGFloatVtcfC', symObjAddr: 0x0, symBinAddr: 0x56E8, symSize: 0x20C }
+  - { offset: 0x5CB45, size: 0x8, addend: 0x0, symName: '_$sSlsE9dropFirsty11SubSequenceQzSiFSS_Tg5Tf4ng_n', symObjAddr: 0xDE4, symBinAddr: 0x64CC, symSize: 0x9C }
+  - { offset: 0x5CCED, size: 0x8, addend: 0x0, symName: '_$sSo7UIColorC18ScreenProtectorKitE9hexString5alphaABSS_12CoreGraphics7CGFloatVtcfC', symObjAddr: 0x0, symBinAddr: 0x56E8, symSize: 0x20C }
+  - { offset: 0x5CEE4, size: 0x8, addend: 0x0, symName: '_$ss13_parseInteger5ascii5radixq_Sgx_SitSyRzs010FixedWidthB0R_r0_lFSs_SuTg5', symObjAddr: 0x20C, symBinAddr: 0x58F4, symSize: 0xF0 }
+  - { offset: 0x5CFA8, size: 0x8, addend: 0x0, symName: '_$ss13_parseInteger5ascii5radixq_Sgx_SitSyRzs010FixedWidthB0R_r0_lFADSRys5UInt8VGXEfU_Ss_SuTg5', symObjAddr: 0x2FC, symBinAddr: 0x59E4, symSize: 0x284 }
+  - { offset: 0x5D0C0, size: 0x8, addend: 0x0, symName: '_$sSS8_copyingyS2SFZ', symObjAddr: 0x580, symBinAddr: 0x5C68, symSize: 0x50 }
+  - { offset: 0x5D0D8, size: 0x8, addend: 0x0, symName: '_$sSlsEy11SubSequenceQzqd__cSXRd__5BoundQyd__5IndexRtzluigSS_s16PartialRangeFromVySSAEVGTgq5', symObjAddr: 0x5D0, symBinAddr: 0x5CB8, symSize: 0x4C }
+  - { offset: 0x5D134, size: 0x8, addend: 0x0, symName: '_$sSS8_copyingySSSsFZ', symObjAddr: 0x61C, symBinAddr: 0x5D04, symSize: 0xBC }
+  - { offset: 0x5D1A1, size: 0x8, addend: 0x0, symName: '_$ss32_copyCollectionToContiguousArrayys0dE0Vy7ElementQzGxSlRzlFSs8UTF8ViewV_Tgq5', symObjAddr: 0x6D8, symBinAddr: 0x5DC0, symSize: 0xB0 }
+  - { offset: 0x5D1E2, size: 0x8, addend: 0x0, symName: '_$sSlsE5countSivgSs8UTF8ViewV_Tgq5', symObjAddr: 0x788, symBinAddr: 0x5E70, symSize: 0xE0 }
+  - { offset: 0x5D207, size: 0x8, addend: 0x0, symName: '_$ss22_ContiguousArrayBufferV19_uninitializedCount15minimumCapacityAByxGSi_SitcfCs5UInt8V_Tt1gq5', symObjAddr: 0x868, symBinAddr: 0x5F50, symSize: 0x6C }
+  - { offset: 0x5D23D, size: 0x8, addend: 0x0, symName: '_$sSTsE21_copySequenceContents12initializing8IteratorQz_SitSry7ElementQzG_tFSs8UTF8ViewV_Tgq5', symObjAddr: 0x8D4, symBinAddr: 0x5FBC, symSize: 0x21C }
+  - { offset: 0x5D28A, size: 0x8, addend: 0x0, symName: '_$ss11_StringGutsV27_slowEnsureMatchingEncodingySS5IndexVAEF', symObjAddr: 0xAF0, symBinAddr: 0x61D8, symSize: 0x78 }
+  - { offset: 0x5D2B4, size: 0x8, addend: 0x0, symName: '_$ss17FixedWidthIntegerPsE_5radixxSgqd___SitcSyRd__lufcADSRys5UInt8VGXEfU_Su_SsTG5', symObjAddr: 0xB68, symBinAddr: 0x6250, symSize: 0x27C }
+  - { offset: 0x5D405, size: 0x8, addend: 0x0, symName: '_$ss17FixedWidthIntegerPsE_5radixxSgqd___SitcSyRd__lufcADSRys5UInt8VGXEfU_Su_SsTG5TA', symObjAddr: 0xE80, symBinAddr: 0x6568, symSize: 0x18 }
+  - { offset: 0x5D419, size: 0x8, addend: 0x0, symName: '_$sS2sSTsWl', symObjAddr: 0xE98, symBinAddr: 0x6580, symSize: 0x40 }
+  - { offset: 0x5D42D, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledName, symObjAddr: 0xED8, symBinAddr: 0x65C0, symSize: 0x44 }
+  - { offset: 0x5D457, size: 0x8, addend: 0x0, symName: '_$ss5SliceV32withContiguousStorageIfAvailableyqd__Sgqd__SRy7ElementQzGKXEKlFqd__AGKXEfU_SS8UTF8ViewV_SuSgTg5Tf4xnn_n', symObjAddr: 0xF1C, symBinAddr: 0x6604, symSize: 0x214 }
+...

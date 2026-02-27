@@ -1,0 +1,580 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "webcontent_converter",
+    "printedName": "webcontent_converter",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Flutter",
+        "printedName": "Flutter",
+        "declKind": "Import",
+        "moduleName": "webcontent_converter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "webcontent_converter"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "webcontent_converter"
+      },
+      {
+        "kind": "Import",
+        "name": "Flutter",
+        "printedName": "Flutter",
+        "declKind": "Import",
+        "moduleName": "webcontent_converter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "webcontent_converter"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "webcontent_converter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SwiftWebcontentConverterPlugin",
+        "printedName": "SwiftWebcontentConverterPlugin",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
+                "usr": "c:objc(pl)FlutterPluginRegistrar"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@webcontent_converter@objc(cs)SwiftWebcontentConverterPlugin(cm)registerWithRegistrar:",
+            "mangledName": "$s20webcontent_converter30SwiftWebcontentConverterPluginC8register4withySo07FlutterF9Registrar_p_tFZ",
+            "moduleName": "webcontent_converter",
+            "static": true,
+            "objc_name": "registerWithRegistrar:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handle",
+            "printedName": "handle(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterMethodCall",
+                "printedName": "Flutter.FlutterMethodCall",
+                "usr": "c:objc(cs)FlutterMethodCall"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@webcontent_converter@objc(cs)SwiftWebcontentConverterPlugin(im)handleMethodCall:result:",
+            "mangledName": "$s20webcontent_converter30SwiftWebcontentConverterPluginC6handle_6resultySo17FlutterMethodCallC_yypSgctF",
+            "moduleName": "webcontent_converter",
+            "objc_name": "handleMethodCall:result:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SwiftWebcontentConverterPlugin",
+                "printedName": "webcontent_converter.SwiftWebcontentConverterPlugin",
+                "usr": "c:@M@webcontent_converter@objc(cs)SwiftWebcontentConverterPlugin"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@webcontent_converter@objc(cs)SwiftWebcontentConverterPlugin(im)init",
+            "mangledName": "$s20webcontent_converter30SwiftWebcontentConverterPluginCACycfc",
+            "moduleName": "webcontent_converter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@webcontent_converter@objc(cs)SwiftWebcontentConverterPlugin",
+        "mangledName": "$s20webcontent_converter30SwiftWebcontentConverterPluginC",
+        "moduleName": "webcontent_converter",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 947,
+      "length": 9,
+      "value": "\"content\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 1003,
+      "length": 10,
+      "value": "\"duration\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "FloatLiteral",
+      "offset": 1064,
+      "length": 6,
+      "value": "2000.0"
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 1109,
+      "length": 16,
+      "value": "\"contentToImage\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1202,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1238,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1600,
+      "length": 5,
+      "value": "10000"
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 1637,
+      "length": 56,
+      "value": "\"height = \""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 1692,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 1721,
+      "length": 54,
+      "value": "\"width = \""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 1774,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2019,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 2052,
+      "length": 25,
+      "value": "\"height = \""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 2076,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2228,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2406,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 2901,
+      "length": 14,
+      "value": "\"Got snapshot\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3161,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 3616,
+      "length": 14,
+      "value": "\"Got snapshot\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 3934,
+      "length": 14,
+      "value": "\"contentToPDF\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 3984,
+      "length": 11,
+      "value": "\"savedPath\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 4102,
+      "length": 8,
+      "value": "\"format\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 4180,
+      "length": 9,
+      "value": "\"margins\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4297,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4334,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4626,
+      "length": 5,
+      "value": "10000"
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 4663,
+      "length": 56,
+      "value": "\"height = \""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 4718,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 4747,
+      "length": 54,
+      "value": "\"width = \""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 4800,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4977,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4983,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 5009,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "FloatLiteral",
+      "offset": 5021,
+      "length": 4,
+      "value": "8.27"
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 5062,
+      "length": 8,
+      "value": "\"height\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "FloatLiteral",
+      "offset": 5075,
+      "length": 5,
+      "value": "11.27"
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 5602,
+      "length": 14,
+      "value": "\"printPreview\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 5651,
+      "length": 5,
+      "value": "\"url\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 5707,
+      "length": 9,
+      "value": "\"margins\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5909,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5945,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6221,
+      "length": 5,
+      "value": "10000"
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 6258,
+      "length": 56,
+      "value": "\"height = \""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 6313,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 6342,
+      "length": 54,
+      "value": "\"width = \""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 6395,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/salespanda\/.pub-cache\/git\/web_converter-7609c0f26535eb3cfae5b78ae791eafa34c0cc20\/ios\/Classes\/SwiftWebcontentConverterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 6643,
+      "length": 6,
+      "value": "\"iOS \""
+    }
+  ]
+}

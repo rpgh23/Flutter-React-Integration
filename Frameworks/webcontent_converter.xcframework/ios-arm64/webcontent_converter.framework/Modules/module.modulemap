@@ -1,0 +1,11 @@
+framework module webcontent_converter {
+  umbrella header "webcontent_converter-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module webcontent_converter.Swift {
+  header "webcontent_converter-Swift.h"
+  requires objc
+}

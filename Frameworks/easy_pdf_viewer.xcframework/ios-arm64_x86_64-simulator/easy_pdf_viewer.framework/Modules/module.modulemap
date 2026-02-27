@@ -1,0 +1,11 @@
+framework module easy_pdf_viewer {
+  umbrella header "easy_pdf_viewer-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module easy_pdf_viewer.Swift {
+  header "easy_pdf_viewer-Swift.h"
+  requires objc
+}

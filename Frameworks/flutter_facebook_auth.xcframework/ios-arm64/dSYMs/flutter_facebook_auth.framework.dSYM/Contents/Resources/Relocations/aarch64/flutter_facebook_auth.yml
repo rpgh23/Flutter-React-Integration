@@ -1,0 +1,79 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/flutter_facebook_auth/flutter_facebook_auth.framework/flutter_facebook_auth'
+relocations:
+  - { offset: 0x6E627, size: 0x8, addend: 0x0, symName: _flutter_facebook_authVersionString, symObjAddr: 0x0, symBinAddr: 0xA680, symSize: 0x0 }
+  - { offset: 0x6E65C, size: 0x8, addend: 0x0, symName: _flutter_facebook_authVersionNumber, symObjAddr: 0x38, symBinAddr: 0xA6B8, symSize: 0x0 }
+  - { offset: 0x6E699, size: 0x8, addend: 0x0, symName: '+[FlutterFacebookAuthPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xC }
+  - { offset: 0x6E6A7, size: 0x8, addend: 0x0, symName: '+[FlutterFacebookAuthPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xC }
+  - { offset: 0x6EAC0, size: 0x8, addend: 0x0, symName: '_$sSo27FBSDKGraphRequestConnecting_pSgypSgs5Error_pSgIeggng_AByXlSgSo7NSErrorCSgIeyByyy_TR', symObjAddr: 0x132C, symBinAddr: 0x5338, symSize: 0xBC }
+  - { offset: 0x6EB04, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth12FacebookAuthCfETo', symObjAddr: 0x1674, symBinAddr: 0x5680, symSize: 0x3C }
+  - { offset: 0x6EB33, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth12FacebookAuthCMa', symObjAddr: 0x16B0, symBinAddr: 0x56BC, symSize: 0x20 }
+  - { offset: 0x6EB47, size: 0x8, addend: 0x0, symName: '_$syXlSgIeyBy_ypSgIegn_TR', symObjAddr: 0x16D0, symBinAddr: 0x56DC, symSize: 0xE8 }
+  - { offset: 0x6EB66, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4findys10_HashTableV6BucketV6bucket_Sb5foundtxSHRzlFSS_Tg5', symObjAddr: 0x1B34, symBinAddr: 0x5B40, symSize: 0x64 }
+  - { offset: 0x6EB93, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4find_9hashValues10_HashTableV6BucketV6bucket_Sb5foundtx_SitSHRzlFSS_Tg5', symObjAddr: 0x1C28, symBinAddr: 0x5C34, symSize: 0xE0 }
+  - { offset: 0x6EC0B, size: 0x8, addend: 0x0, symName: '_$ss15ContiguousArrayV16_createNewBuffer14bufferIsUnique15minimumCapacity13growForAppendySb_SiSbtFSS_Tg5', symObjAddr: 0x1E80, symBinAddr: 0x5E8C, symSize: 0x1C }
+  - { offset: 0x6EC7B, size: 0x8, addend: 0x0, symName: '_$ss22_ContiguousArrayBufferV20_consumeAndCreateNew14bufferIsUnique15minimumCapacity13growForAppendAByxGSb_SiSbtFSS_Tg5', symObjAddr: 0x1E9C, symBinAddr: 0x5EA8, symSize: 0x100 }
+  - { offset: 0x6ED67, size: 0x8, addend: 0x0, symName: '_$ss10_NativeSetV5index5afterSh5IndexVyx_GAG_tF12FBSDKCoreKit10PermissionO_Tg5', symObjAddr: 0x1F9C, symBinAddr: 0x5FA8, symSize: 0xFC }
+  - { offset: 0x6ED8C, size: 0x8, addend: 0x0, symName: '_$ss10_NativeSetV10startIndexSh0D0Vyx_Gvg12FBSDKCoreKit10PermissionO_Tg5', symObjAddr: 0x2098, symBinAddr: 0x60A4, symSize: 0xB0 }
+  - { offset: 0x6EEF9, size: 0x8, addend: 0x0, symName: '_$syXlSgIeyBy_ypSgIegn_TRTA', symObjAddr: 0x36E8, symBinAddr: 0x76F4, symSize: 0x8 }
+  - { offset: 0x6EF0D, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledName, symObjAddr: 0x36F0, symBinAddr: 0x76FC, symSize: 0x44 }
+  - { offset: 0x6EF21, size: 0x8, addend: 0x0, symName: ___swift_project_boxed_opaque_existential_0, symObjAddr: 0x3734, symBinAddr: 0x7740, symSize: 0x24 }
+  - { offset: 0x6EF35, size: 0x8, addend: 0x0, symName: ___swift_destroy_boxed_opaque_existential_0, symObjAddr: 0x3758, symBinAddr: 0x7764, symSize: 0x20 }
+  - { offset: 0x6EF49, size: 0x8, addend: 0x0, symName: '_$sypWOb', symObjAddr: 0x3778, symBinAddr: 0x7784, symSize: 0x10 }
+  - { offset: 0x6EF5D, size: 0x8, addend: 0x0, symName: '_$sypWOc', symObjAddr: 0x3788, symBinAddr: 0x7794, symSize: 0x3C }
+  - { offset: 0x6EF71, size: 0x8, addend: 0x0, symName: '_$sSh5IndexV8_VariantOy12FBSDKCoreKit10PermissionO__GWOe', symObjAddr: 0x37C4, symBinAddr: 0x77D0, symSize: 0xC }
+  - { offset: 0x6EF85, size: 0x8, addend: 0x0, symName: '_$sypSgIegn_SgWOe', symObjAddr: 0x3814, symBinAddr: 0x7820, symSize: 0x10 }
+  - { offset: 0x6EF99, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth12FacebookAuthC11getUserData33_0CD7F4A0409F9E3BEE3EA7D01DC1C234LL6fields0A6ResultySS_yypSgctFySo27FBSDKGraphRequestConnecting_pSg_AHs5Error_pSgtcfU_TA', symObjAddr: 0x388C, symBinAddr: 0x7898, symSize: 0xC }
+  - { offset: 0x6EFAD, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x3898, symBinAddr: 0x78A4, symSize: 0x10 }
+  - { offset: 0x6EFC1, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x38A8, symBinAddr: 0x78B4, symSize: 0x8 }
+  - { offset: 0x6EFD5, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth12FacebookAuthC5login33_0CD7F4A0409F9E3BEE3EA7D01DC1C234LL11permissions0A6ResultySaySSG_yypSgctFy13FBSDKLoginKit012LoginManageruR0CSg_s5Error_pSgtcfU_TA', symObjAddr: 0x38D4, symBinAddr: 0x78E0, symSize: 0x8 }
+  - { offset: 0x6EFE9, size: 0x8, addend: 0x0, symName: '_$sSo7UISceneCSo8NSObjectCSH10ObjectiveCWl', symObjAddr: 0x391C, symBinAddr: 0x7928, symSize: 0x54 }
+  - { offset: 0x6EFFD, size: 0x8, addend: 0x0, symName: '_$sSh8IteratorV8_VariantOySo7UISceneC__GWOe', symObjAddr: 0x3970, symBinAddr: 0x797C, symSize: 0x8 }
+  - { offset: 0x6F011, size: 0x8, addend: 0x0, symName: '_$sSo30UIApplicationOpenURLOptionsKeyas20_SwiftNewtypeWrapperSCSYWb', symObjAddr: 0x39E4, symBinAddr: 0x79F0, symSize: 0x2C }
+  - { offset: 0x6F025, size: 0x8, addend: 0x0, symName: '_$sSo30UIApplicationOpenURLOptionsKeyas20_SwiftNewtypeWrapperSCs35_HasCustomAnyHashableRepresentationPWb', symObjAddr: 0x3A50, symBinAddr: 0x7A5C, symSize: 0x2C }
+  - { offset: 0x6F039, size: 0x8, addend: 0x0, symName: '_$sSo29UIApplicationLaunchOptionsKeyas20_SwiftNewtypeWrapperSCSYWb', symObjAddr: 0x3A7C, symBinAddr: 0x7A88, symSize: 0x2C }
+  - { offset: 0x6F04D, size: 0x8, addend: 0x0, symName: '_$sSo29UIApplicationLaunchOptionsKeyas20_SwiftNewtypeWrapperSCs35_HasCustomAnyHashableRepresentationPWb', symObjAddr: 0x3AA8, symBinAddr: 0x7AB4, symSize: 0x2C }
+  - { offset: 0x6F061, size: 0x8, addend: 0x0, symName: '_$sSo29UIApplicationLaunchOptionsKeyaSHSCSQWb', symObjAddr: 0x3AD4, symBinAddr: 0x7AE0, symSize: 0x2C }
+  - { offset: 0x6F075, size: 0x8, addend: 0x0, symName: '_$sSo30UIApplicationOpenURLOptionsKeyaSHSCSQWb', symObjAddr: 0x3B00, symBinAddr: 0x7B0C, symSize: 0x2C }
+  - { offset: 0x6F0E2, size: 0x8, addend: 0x0, symName: '_$sSTsE5first5where7ElementQzSgSbADKXE_tKFShySo7UISceneCG_Tg50110$s21flutter_facebook_auth12FacebookAuthC10mainWindow33_0CD7F4A0409F9E3BEE3EA7D01DC1C234LLSo8UIWindowCSgvgSbSo7D6CXEfU_Tf1cn_n', symObjAddr: 0x0, symBinAddr: 0x400C, symSize: 0x3D8 }
+  - { offset: 0x6F355, size: 0x8, addend: 0x0, symName: '_$sSo29UIApplicationLaunchOptionsKeyas21_ObjectiveCBridgeableSCsACP016_forceBridgeFromE1C_6resulty01_E5CTypeQz_xSgztFZTW', symObjAddr: 0x17D8, symBinAddr: 0x57E4, symSize: 0x14 }
+  - { offset: 0x6F371, size: 0x8, addend: 0x0, symName: '_$sSo29UIApplicationLaunchOptionsKeyas21_ObjectiveCBridgeableSCsACP024_conditionallyBridgeFromE1C_6resultSb01_E5CTypeQz_xSgztFZTW', symObjAddr: 0x17EC, symBinAddr: 0x57F8, symSize: 0x18 }
+  - { offset: 0x6F38D, size: 0x8, addend: 0x0, symName: '_$sSo29UIApplicationLaunchOptionsKeyas35_HasCustomAnyHashableRepresentationSCsACP03_tofgH0s0gH0VSgyFTW', symObjAddr: 0x19E8, symBinAddr: 0x59F4, symSize: 0x84 }
+  - { offset: 0x6F3A9, size: 0x8, addend: 0x0, symName: '_$sSo30UIApplicationOpenURLOptionsKeyas35_HasCustomAnyHashableRepresentationSCsACP03_tofgH0s0gH0VSgyFTW', symObjAddr: 0x1AB0, symBinAddr: 0x5ABC, symSize: 0x84 }
+  - { offset: 0x6F3D7, size: 0x8, addend: 0x0, symName: '_$sSD17dictionaryLiteralSDyxq_Gx_q_td_tcfCSS_ypTt0g5Tf4g_n', symObjAddr: 0x2460, symBinAddr: 0x646C, symSize: 0x10C }
+  - { offset: 0x6F7BC, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth12FacebookAuthC6handle_6resultySo17FlutterMethodCallC_yypSgctF', symObjAddr: 0x3D8, symBinAddr: 0x43E4, symSize: 0x67C }
+  - { offset: 0x6FAAC, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth12FacebookAuthC5login33_0CD7F4A0409F9E3BEE3EA7D01DC1C234LL11permissions0A6ResultySaySSG_yypSgctF', symObjAddr: 0xA54, symBinAddr: 0x4A60, symSize: 0x104 }
+  - { offset: 0x6FB46, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth12FacebookAuthC5login33_0CD7F4A0409F9E3BEE3EA7D01DC1C234LL11permissions0A6ResultySaySSG_yypSgctFy13FBSDKLoginKit012LoginManageruR0CSg_s5Error_pSgtcfU_', symObjAddr: 0xB58, symBinAddr: 0x4B64, symSize: 0x384 }
+  - { offset: 0x6FEA7, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth12FacebookAuthC11getUserData33_0CD7F4A0409F9E3BEE3EA7D01DC1C234LL6fields0A6ResultySS_yypSgctF', symObjAddr: 0xEDC, symBinAddr: 0x4EE8, symSize: 0x1F0 }
+  - { offset: 0x6FFC5, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth12FacebookAuthC11getUserData33_0CD7F4A0409F9E3BEE3EA7D01DC1C234LL6fields0A6ResultySS_yypSgctFySo27FBSDKGraphRequestConnecting_pSg_AHs5Error_pSgtcfU_', symObjAddr: 0x10CC, symBinAddr: 0x50D8, symSize: 0x260 }
+  - { offset: 0x700B0, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth12FacebookAuthC16setPendingResult33_0CD7F4A0409F9E3BEE3EA7D01DC1C234LL10methodName0aH0SbSS_yypSgctF', symObjAddr: 0x13E8, symBinAddr: 0x53F4, symSize: 0x1C4 }
+  - { offset: 0x7025F, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth12FacebookAuthCACycfcTo', symObjAddr: 0x15AC, symBinAddr: 0x55B8, symSize: 0x98 }
+  - { offset: 0x70299, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth12FacebookAuthCfD', symObjAddr: 0x1644, symBinAddr: 0x5650, symSize: 0x30 }
+  - { offset: 0x702C3, size: 0x8, addend: 0x0, symName: '_$sSo29UIApplicationLaunchOptionsKeyaSYSCSY8rawValue03RawF0QzvgTW', symObjAddr: 0x19C0, symBinAddr: 0x59CC, symSize: 0x28 }
+  - { offset: 0x702F3, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth12FacebookAuthC10mainWindow33_0CD7F4A0409F9E3BEE3EA7D01DC1C234LLSo8UIWindowCSgvgTf4d_n', symObjAddr: 0x2258, symBinAddr: 0x6264, symSize: 0x208 }
+  - { offset: 0x7039D, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth12FacebookAuthC14getAccessToken33_0CD7F4A0409F9E3BEE3EA7D01DC1C234LL06accessH0SDySSypGSo011FBSDKAccessH0C_tFTf4nd_n', symObjAddr: 0x256C, symBinAddr: 0x6578, symSize: 0x88C }
+  - { offset: 0x7094B, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth12FacebookAuthC6handle_6resultySo17FlutterMethodCallC_yypSgctF015$syXlSgIeyBy_ypM7Iegn_TRyXlSgIeyBy_Tf1ncn_nTf4nng_n', symObjAddr: 0x2DF8, symBinAddr: 0x6E04, symSize: 0x8CC }
+  - { offset: 0x70FEF, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth30SwiftFlutterFacebookAuthPluginCfETo', symObjAddr: 0x3F0, symBinAddr: 0x7F54, symSize: 0x10 }
+  - { offset: 0x71055, size: 0x8, addend: 0x0, symName: '_$ss17_NativeDictionaryV4copyyyFSo29UIApplicationLaunchOptionsKeya_ypTg5', symObjAddr: 0x400, symBinAddr: 0x7F64, symSize: 0x1D4 }
+  - { offset: 0x71129, size: 0x8, addend: 0x0, symName: '_$ss17_NativeDictionaryV20_copyOrMoveAndResize8capacity12moveElementsySi_SbtFSo29UIApplicationLaunchOptionsKeya_ypTg5', symObjAddr: 0x5D4, symBinAddr: 0x8138, symSize: 0x350 }
+  - { offset: 0x7129F, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth30SwiftFlutterFacebookAuthPluginCMa', symObjAddr: 0x1008, symBinAddr: 0x8B6C, symSize: 0x20 }
+  - { offset: 0x712B3, size: 0x8, addend: 0x0, symName: '_$sSo30UIApplicationOpenURLOptionsKeyaABSHSCWl', symObjAddr: 0x1088, symBinAddr: 0x8BEC, symSize: 0x44 }
+  - { offset: 0x712C7, size: 0x8, addend: 0x0, symName: '_$sypSgWOh', symObjAddr: 0x10CC, symBinAddr: 0x8C30, symSize: 0x40 }
+  - { offset: 0x712DB, size: 0x8, addend: 0x0, symName: '_$ss11AnyHashableVWOc', symObjAddr: 0x118C, symBinAddr: 0x8C70, symSize: 0x3C }
+  - { offset: 0x71365, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth30SwiftFlutterFacebookAuthPluginC8register4withySo0eH9Registrar_p_tFZ', symObjAddr: 0x0, symBinAddr: 0x7B64, symSize: 0x4 }
+  - { offset: 0x71379, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth30SwiftFlutterFacebookAuthPluginCACycfC', symObjAddr: 0x4, symBinAddr: 0x7B68, symSize: 0x20 }
+  - { offset: 0x7139A, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth30SwiftFlutterFacebookAuthPluginC8register4withySo0eH9Registrar_p_tFZTo', symObjAddr: 0x24, symBinAddr: 0x7B88, symSize: 0x30 }
+  - { offset: 0x713D0, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth30SwiftFlutterFacebookAuthPluginC6handle_6resultySo0E10MethodCallC_yypSgctF', symObjAddr: 0x54, symBinAddr: 0x7BB8, symSize: 0x28 }
+  - { offset: 0x7144B, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth30SwiftFlutterFacebookAuthPluginC6handle_6resultySo0E10MethodCallC_yypSgctFTo', symObjAddr: 0x7C, symBinAddr: 0x7BE0, symSize: 0x88 }
+  - { offset: 0x715E7, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth30SwiftFlutterFacebookAuthPluginC11application_29didFinishLaunchingWithOptionsSbSo13UIApplicationC_SDys11AnyHashableVypGtF', symObjAddr: 0x104, symBinAddr: 0x7C68, symSize: 0x4 }
+  - { offset: 0x71634, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth30SwiftFlutterFacebookAuthPluginC11application_29didFinishLaunchingWithOptionsSbSo13UIApplicationC_SDys11AnyHashableVypGtFTo', symObjAddr: 0x108, symBinAddr: 0x7C6C, symSize: 0x98 }
+  - { offset: 0x71678, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth30SwiftFlutterFacebookAuthPluginC11application_4open7optionsSbSo13UIApplicationC_10Foundation3URLVSDySo0L17OpenURLOptionsKeyaypGtF', symObjAddr: 0x1A0, symBinAddr: 0x7D04, symSize: 0x4 }
+  - { offset: 0x71693, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth30SwiftFlutterFacebookAuthPluginC11application_4open7optionsSbSo13UIApplicationC_10Foundation3URLVSDySo0L17OpenURLOptionsKeyaypGtFTo', symObjAddr: 0x1A4, symBinAddr: 0x7D08, symSize: 0x110 }
+  - { offset: 0x716CA, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth30SwiftFlutterFacebookAuthPluginCACycfc', symObjAddr: 0x2B4, symBinAddr: 0x7E18, symSize: 0x84 }
+  - { offset: 0x7170A, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth30SwiftFlutterFacebookAuthPluginCACycfcTo', symObjAddr: 0x338, symBinAddr: 0x7E9C, symSize: 0x88 }
+  - { offset: 0x71744, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth30SwiftFlutterFacebookAuthPluginCfD', symObjAddr: 0x3C0, symBinAddr: 0x7F24, symSize: 0x30 }
+  - { offset: 0x71795, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth30SwiftFlutterFacebookAuthPluginC8register4withySo0eH9Registrar_p_tFZTf4nd_n', symObjAddr: 0x924, symBinAddr: 0x8488, symSize: 0x104 }
+  - { offset: 0x71831, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth30SwiftFlutterFacebookAuthPluginC11application_29didFinishLaunchingWithOptionsSbSo13UIApplicationC_SDys11AnyHashableVypGtFTf4nnd_n', symObjAddr: 0xA28, symBinAddr: 0x858C, symSize: 0x404 }
+  - { offset: 0x71A1C, size: 0x8, addend: 0x0, symName: '_$s21flutter_facebook_auth30SwiftFlutterFacebookAuthPluginC11application_4open7optionsSbSo13UIApplicationC_10Foundation3URLVSDySo0L17OpenURLOptionsKeyaypGtFTf4nnnd_n', symObjAddr: 0xE2C, symBinAddr: 0x8990, symSize: 0x1DC }
+...

@@ -1,0 +1,32 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/easy_pdf_viewer/easy_pdf_viewer.framework/easy_pdf_viewer'
+relocations:
+  - { offset: 0x6207A, size: 0x8, addend: 0x0, symName: _easy_pdf_viewerVersionString, symObjAddr: 0x0, symBinAddr: 0x6B40, symSize: 0x0 }
+  - { offset: 0x620AF, size: 0x8, addend: 0x0, symName: _easy_pdf_viewerVersionNumber, symObjAddr: 0x30, symBinAddr: 0x6B70, symSize: 0x0 }
+  - { offset: 0x620EC, size: 0x8, addend: 0x0, symName: '+[EasyPdfViewerPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xA0 }
+  - { offset: 0x6210B, size: 0x8, addend: 0x0, symName: _kFileName, symObjAddr: 0xE20, symBinAddr: 0x10C08, symSize: 0x0 }
+  - { offset: 0x62134, size: 0x8, addend: 0x0, symName: '+[EasyPdfViewerPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xA0 }
+  - { offset: 0x62193, size: 0x8, addend: 0x0, symName: '-[EasyPdfViewerPlugin handleMethodCall:result:]', symObjAddr: 0xA0, symBinAddr: 0x40A0, symSize: 0xE0 }
+  - { offset: 0x6225C, size: 0x8, addend: 0x0, symName: '___47-[EasyPdfViewerPlugin handleMethodCall:result:]_block_invoke', symObjAddr: 0x180, symBinAddr: 0x4180, symSize: 0x248 }
+  - { offset: 0x6235B, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48b, symObjAddr: 0x3C8, symBinAddr: 0x43C8, symSize: 0x3C }
+  - { offset: 0x62384, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s, symObjAddr: 0x404, symBinAddr: 0x4404, symSize: 0x30 }
+  - { offset: 0x623A3, size: 0x8, addend: 0x0, symName: '-[EasyPdfViewerPlugin clearCacheDir]', symObjAddr: 0x434, symBinAddr: 0x4434, symSize: 0x124 }
+  - { offset: 0x62496, size: 0x8, addend: 0x0, symName: '-[EasyPdfViewerPlugin getNumberOfPages:clearCacheDir:]', symObjAddr: 0x558, symBinAddr: 0x4558, symSize: 0x248 }
+  - { offset: 0x625F0, size: 0x8, addend: 0x0, symName: '-[EasyPdfViewerPlugin getPage:ofPage:]', symObjAddr: 0x7A0, symBinAddr: 0x47A0, symSize: 0x314 }
+  - { offset: 0x62D76, size: 0x8, addend: 0x0, symName: '_$s15easy_pdf_viewer24SwiftEasyPdfViewerPluginCMa', symObjAddr: 0xFC, symBinAddr: 0x4BB0, symSize: 0x20 }
+  - { offset: 0x62D8A, size: 0x8, addend: 0x0, symName: '_$sypSgWOh', symObjAddr: 0x2F0, symBinAddr: 0x4DA4, symSize: 0x40 }
+  - { offset: 0x62D9E, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledName, symObjAddr: 0x330, symBinAddr: 0x4DE4, symSize: 0x44 }
+  - { offset: 0x62DBD, size: 0x8, addend: 0x0, symName: '_$sypSgWOc', symObjAddr: 0x630, symBinAddr: 0x50E4, symSize: 0x48 }
+  - { offset: 0x62DD1, size: 0x8, addend: 0x0, symName: ___swift_project_boxed_opaque_existential_0, symObjAddr: 0x678, symBinAddr: 0x512C, symSize: 0x24 }
+  - { offset: 0x62DE5, size: 0x8, addend: 0x0, symName: ___swift_destroy_boxed_opaque_existential_0, symObjAddr: 0x69C, symBinAddr: 0x5150, symSize: 0x20 }
+  - { offset: 0x62F1B, size: 0x8, addend: 0x0, symName: '_$s15easy_pdf_viewer24SwiftEasyPdfViewerPluginC8register4withySo07FlutterH9Registrar_p_tFZ', symObjAddr: 0x0, symBinAddr: 0x4AB4, symSize: 0xDC }
+  - { offset: 0x62F9D, size: 0x8, addend: 0x0, symName: '_$s15easy_pdf_viewer24SwiftEasyPdfViewerPluginCACycfC', symObjAddr: 0xDC, symBinAddr: 0x4B90, symSize: 0x20 }
+  - { offset: 0x62FBE, size: 0x8, addend: 0x0, symName: '_$s15easy_pdf_viewer24SwiftEasyPdfViewerPluginC8register4withySo07FlutterH9Registrar_p_tFZTo', symObjAddr: 0x11C, symBinAddr: 0x4BD0, symSize: 0xF0 }
+  - { offset: 0x6305A, size: 0x8, addend: 0x0, symName: '_$s15easy_pdf_viewer24SwiftEasyPdfViewerPluginC6handle_6resultySo17FlutterMethodCallC_yypSgctF', symObjAddr: 0x20C, symBinAddr: 0x4CC0, symSize: 0xE4 }
+  - { offset: 0x630B1, size: 0x8, addend: 0x0, symName: '_$s15easy_pdf_viewer24SwiftEasyPdfViewerPluginC6handle_6resultySo17FlutterMethodCallC_yypSgctFTo', symObjAddr: 0x374, symBinAddr: 0x4E28, symSize: 0x74 }
+  - { offset: 0x630DB, size: 0x8, addend: 0x0, symName: '_$s15easy_pdf_viewer24SwiftEasyPdfViewerPluginCACycfc', symObjAddr: 0x3E8, symBinAddr: 0x4E9C, symSize: 0x30 }
+  - { offset: 0x6310E, size: 0x8, addend: 0x0, symName: '_$s15easy_pdf_viewer24SwiftEasyPdfViewerPluginCACycfcTo', symObjAddr: 0x418, symBinAddr: 0x4ECC, symSize: 0x3C }
+  - { offset: 0x63143, size: 0x8, addend: 0x0, symName: '_$s15easy_pdf_viewer24SwiftEasyPdfViewerPluginCfD', symObjAddr: 0x454, symBinAddr: 0x4F08, symSize: 0x30 }
+  - { offset: 0x63166, size: 0x8, addend: 0x0, symName: '_$s15easy_pdf_viewer24SwiftEasyPdfViewerPluginC6handle_6resultySo17FlutterMethodCallC_yypSgctF015$syXlSgIeyBy_ypP7Iegn_TRyXlSgIeyBy_Tf1ncn_nTf4ddg_n', symObjAddr: 0x4AC, symBinAddr: 0x4F60, symSize: 0x184 }
+...

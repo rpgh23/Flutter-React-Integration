@@ -1,0 +1,1110 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name flutter_inappwebview_ios
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+import AVFoundation
+import AuthenticationServices
+import Flutter
+import Foundation
+import OrderedSet
+import SafariServices
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_exported import flutter_inappwebview_ios
+@available(iOS 15.0, *)
+extension SafariServices.SFSafariViewController.ActivityButton {
+  public static func fromMap(map: [Swift.String : Any?]?) -> SafariServices.SFSafariViewController.ActivityButton?
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BaseCallbackResult<T> : flutter_inappwebview_ios.CallbackResult<T> {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CallbackResult<T> : flutter_inappwebview_ios.MethodChannelResult {
+  public var notImplemented: () -> Swift.Void
+  public var success: (Any?) -> Swift.Void
+  public var error: (Swift.String, Swift.String?, Any?) -> Swift.Void
+  public var nonNullSuccess: (T) -> Swift.Bool
+  public var nullSuccess: () -> Swift.Bool
+  public var defaultBehaviour: (T?) -> Swift.Void
+  public var decodeResult: (Any?) -> T?
+  @objc deinit
+}
+extension CoreFoundation.CGRect {
+  public static func fromMap(map: [Swift.String : Swift.Double]) -> CoreFoundation.CGRect
+  public func toMap() -> [Swift.String : Any?]
+}
+extension CoreFoundation.CGSize {
+  public static func fromMap(map: [Swift.String : Swift.Double]) -> CoreFoundation.CGSize
+  public func toMap() -> [Swift.String : Any?]
+}
+@objc public class ChannelDelegate : flutter_inappwebview_ios.FlutterMethodCallDelegate, flutter_inappwebview_ios.Disposable {
+  public init(channel: Flutter.FlutterMethodChannel)
+  override public func handle(_ call: Flutter.FlutterMethodCall, result: @escaping Flutter.FlutterResult)
+  public func dispose()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class ChromeSafariBrowserManager : flutter_inappwebview_ios.ChannelDelegate {
+  override public func handle(_ call: Flutter.FlutterMethodCall, result: @escaping Flutter.FlutterResult)
+  public func open(id: Swift.String, url: Swift.String, settings: [Swift.String : Any?], menuItemList: [[Swift.String : Any]], result: @escaping Flutter.FlutterResult)
+  override public func dispose()
+  @objc deinit
+}
+@objc public class ClientCertChallenge : ObjectiveC.NSObject {
+  public init(fromChallenge: Foundation.URLAuthenticationChallenge)
+  public func toMap() -> [Swift.String : Any?]
+  @objc deinit
+}
+@objc public class ClientCertResponse : ObjectiveC.NSObject {
+  public init(certificatePath: Swift.String, certificatePassword: Swift.String? = nil, keyStoreType: Swift.String? = nil, action: Swift.Int? = nil)
+  public static func fromMap(map: [Swift.String : Any?]?) -> flutter_inappwebview_ios.ClientCertResponse?
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ContextMenuSettings : flutter_inappwebview_ios.ISettings<ObjectiveC.NSObject> {
+  @objc deinit
+}
+@objc public class CreateWindowAction : ObjectiveC.NSObject {
+  public init(navigationAction: WebKit.WKNavigationAction, windowId: Swift.Int64, windowFeatures: WebKit.WKWindowFeatures, isDialog: Swift.Bool? = nil)
+  public func toMap() -> [Swift.String : Any?]
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class CredentialDatabase : flutter_inappwebview_ios.ChannelDelegate {
+  override public func handle(_ call: Flutter.FlutterMethodCall, result: @escaping Flutter.FlutterResult)
+  override public func dispose()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @available(iOS 11.0, *)
+@_Concurrency.MainActor @preconcurrency public class CustomSchemeHandler : ObjectiveC.NSObject, WebKit.WKURLSchemeHandler {
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, start urlSchemeTask: any WebKit.WKURLSchemeTask)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, stop urlSchemeTask: any WebKit.WKURLSchemeTask)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class CustomSchemeResponse : ObjectiveC.NSObject {
+  public init(data: Foundation.Data, contentType: Swift.String, contentEncoding: Swift.String)
+  public static func fromMap(map: [Swift.String : Any?]?) -> flutter_inappwebview_ios.CustomSchemeResponse?
+  @objc deinit
+}
+@objc @_Concurrency.MainActor @preconcurrency public class CustomUIPrintPageRenderer : UIKit.UIPrintPageRenderer {
+  @_Concurrency.MainActor @preconcurrency public init(numberOfPage: Swift.Int? = nil, forceRenderingQuality: Swift.Int? = nil)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var numberOfPages: Swift.Int {
+    @objc get
+  }
+  @available(iOS 14.5, *)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func currentRenderingQuality(forRequested requestedRenderingQuality: UIKit.UIPrintRenderingQuality) -> UIKit.UIPrintRenderingQuality
+  @objc deinit
+}
+public protocol Disposable {
+  func dispose()
+}
+@objc public class DownloadStartRequest : ObjectiveC.NSObject {
+  public init(url: Swift.String, userAgent: Swift.String?, contentDisposition: Swift.String?, mimeType: Swift.String?, contentLength: Swift.Int64, suggestedFilename: Swift.String?, textEncodingName: Swift.String?)
+  public func toMap() -> [Swift.String : Any?]
+  @objc deinit
+}
+@objc public class FindInteractionChannelDelegate : flutter_inappwebview_ios.ChannelDelegate {
+  public init(findInteractionController: flutter_inappwebview_ios.FindInteractionController, channel: Flutter.FlutterMethodChannel)
+  override public func handle(_ call: Flutter.FlutterMethodCall, result: @escaping Flutter.FlutterResult)
+  public func onFindResultReceived(activeMatchOrdinal: Swift.Int, numberOfMatches: Swift.Int, isDoneCounting: Swift.Bool)
+  override public func dispose()
+  @objc deinit
+}
+@objc public class FindInteractionController : ObjectiveC.NSObject, flutter_inappwebview_ios.Disposable {
+  public init(plugin: flutter_inappwebview_ios.SwiftFlutterPlugin, id: Any, webView: flutter_inappwebview_ios.InAppWebView, settings: flutter_inappwebview_ios.FindInteractionSettings?)
+  public func prepare()
+  public func findAll(find: Swift.String?, completionHandler: ((Any?, (any Swift.Error)?) -> Swift.Void)?)
+  public func findNext(forward: Swift.Bool, completionHandler: ((Any?, (any Swift.Error)?) -> Swift.Void)?)
+  public func clearMatches(completionHandler: ((Any?, (any Swift.Error)?) -> Swift.Void)?)
+  public func dispose()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class FindInteractionSettings : flutter_inappwebview_ios.ISettings<flutter_inappwebview_ios.FindInteractionController> {
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class FlutterMethodCallDelegate : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  public func handle(_ call: Flutter.FlutterMethodCall, result: @escaping Flutter.FlutterResult)
+  @objc deinit
+}
+extension Flutter.FlutterMethodChannel {
+  public func invokeMethod(_ method: Swift.String, arguments: Any, callback: any flutter_inappwebview_ios.MethodChannelResult)
+}
+@objc @_hasMissingDesignatedInitializers public class FlutterWebViewController : ObjectiveC.NSObject, Flutter.FlutterPlatformView, flutter_inappwebview_ios.Disposable {
+  public func webView() -> flutter_inappwebview_ios.InAppWebView?
+  @objc public func view() -> UIKit.UIView
+  public func makeInitialLoad(params: Foundation.NSDictionary)
+  public func dispose(removeFromSuperview: Swift.Bool)
+  public func dispose()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class FlutterWebViewFactory : ObjectiveC.NSObject, Flutter.FlutterPlatformViewFactory {
+  @objc public func createArgsCodec() -> any Flutter.FlutterMessageCodec & ObjectiveC.NSObjectProtocol
+  @objc public func create(withFrame frame: CoreFoundation.CGRect, viewIdentifier viewId: Swift.Int64, arguments args: Any?) -> any Flutter.FlutterPlatformView
+  @objc deinit
+}
+public class HeadlessInAppWebView : flutter_inappwebview_ios.Disposable {
+  public init(plugin: flutter_inappwebview_ios.SwiftFlutterPlugin, id: Swift.String, flutterWebView: flutter_inappwebview_ios.FlutterWebViewController)
+  public func onWebViewCreated()
+  public func prepare(params: Foundation.NSDictionary)
+  public func setSize(size: flutter_inappwebview_ios.Size2D)
+  public func getSize() -> flutter_inappwebview_ios.Size2D?
+  public func disposeAndGetFlutterWebView(withFrame frame: CoreFoundation.CGRect) -> flutter_inappwebview_ios.FlutterWebViewController?
+  public func dispose(disposeWebView: Swift.Bool)
+  public func dispose()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class HeadlessInAppWebViewManager : flutter_inappwebview_ios.ChannelDelegate {
+  override public func handle(_ call: Flutter.FlutterMethodCall, result: @escaping Flutter.FlutterResult)
+  public func run(id: Swift.String, params: [Swift.String : Any?])
+  override public func dispose()
+  @objc deinit
+}
+@objc public class HeadlessWebViewChannelDelegate : flutter_inappwebview_ios.ChannelDelegate {
+  public init(headlessWebView: flutter_inappwebview_ios.HeadlessInAppWebView, channel: Flutter.FlutterMethodChannel)
+  override public func handle(_ call: Flutter.FlutterMethodCall, result: @escaping Flutter.FlutterResult)
+  public func onWebViewCreated()
+  override public func dispose()
+  @objc deinit
+}
+public enum HitTestResultType : Swift.Int {
+  case unknownType
+  case phoneType
+  case geoType
+  case emailType
+  case imageType
+  case srcAnchorType
+  case srcImageAnchorType
+  case editTextType
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public class HitTestResult : ObjectiveC.NSObject {
+  public init(type: flutter_inappwebview_ios.HitTestResultType, extra: Swift.String?)
+  public static func fromMap(map: [Swift.String : Any?]?) -> flutter_inappwebview_ios.HitTestResult?
+  public func toMap() -> [Swift.String : Any?]
+  @objc deinit
+}
+@objc public class HttpAuthenticationChallenge : ObjectiveC.NSObject {
+  public init(fromChallenge: Foundation.URLAuthenticationChallenge)
+  public func toMap() -> [Swift.String : Any?]
+  @objc deinit
+}
+@objc public class HttpAuthResponse : ObjectiveC.NSObject {
+  public init(username: Swift.String, password: Swift.String, permanentPersistence: Swift.Bool, action: Swift.Int? = nil)
+  public static func fromMap(map: [Swift.String : Any?]?) -> flutter_inappwebview_ios.HttpAuthResponse?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class InAppBrowserChannelDelegate : flutter_inappwebview_ios.ChannelDelegate {
+  override public init(channel: Flutter.FlutterMethodChannel)
+  public func onBrowserCreated()
+  public func onMenuItemClicked(menuItem: flutter_inappwebview_ios.InAppBrowserMenuItem)
+  public func onExit()
+  @objc deinit
+}
+public protocol InAppBrowserDelegate {
+  func didChangeTitle(title: Swift.String?)
+  func didStartNavigation(url: Foundation.URL?)
+  func didUpdateVisitedHistory(url: Foundation.URL?)
+  func didFinishNavigation(url: Foundation.URL?)
+  func didFailNavigation(url: Foundation.URL?, error: any Swift.Error)
+  func didChangeProgress(progress: Swift.Double)
+}
+@objc @_hasMissingDesignatedInitializers public class InAppBrowserManager : flutter_inappwebview_ios.ChannelDelegate {
+  override public func handle(_ call: Flutter.FlutterMethodCall, result: @escaping Flutter.FlutterResult)
+  public func prepareInAppBrowserWebViewController(settings: [Swift.String : Any?]) -> flutter_inappwebview_ios.InAppBrowserWebViewController
+  public func open(arguments: Foundation.NSDictionary)
+  public func presentViewController(webViewController: flutter_inappwebview_ios.InAppBrowserWebViewController)
+  public func openWithSystemBrowser(url: Swift.String, result: @escaping Flutter.FlutterResult)
+  override public func dispose()
+  @objc deinit
+}
+@objc public class InAppBrowserMenuItem : ObjectiveC.NSObject {
+  public init(id: Swift.Int64, title: Swift.String, order: Swift.Int64?, icon: UIKit.UIImage?, iconColor: UIKit.UIColor?, showAsAction: Swift.Bool)
+  public static func fromMap(map: [Swift.String : Any?]?) -> flutter_inappwebview_ios.InAppBrowserMenuItem?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class InAppBrowserNavigationController : UIKit.UINavigationController {
+  @objc deinit
+  @available(iOS 5.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(rootViewController: UIKit.UIViewController)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class InAppBrowserSettings : flutter_inappwebview_ios.ISettings<flutter_inappwebview_ios.InAppBrowserWebViewController> {
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class InAppBrowserWebViewController : UIKit.UIViewController, flutter_inappwebview_ios.InAppBrowserDelegate, UIKit.UIScrollViewDelegate, UIKit.UISearchBarDelegate, flutter_inappwebview_ios.Disposable {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func loadView()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency public func initLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func prepareNavigationControllerBeforeViewWillAppear()
+  @_Concurrency.MainActor @preconcurrency public func prepareWebView()
+  @_Concurrency.MainActor @preconcurrency public func didChangeTitle(title: Swift.String?)
+  @_Concurrency.MainActor @preconcurrency public func didStartNavigation(url: Foundation.URL?)
+  @_Concurrency.MainActor @preconcurrency public func didUpdateVisitedHistory(url: Foundation.URL?)
+  @_Concurrency.MainActor @preconcurrency public func didFinishNavigation(url: Foundation.URL?)
+  @_Concurrency.MainActor @preconcurrency public func didFailNavigation(url: Foundation.URL?, error: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency public func didChangeProgress(progress: Swift.Double)
+  @_Concurrency.MainActor @preconcurrency @objc public func searchBarSearchButtonClicked(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor @preconcurrency public func show(completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public func hide(completion: (() -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor @preconcurrency public func reload()
+  @objc @_Concurrency.MainActor @preconcurrency public func share()
+  @_Concurrency.MainActor @preconcurrency public func close(completion: (() -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor @preconcurrency public func close()
+  @objc @_Concurrency.MainActor @preconcurrency public func goBack()
+  @objc @_Concurrency.MainActor @preconcurrency public func goForward()
+  @objc @_Concurrency.MainActor @preconcurrency public func goBackOrForward(steps: Swift.Int)
+  @_Concurrency.MainActor @preconcurrency public func setSettings(newSettings: flutter_inappwebview_ios.InAppBrowserSettings, newSettingsMap: [Swift.String : Any])
+  @_Concurrency.MainActor @preconcurrency public func getSettings() -> [Swift.String : Any?]?
+  @_Concurrency.MainActor @preconcurrency public func dispose()
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class InAppWebView : WebKit.WKWebView, UIKit.UIScrollViewDelegate, WebKit.WKUIDelegate, WebKit.WKNavigationDelegate, WebKit.WKScriptMessageHandler, UIKit.UIGestureRecognizerDelegate, WebKit.WKDownloadDelegate, flutter_inappwebview_ios.PullToRefreshDelegate, flutter_inappwebview_ios.Disposable {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var frame: CoreFoundation.CGRect {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func hitTest(_ point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> UIKit.UIView?
+  @available(iOS 13.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func buildMenu(with builder: any UIKit.UIMenuBuilder)
+  @available(iOS 16.4, *)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, willPresentEditMenuWithAnimator animator: any UIKit.UIEditMenuInteractionAnimating)
+  @available(iOS 16.4, *)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, willDismissEditMenuWithAnimator animator: any UIKit.UIEditMenuInteractionAnimating)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func canPerformAction(_ action: ObjectiveC.Selector, withSender sender: Any?) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func prepare()
+  @_Concurrency.MainActor @preconcurrency public func prepareAndAddUserScripts()
+  @_Concurrency.MainActor @preconcurrency public static func preWKWebViewConfiguration(settings: flutter_inappwebview_ios.InAppWebViewSettings?) -> WebKit.WKWebViewConfiguration
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+  @_Concurrency.MainActor @preconcurrency public func initializeWindowIdJS()
+  @_Concurrency.MainActor @preconcurrency public func goBackOrForward(steps: Swift.Int)
+  @_Concurrency.MainActor @preconcurrency public func canGoBackOrForward(steps: Swift.Int) -> Swift.Bool
+  @available(iOS 11.0, *)
+  @_Concurrency.MainActor @preconcurrency public func takeScreenshot(with: [Swift.String : Any?]?, completionHandler: @escaping (_ screenshot: Foundation.Data?) -> Swift.Void)
+  @available(iOS 14.0, *)
+  @_Concurrency.MainActor @preconcurrency public func createPdf(configuration: [Swift.String : Any?]?, completionHandler: @escaping (_ pdf: Foundation.Data?) -> Swift.Void)
+  @available(iOS 14.0, *)
+  @_Concurrency.MainActor @preconcurrency public func createWebArchiveData(dataCompletionHandler: @escaping (_ webArchiveData: Foundation.Data?) -> Swift.Void)
+  @available(iOS 14.0, *)
+  @_Concurrency.MainActor @preconcurrency public func saveWebArchive(filePath: Swift.String, autoname: Swift.Bool, completionHandler: @escaping (_ path: Swift.String?) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func loadUrl(urlRequest: Foundation.URLRequest, allowingReadAccessTo: Foundation.URL?)
+  @_Concurrency.MainActor @preconcurrency public func postUrl(url: Foundation.URL, postData: Foundation.Data)
+  @_Concurrency.MainActor @preconcurrency public func loadData(data: Swift.String, mimeType: Swift.String, encoding: Swift.String, baseUrl: Foundation.URL, allowingReadAccessTo: Foundation.URL?)
+  @_Concurrency.MainActor @preconcurrency public func loadFile(assetFilePath: Swift.String) throws
+  @_Concurrency.MainActor @preconcurrency public func enablePluginScriptAtRuntime(flagVariable: Swift.String, enable: Swift.Bool, pluginScript: flutter_inappwebview_ios.PluginScript)
+  @available(*, deprecated, message: "Use InAppWebViewManager.clearAllCache instead.")
+  @_Concurrency.MainActor @preconcurrency public func clearCache()
+  @_Concurrency.MainActor @preconcurrency public func injectDeferredObject(source: Swift.String, withWrapper jsWrapper: Swift.String?, completionHandler: ((Any?) -> Swift.Void)? = nil)
+  @available(iOS 14.0, *)
+  @_Concurrency.MainActor @preconcurrency public func injectDeferredObject(source: Swift.String, contentWorld: WebKit.WKContentWorld, withWrapper jsWrapper: Swift.String?, completionHandler: ((Any?) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func evaluateJavaScript(_ javaScriptString: Swift.String, completionHandler: (@_Concurrency.MainActor @Sendable (Any?, (any Swift.Error)?) -> Swift.Void)? = nil)
+  @available(iOS 14.0, *)
+  @_Concurrency.MainActor @preconcurrency public func evaluateJavaScript(_ javaScript: Swift.String, frame: WebKit.WKFrameInfo? = nil, contentWorld: WebKit.WKContentWorld, completionHandler: ((Swift.Result<Any, any Swift.Error>) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public func evaluateJavascript(source: Swift.String, completionHandler: ((Any?) -> Swift.Void)? = nil)
+  @available(iOS 14.0, *)
+  @_Concurrency.MainActor @preconcurrency public func evaluateJavascript(source: Swift.String, contentWorld: WebKit.WKContentWorld, completionHandler: ((Any?) -> Swift.Void)? = nil)
+  @available(iOS 14.0, *)
+  @_Concurrency.MainActor @preconcurrency public func callAsyncJavaScript(_ functionBody: Swift.String, arguments: [Swift.String : Any] = [:], frame: WebKit.WKFrameInfo? = nil, contentWorld: WebKit.WKContentWorld, completionHandler: ((Swift.Result<Any, any Swift.Error>) -> Swift.Void)? = nil)
+  @available(iOS 14.0, *)
+  @_Concurrency.MainActor @preconcurrency public func callAsyncJavaScript(functionBody: Swift.String, arguments: [Swift.String : Any], contentWorld: WebKit.WKContentWorld, completionHandler: ((Any?) -> Swift.Void)? = nil)
+  @available(iOS 10.3, *)
+  @_Concurrency.MainActor @preconcurrency public func callAsyncJavaScript(functionBody: Swift.String, arguments: [Swift.String : Any], completionHandler: ((Any?) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public func injectJavascriptFileFromUrl(urlFile: Swift.String, scriptHtmlTagAttributes: [Swift.String : Any?]?)
+  @_Concurrency.MainActor @preconcurrency public func injectCSSCode(source: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public func injectCSSFileFromUrl(urlFile: Swift.String, cssLinkHtmlTagAttributes: [Swift.String : Any?]?)
+  @_Concurrency.MainActor @preconcurrency public func getCopyBackForwardList() -> [Swift.String : Any]
+  @available(iOS 15.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, requestMediaCapturePermissionFor origin: WebKit.WKSecurityOrigin, initiatedByFrame frame: WebKit.WKFrameInfo, type: WebKit.WKMediaCaptureType, decisionHandler: @escaping (WebKit.WKPermissionDecision) -> Swift.Void)
+  @available(iOS 15.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, requestDeviceOrientationAndMotionPermissionFor origin: WebKit.WKSecurityOrigin, initiatedByFrame frame: WebKit.WKFrameInfo, decisionHandler: @escaping (WebKit.WKPermissionDecision) -> Swift.Void)
+  @available(iOS 13.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, preferences: WebKit.WKWebpagePreferences, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy, WebKit.WKWebpagePreferences) -> Swift.Void)
+  @available(iOS 14.5, *)
+  @_Concurrency.MainActor @preconcurrency @objc public func download(_ download: WebKit.WKDownload, decideDestinationUsing response: Foundation.URLResponse, suggestedFilename: Swift.String, completionHandler: @escaping (Foundation.URL?) -> Swift.Void)
+  @available(iOS 14.5, *)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, navigationResponse: WebKit.WKNavigationResponse, didBecome download: WebKit.WKDownload)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationResponse: WebKit.WKNavigationResponse, decisionHandler: @escaping (WebKit.WKNavigationResponsePolicy) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ view: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, runJavaScriptAlertPanelWithMessage message: Swift.String, initiatedByFrame frame: WebKit.WKFrameInfo, completionHandler: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, runJavaScriptConfirmPanelWithMessage message: Swift.String, initiatedByFrame frame: WebKit.WKFrameInfo, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, runJavaScriptTextInputPanelWithPrompt message: Swift.String, defaultText defaultValue: Swift.String?, initiatedByFrame frame: WebKit.WKFrameInfo, completionHandler: @escaping (Swift.String?) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func onScrollChanged(startedByUser: Swift.Bool, oldContentOffset: CoreFoundation.CGPoint?)
+  @_Concurrency.MainActor @preconcurrency public func onContentSizeChanged(oldContentSize: CoreFoundation.CGSize)
+  @_Concurrency.MainActor @preconcurrency @objc public func scrollViewDidZoom(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, authenticationChallenge challenge: Foundation.URLAuthenticationChallenge, shouldAllowDeprecatedTLS decisionHandler: @escaping (Swift.Bool) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency @objc public func webViewDidClose(_ webView: WebKit.WKWebView)
+  @_Concurrency.MainActor @preconcurrency @objc public func webViewWebContentProcessDidTerminate(_ webView: WebKit.WKWebView)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didCommit navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor @preconcurrency public func isVideoPlayerWindow(_ notificationObject: Swift.AnyObject?) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+  @_Concurrency.MainActor @preconcurrency public func scrollTo(x: Swift.Int, y: Swift.Int, animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func scrollBy(x: Swift.Int, y: Swift.Int, animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func pauseTimers()
+  @_Concurrency.MainActor @preconcurrency public func resumeTimers()
+  @_Concurrency.MainActor @preconcurrency public func printCurrentPage(settings: flutter_inappwebview_ios.PrintJobSettings? = nil, completionHandler: UIKit.UIPrintInteractionController.CompletionHandler? = nil) -> Swift.String?
+  @_Concurrency.MainActor @preconcurrency public func getContentHeight() -> Swift.Int64
+  @_Concurrency.MainActor @preconcurrency public func getContentWidth() -> Swift.Int64
+  @_Concurrency.MainActor @preconcurrency public func zoomBy(zoomFactor: Swift.Float, animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func getOriginalUrl() -> Foundation.URL?
+  @_Concurrency.MainActor @preconcurrency public func getZoomScale() -> Swift.Float
+  @_Concurrency.MainActor @preconcurrency public func getSelectedText(completionHandler: @escaping (Any?, (any Swift.Error)?) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func getHitTestResult(completionHandler: @escaping (flutter_inappwebview_ios.HitTestResult) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func requestFocusNodeHref(completionHandler: @escaping ([Swift.String : Any?]?, (any Swift.Error)?) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func requestImageRef(completionHandler: @escaping ([Swift.String : Any?]?, (any Swift.Error)?) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func clearFocus()
+  @_Concurrency.MainActor @preconcurrency public func getCertificate() -> flutter_inappwebview_ios.SslCertificate?
+  @_Concurrency.MainActor @preconcurrency public func isSecureContext(completionHandler: @escaping (_ isSecureContext: Swift.Bool) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func canScrollVertically() -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func canScrollHorizontally() -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func enablePullToRefresh()
+  @_Concurrency.MainActor @preconcurrency public func disablePullToRefresh()
+  @_Concurrency.MainActor @preconcurrency public func isPullToRefreshEnabled() -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func createWebMessageChannel(completionHandler: ((flutter_inappwebview_ios.WebMessageChannel?) -> Swift.Void)? = nil) -> flutter_inappwebview_ios.WebMessageChannel?
+  @_Concurrency.MainActor @preconcurrency public func postWebMessage(message: flutter_inappwebview_ios.WebMessage, targetOrigin: Swift.String, completionHandler: ((Any?) -> Swift.Void)? = nil) throws
+  @_Concurrency.MainActor @preconcurrency public func addWebMessageListener(webMessageListener: flutter_inappwebview_ios.WebMessageListener) throws
+  @_Concurrency.MainActor @preconcurrency public func disposeWebMessageChannels()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var inputAccessoryView: UIKit.UIView? {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency public func runWindowBeforeCreatedCallbacks()
+  @_Concurrency.MainActor @preconcurrency public func dispose()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class InAppWebViewManager : flutter_inappwebview_ios.ChannelDelegate {
+  override public func handle(_ call: Flutter.FlutterMethodCall, result: @escaping Flutter.FlutterResult)
+  public func getDefaultUserAgent(completionHandler: @escaping (_ value: Swift.String?) -> Swift.Void)
+  public func disposeKeepAlive(keepAliveId: Swift.String)
+  public func clearAllCache(includeDiskFiles: Swift.Bool, completionHandler: @escaping () -> Swift.Void)
+  override public func dispose()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class InAppWebViewSettings : flutter_inappwebview_ios.ISettings<flutter_inappwebview_ios.InAppWebView> {
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class ISettings<T> : ObjectiveC.NSObject {
+  @objc deinit
+}
+@objc public class JsAlertResponse : ObjectiveC.NSObject {
+  public init(message: Swift.String, confirmButtonTitle: Swift.String, handledByClient: Swift.Bool, action: Swift.Int? = nil)
+  public static func fromMap(map: [Swift.String : Any?]?) -> flutter_inappwebview_ios.JsAlertResponse?
+  @objc deinit
+}
+@objc public class JsConfirmResponse : ObjectiveC.NSObject {
+  public init(message: Swift.String, confirmButtonTitle: Swift.String, cancelButtonTitle: Swift.String, handledByClient: Swift.Bool, action: Swift.Int? = nil)
+  public static func fromMap(map: [Swift.String : Any?]?) -> flutter_inappwebview_ios.JsConfirmResponse?
+  @objc deinit
+}
+@objc public class JsPromptResponse : ObjectiveC.NSObject {
+  public init(message: Swift.String, defaultValue: Swift.String, confirmButtonTitle: Swift.String, cancelButtonTitle: Swift.String, handledByClient: Swift.Bool, value: Swift.String? = nil, action: Swift.Int? = nil)
+  public static func fromMap(map: [Swift.String : Any?]?) -> flutter_inappwebview_ios.JsPromptResponse?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class LeakAvoider : ObjectiveC.NSObject {
+  public func handle(_ call: Flutter.FlutterMethodCall, result: @escaping Flutter.FlutterResult)
+  @objc deinit
+}
+public protocol MethodChannelResult {
+  var success: (_ obj: Any?) -> Swift.Void { get set }
+  var error: (_ code: Swift.String, _ message: Swift.String?, _ details: Any?) -> Swift.Void { get set }
+  var notImplemented: () -> Swift.Void { get set }
+}
+@objc @_hasMissingDesignatedInitializers @available(iOS 11.0, *)
+public class MyCookieManager : flutter_inappwebview_ios.ChannelDelegate {
+  override public func handle(_ call: Flutter.FlutterMethodCall, result: @escaping Flutter.FlutterResult)
+  public static func setCookie(url: Swift.String, name: Swift.String, value: Swift.String, path: Swift.String, domain: Swift.String?, expiresDate: Swift.Int64?, maxAge: Swift.Int64?, isSecure: Swift.Bool?, isHttpOnly: Swift.Bool?, sameSite: Swift.String?, result: @escaping Flutter.FlutterResult)
+  public static func getCookies(url: Swift.String, result: @escaping Flutter.FlutterResult)
+  public static func getAllCookies(result: @escaping Flutter.FlutterResult)
+  public static func deleteCookie(url: Swift.String, name: Swift.String, path: Swift.String, domain: Swift.String?, result: @escaping Flutter.FlutterResult)
+  public static func deleteCookies(url: Swift.String, path: Swift.String, domain: Swift.String?, result: @escaping Flutter.FlutterResult)
+  public static func deleteAllCookies(result: @escaping Flutter.FlutterResult)
+  override public func dispose()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @available(iOS 9.0, *)
+public class MyWebStorageManager : flutter_inappwebview_ios.ChannelDelegate {
+  override public func handle(_ call: Flutter.FlutterMethodCall, result: @escaping Flutter.FlutterResult)
+  public static func fetchDataRecords(dataTypes: Swift.Set<Swift.String>, result: @escaping Flutter.FlutterResult)
+  public static func removeDataFor(dataTypes: Swift.Set<Swift.String>, recordList: [[Swift.String : Any?]], result: @escaping Flutter.FlutterResult)
+  public static func removeDataModifiedSince(dataTypes: Swift.Set<Swift.String>, timestamp: Swift.Int64, result: @escaping Flutter.FlutterResult)
+  override public func dispose()
+  @objc deinit
+}
+extension Foundation.NSAttributedString {
+  public static func fromMap(map: [Swift.String : Any?]?) -> Foundation.NSAttributedString?
+}
+@objc public class PermissionRequest : ObjectiveC.NSObject {
+  public init(origin: Swift.String, resources: [any flutter_inappwebview_ios.StringOrInt], frame: WebKit.WKFrameInfo)
+  public func toMap() -> [Swift.String : Any?]
+  @objc deinit
+}
+@objc public class PermissionResponse : ObjectiveC.NSObject {
+  public init(resources: [Any], action: Swift.Int? = nil)
+  public static func fromMap(map: [Swift.String : Any?]?) -> flutter_inappwebview_ios.PermissionResponse?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class PlatformUtil : flutter_inappwebview_ios.ChannelDelegate {
+  override public func handle(_ call: Flutter.FlutterMethodCall, result: @escaping Flutter.FlutterResult)
+  public static func getLocaleFromString(locale: Swift.String?) -> Foundation.Locale
+  public static func getDateFromMilliseconds(date: Swift.Int64) -> Foundation.Date
+  public static func formatDate(date: Swift.Int64, format: Swift.String, locale: Foundation.Locale, timezone: Foundation.TimeZone) -> Swift.String
+  override public func dispose()
+  @objc deinit
+}
+@objc @_Concurrency.MainActor @preconcurrency public class PluginScript : flutter_inappwebview_ios.UserScript {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(source: Swift.String, injectionTime: WebKit.WKUserScriptInjectionTime, forMainFrameOnly: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public init(groupName: Swift.String, source: Swift.String, injectionTime: WebKit.WKUserScriptInjectionTime, forMainFrameOnly: Swift.Bool, requiredInAllContentWorlds: Swift.Bool = false, messageHandlerNames: [Swift.String] = [])
+  @available(iOS 14.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(source: Swift.String, injectionTime: WebKit.WKUserScriptInjectionTime, forMainFrameOnly: Swift.Bool, in contentWorld: WebKit.WKContentWorld)
+  @available(iOS 14.0, *)
+  @_Concurrency.MainActor @preconcurrency public init(source: Swift.String, injectionTime: WebKit.WKUserScriptInjectionTime, forMainFrameOnly: Swift.Bool, in contentWorld: WebKit.WKContentWorld, requiredInAllContentWorlds: Swift.Bool = false, messageHandlerNames: [Swift.String] = [])
+  @available(iOS 14.0, *)
+  @_Concurrency.MainActor @preconcurrency public init(groupName: Swift.String, source: Swift.String, injectionTime: WebKit.WKUserScriptInjectionTime, forMainFrameOnly: Swift.Bool, in contentWorld: WebKit.WKContentWorld, requiredInAllContentWorlds: Swift.Bool = false, messageHandlerNames: [Swift.String] = [])
+  @_Concurrency.MainActor @preconcurrency public func copyAndSet(groupName: Swift.String? = nil, source: Swift.String? = nil, injectionTime: WebKit.WKUserScriptInjectionTime? = nil, forMainFrameOnly: Swift.Bool? = nil, requiredInAllContentWorlds: Swift.Bool? = nil, messageHandlerNames: [Swift.String]? = nil) -> flutter_inappwebview_ios.PluginScript
+  @available(iOS 14.0, *)
+  @_Concurrency.MainActor @preconcurrency public func copyAndSet(groupName: Swift.String? = nil, source: Swift.String? = nil, injectionTime: WebKit.WKUserScriptInjectionTime? = nil, forMainFrameOnly: Swift.Bool? = nil, contentWorld: WebKit.WKContentWorld? = nil, requiredInAllContentWorlds: Swift.Bool? = nil, messageHandlerNames: [Swift.String]? = nil) -> flutter_inappwebview_ios.PluginScript
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class PluginScriptsUtil {
+  public static let VAR_PLACEHOLDER_VALUE: Swift.String
+  public static let VAR_FUNCTION_ARGUMENT_NAMES: Swift.String
+  public static let VAR_FUNCTION_ARGUMENT_VALUES: Swift.String
+  public static let VAR_FUNCTION_ARGUMENTS_OBJ: Swift.String
+  public static let VAR_FUNCTION_BODY: Swift.String
+  public static let VAR_RESULT_UUID: Swift.String
+  public static let GET_SELECTED_TEXT_JS_SOURCE: Swift.String
+  @objc deinit
+}
+@objc public class PrintAttributes : ObjectiveC.NSObject {
+  public init(fromPrintJobController: flutter_inappwebview_ios.PrintJobController)
+  public func toMap() -> [Swift.String : Any?]
+  @objc deinit
+}
+@objc public class PrintJobChannelDelegate : flutter_inappwebview_ios.ChannelDelegate {
+  public init(printJobController: flutter_inappwebview_ios.PrintJobController, channel: Flutter.FlutterMethodChannel)
+  override public func handle(_ call: Flutter.FlutterMethodCall, result: @escaping Flutter.FlutterResult)
+  public func onComplete(completed: Swift.Bool, error: (any Swift.Error)?)
+  override public func dispose()
+  @objc deinit
+}
+public enum PrintJobState : Swift.Int {
+  case created
+  case started
+  case completed
+  case failed
+  case canceled
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_Concurrency.MainActor @preconcurrency public class PrintJobController : ObjectiveC.NSObject, flutter_inappwebview_ios.Disposable, UIKit.UIPrintInteractionControllerDelegate {
+  @_Concurrency.MainActor @preconcurrency public init(plugin: flutter_inappwebview_ios.SwiftFlutterPlugin, id: Swift.String, job: UIKit.UIPrintInteractionController? = nil, settings: flutter_inappwebview_ios.PrintJobSettings? = nil)
+  @_Concurrency.MainActor @preconcurrency @objc public func printInteractionControllerWillStartJob(_ printInteractionController: UIKit.UIPrintInteractionController)
+  @_Concurrency.MainActor @preconcurrency public func present(animated: Swift.Bool, completionHandler: UIKit.UIPrintInteractionController.CompletionHandler? = nil)
+  @_Concurrency.MainActor @preconcurrency public func getInfo() -> flutter_inappwebview_ios.PrintJobInfo?
+  @_Concurrency.MainActor @preconcurrency public func disposeNoDismiss()
+  @_Concurrency.MainActor @preconcurrency public func dispose()
+  @objc deinit
+}
+@objc public class PrintJobInfo : ObjectiveC.NSObject {
+  public init(fromPrintJobController: flutter_inappwebview_ios.PrintJobController)
+  public func toMap() -> [Swift.String : Any?]
+  @objc deinit
+}
+@objc public class PrintJobManager : ObjectiveC.NSObject, flutter_inappwebview_ios.Disposable {
+  public init(plugin: flutter_inappwebview_ios.SwiftFlutterPlugin?)
+  public func dispose()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class PrintJobSettings : flutter_inappwebview_ios.ISettings<flutter_inappwebview_ios.PrintJobController> {
+  @objc public var handledByClient: Swift.Bool
+  @objc public var jobName: Swift.String?
+  @objc public var animated: Swift.Bool
+  @objc public var _orientation: Foundation.NSNumber?
+  public var orientation: Swift.Int? {
+    get
+    set
+  }
+  @objc public var _numberOfPages: Foundation.NSNumber?
+  public var numberOfPages: Swift.Int? {
+    get
+    set
+  }
+  @objc public var _forceRenderingQuality: Foundation.NSNumber?
+  public var forceRenderingQuality: Swift.Int? {
+    get
+    set
+  }
+  public var margins: UIKit.UIEdgeInsets?
+  @objc public var _duplexMode: Foundation.NSNumber?
+  public var duplexMode: Swift.Int? {
+    get
+    set
+  }
+  @objc public var _outputType: Foundation.NSNumber?
+  public var outputType: Swift.Int? {
+    get
+    set
+  }
+  @objc public var showsNumberOfCopies: Swift.Bool
+  @objc public var showsPaperSelectionForLoadedPapers: Swift.Bool
+  @objc public var showsPaperOrientation: Swift.Bool
+  @objc public var _maximumContentHeight: Foundation.NSNumber?
+  public var maximumContentHeight: Swift.Double? {
+    get
+    set
+  }
+  @objc public var _maximumContentWidth: Foundation.NSNumber?
+  public var maximumContentWidth: Swift.Double? {
+    get
+    set
+  }
+  @objc public var _footerHeight: Foundation.NSNumber?
+  public var footerHeight: Swift.Double? {
+    get
+    set
+  }
+  @objc public var _headerHeight: Foundation.NSNumber?
+  public var headerHeight: Swift.Double? {
+    get
+    set
+  }
+  @objc deinit
+}
+@objc public class PullToRefreshChannelDelegate : flutter_inappwebview_ios.ChannelDelegate {
+  public init(pullToRefreshControl: flutter_inappwebview_ios.PullToRefreshControl, channel: Flutter.FlutterMethodChannel)
+  override public func handle(_ call: Flutter.FlutterMethodCall, result: @escaping Flutter.FlutterResult)
+  public func onRefresh()
+  override public func dispose()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class PullToRefreshControl : UIKit.UIRefreshControl, flutter_inappwebview_ios.Disposable {
+  @_Concurrency.MainActor @preconcurrency public init(plugin: flutter_inappwebview_ios.SwiftFlutterPlugin, id: Any, settings: flutter_inappwebview_ios.PullToRefreshSettings?)
+  @_Concurrency.MainActor @preconcurrency public func prepare()
+  @_Concurrency.MainActor @preconcurrency public func onRefresh()
+  @objc @_Concurrency.MainActor @preconcurrency public func updateShouldCallOnRefresh()
+  @_Concurrency.MainActor @preconcurrency public func dispose()
+  @objc deinit
+}
+public protocol PullToRefreshDelegate {
+  func enablePullToRefresh()
+  func disablePullToRefresh()
+  func isPullToRefreshEnabled() -> Swift.Bool
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class PullToRefreshSettings : flutter_inappwebview_ios.ISettings<flutter_inappwebview_ios.PullToRefreshControl> {
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 9.0, *)
+@objcMembers public class SafariBrowserSettings : flutter_inappwebview_ios.ISettings<flutter_inappwebview_ios.SafariViewController> {
+  @objc deinit
+}
+@objc @available(iOS 9.0, *)
+@_Concurrency.MainActor @preconcurrency public class SafariViewController : SafariServices.SFSafariViewController, SafariServices.SFSafariViewControllerDelegate, flutter_inappwebview_ios.Disposable {
+  @available(iOS 11.0, *)
+  @_Concurrency.MainActor @preconcurrency public init(plugin: flutter_inappwebview_ios.SwiftFlutterPlugin, id: Swift.String, url: Foundation.URL, configuration: SafariServices.SFSafariViewController.Configuration, menuItemList: [[Swift.String : Any]] = [], safariSettings: flutter_inappwebview_ios.SafariBrowserSettings)
+  @_Concurrency.MainActor @preconcurrency public init(plugin: flutter_inappwebview_ios.SwiftFlutterPlugin, id: Swift.String, url: Foundation.URL, entersReaderIfAvailable: Swift.Bool, menuItemList: [[Swift.String : Any]] = [], safariSettings: flutter_inappwebview_ios.SafariBrowserSettings)
+  @_Concurrency.MainActor @preconcurrency public static func prepareConfig(configuration: SafariServices.SFSafariViewController.Configuration, safariSettings: flutter_inappwebview_ios.SafariBrowserSettings)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc public func safariViewControllerDidFinish(_ controller: SafariServices.SFSafariViewController)
+  @_Concurrency.MainActor @preconcurrency @objc public func safariViewController(_ controller: SafariServices.SFSafariViewController, didCompleteInitialLoad didLoadSuccessfully: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc public func safariViewController(_ controller: SafariServices.SFSafariViewController, activityItemsFor URL: Foundation.URL, title: Swift.String?) -> [UIKit.UIActivity]
+  @_Concurrency.MainActor @preconcurrency @objc public func safariViewController(_ controller: SafariServices.SFSafariViewController, initialLoadDidRedirectTo url: Foundation.URL)
+  @_Concurrency.MainActor @preconcurrency @objc public func safariViewControllerWillOpenInBrowser(_ controller: SafariServices.SFSafariViewController)
+  @_Concurrency.MainActor @preconcurrency public func dispose()
+  @objc deinit
+}
+@objc public class SafariViewControllerChannelDelegate : flutter_inappwebview_ios.ChannelDelegate {
+  public init(safariViewController: flutter_inappwebview_ios.SafariViewController, channel: Flutter.FlutterMethodChannel)
+  override public func handle(_ call: Flutter.FlutterMethodCall, result: @escaping Flutter.FlutterResult)
+  public func onOpened()
+  public func onCompletedInitialLoad(didLoadSuccessfully: Swift.Bool)
+  public func onInitialLoadDidRedirect(url: Foundation.URL)
+  public func onWillOpenInBrowser()
+  public func onClosed()
+  public func onItemActionPerform(id: Swift.Int64, url: Foundation.URL, title: Swift.String?)
+  override public func dispose()
+  @objc deinit
+}
+@objc public class ServerTrustAuthResponse : ObjectiveC.NSObject {
+  public init(action: Swift.Int? = nil)
+  public static func fromMap(map: [Swift.String : Any?]?) -> flutter_inappwebview_ios.ServerTrustAuthResponse?
+  @objc deinit
+}
+@objc public class ServerTrustChallenge : ObjectiveC.NSObject {
+  public init(fromChallenge: Foundation.URLAuthenticationChallenge)
+  public func toMap() -> [Swift.String : Any?]
+  @objc deinit
+}
+@objc public class Size2D : ObjectiveC.NSObject {
+  public init(width: Swift.Double, height: Swift.Double)
+  public static func fromMap(map: [Swift.String : Any?]?) -> flutter_inappwebview_ios.Size2D?
+  public func toMap() -> [Swift.String : Any?]
+  @objc deinit
+}
+@objc public class SslCertificate : ObjectiveC.NSObject {
+  public init(x509Certificate: Foundation.Data)
+  public func toMap() -> [Swift.String : Any?]
+  @objc deinit
+}
+@objc public class SslError : ObjectiveC.NSObject {
+  public init(errorType: Security.SecTrustResultType?)
+  public func toMap() -> [Swift.String : Any?]
+  @objc deinit
+}
+public protocol StringOrInt {
+}
+extension Swift.Int : flutter_inappwebview_ios.StringOrInt {
+}
+extension Swift.String : flutter_inappwebview_ios.StringOrInt {
+}
+@objc public class SwiftFlutterPlugin : ObjectiveC.NSObject, Flutter.FlutterPlugin {
+  public init(with registrar: any Flutter.FlutterPluginRegistrar)
+  @objc public static func register(with registrar: any Flutter.FlutterPluginRegistrar)
+  @objc public func detachFromEngine(for registrar: any Flutter.FlutterPluginRegistrar)
+  @objc deinit
+}
+extension UIKit.UIEdgeInsets {
+  public static func fromMap(map: [Swift.String : Swift.Double]) -> UIKit.UIEdgeInsets
+  public func toMap() -> [Swift.String : Any?]
+}
+@available(iOS 14.5, *)
+extension UIKit.UIEventAttribution {
+  @_Concurrency.MainActor @preconcurrency public static func fromMap(map: [Swift.String : Any?]?) -> UIKit.UIEventAttribution?
+}
+@objc public class FindSession : ObjectiveC.NSObject {
+  public init(resultCount: Swift.Int, highlightedResultIndex: Swift.Int, searchResultDisplayStyle: Swift.Int)
+  @available(iOS 16.0, *)
+  public static func fromUIFindSession(uiFindSession: UIKit.UIFindSession) -> flutter_inappwebview_ios.FindSession
+  public func toMap() -> [Swift.String : Any?]
+  @objc deinit
+}
+@available(iOS 16.0, *)
+extension UIKit.UIFindSession {
+  @_Concurrency.MainActor @preconcurrency public func toMap() -> [Swift.String : Any?]
+}
+extension UIKit.UIImage {
+  public static func fromMap(map: [Swift.String : Any?]?) -> UIKit.UIImage?
+}
+extension Foundation.URLAuthenticationChallenge {
+  public func toMap() -> [Swift.String : Any?]
+}
+extension Foundation.URLCredential {
+  public func toMap() -> [Swift.String : Any?]
+}
+extension Foundation.URLProtectionSpace {
+  public func toMap() -> [Swift.String : Any?]
+}
+extension Foundation.URLRequest {
+  public init(fromPluginMap: [Swift.String : Any?])
+  public func toMap() -> [Swift.String : Any?]
+}
+extension Foundation.URLResponse {
+  convenience public init?(fromPluginMap: [Swift.String : Any?])
+  public func toMap() -> [Swift.String : Any?]
+}
+@objc @_Concurrency.MainActor @preconcurrency public class UserScript : WebKit.WKUserScript {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(source: Swift.String, injectionTime: WebKit.WKUserScriptInjectionTime, forMainFrameOnly: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public init(groupName: Swift.String?, source: Swift.String, injectionTime: WebKit.WKUserScriptInjectionTime, forMainFrameOnly: Swift.Bool)
+  @available(iOS 14.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(source: Swift.String, injectionTime: WebKit.WKUserScriptInjectionTime, forMainFrameOnly: Swift.Bool, in contentWorld: WebKit.WKContentWorld)
+  @available(iOS 14.0, *)
+  @_Concurrency.MainActor @preconcurrency public init(groupName: Swift.String?, source: Swift.String, injectionTime: WebKit.WKUserScriptInjectionTime, forMainFrameOnly: Swift.Bool, in contentWorld: WebKit.WKContentWorld)
+  @_Concurrency.MainActor @preconcurrency public static func fromMap(map: [Swift.String : Any?]?, windowId: Swift.Int64?) -> flutter_inappwebview_ios.UserScript?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Util {
+  public static func getUrlAsset(plugin: flutter_inappwebview_ios.SwiftFlutterPlugin, assetFilePath: Swift.String) throws -> Foundation.URL
+  public static func getAbsPathAsset(plugin: flutter_inappwebview_ios.SwiftFlutterPlugin, assetFilePath: Swift.String) throws -> Swift.String
+  public static func convertToDictionary(text: Swift.String) -> [Swift.String : Any]?
+  public static func JSONStringify(value: Any, prettyPrinted: Swift.Bool = false) -> Swift.String
+  @available(iOS 14.0, *)
+  public static func getContentWorld(name: Swift.String) -> WebKit.WKContentWorld
+  @available(iOS 10.0, *)
+  public static func getDataDetectorType(type: Swift.String) -> WebKit.WKDataDetectorTypes
+  @available(iOS 10.0, *)
+  public static func getDataDetectorTypeString(type: WebKit.WKDataDetectorTypes) -> [Swift.String]
+  public static func getDecelerationRate(type: Swift.String) -> UIKit.UIScrollView.DecelerationRate
+  public static func getDecelerationRateString(type: UIKit.UIScrollView.DecelerationRate) -> Swift.String
+  public static func isIPv4(address: Swift.String) -> Swift.Bool
+  public static func isIPv6(address: Swift.String) -> Swift.Bool
+  public static func isIpAddress(address: Swift.String) -> Swift.Bool
+  public static func normalizeIPv6(address: Swift.String) throws -> Swift.String
+  @objc deinit
+}
+@objc @_Concurrency.MainActor @preconcurrency public class WebAuthenticationSession : ObjectiveC.NSObject, AuthenticationServices.ASWebAuthenticationPresentationContextProviding, flutter_inappwebview_ios.Disposable {
+  @_Concurrency.MainActor @preconcurrency public init(plugin: flutter_inappwebview_ios.SwiftFlutterPlugin, id: Swift.String, url: Foundation.URL, callbackURLScheme: Swift.String?, settings: flutter_inappwebview_ios.WebAuthenticationSessionSettings)
+  @_Concurrency.MainActor @preconcurrency public func prepare()
+  @_Concurrency.MainActor @preconcurrency public func completionHandler(url: Foundation.URL?, error: (any Swift.Error)?)
+  @_Concurrency.MainActor @preconcurrency public func canStart() -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func start() -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func cancel()
+  @available(iOS 12.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc public func presentationAnchor(for session: AuthenticationServices.ASWebAuthenticationSession) -> AuthenticationServices.ASPresentationAnchor
+  @_Concurrency.MainActor @preconcurrency public func dispose()
+  @objc deinit
+}
+@objc public class WebAuthenticationSessionChannelDelegate : flutter_inappwebview_ios.ChannelDelegate {
+  public init(webAuthenticationSession: flutter_inappwebview_ios.WebAuthenticationSession, channel: Flutter.FlutterMethodChannel)
+  override public func handle(_ call: Flutter.FlutterMethodCall, result: @escaping Flutter.FlutterResult)
+  public func onComplete(url: Foundation.URL?, errorCode: Swift.Int?)
+  override public func dispose()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class WebAuthenticationSessionManager : flutter_inappwebview_ios.ChannelDelegate {
+  override public func handle(_ call: Flutter.FlutterMethodCall, result: @escaping Flutter.FlutterResult)
+  public func create(id: Swift.String, url: Swift.String, callbackURLScheme: Swift.String?, settings: [Swift.String : Any?], result: @escaping Flutter.FlutterResult)
+  override public func dispose()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class WebAuthenticationSessionSettings : flutter_inappwebview_ios.ISettings<flutter_inappwebview_ios.WebAuthenticationSession> {
+  @objc deinit
+}
+@objc public class WebMessage : ObjectiveC.NSObject, flutter_inappwebview_ios.Disposable {
+  public init(data: Any?, type: flutter_inappwebview_ios.WebMessageType, ports: [flutter_inappwebview_ios.WebMessagePort]?)
+  public static func fromMap(map: [Swift.String : Any?]) -> flutter_inappwebview_ios.WebMessage
+  public func toMap() -> [Swift.String : Any?]
+  public func dispose()
+  @objc deinit
+}
+public enum WebMessageType : Swift.Int {
+  case string
+  case arrayBuffer
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public class WebMessageChannel : flutter_inappwebview_ios.FlutterMethodCallDelegate {
+  public init(plugin: flutter_inappwebview_ios.SwiftFlutterPlugin, id: Swift.String)
+  public func initJsInstance(webView: flutter_inappwebview_ios.InAppWebView, completionHandler: ((flutter_inappwebview_ios.WebMessageChannel?) -> Swift.Void)? = nil)
+  public func toMap() -> [Swift.String : Any?]
+  public func dispose()
+  @objc deinit
+}
+@objc public class WebMessageChannelChannelDelegate : flutter_inappwebview_ios.ChannelDelegate {
+  public init(webMessageChannel: flutter_inappwebview_ios.WebMessageChannel, channel: Flutter.FlutterMethodChannel)
+  override public func handle(_ call: Flutter.FlutterMethodCall, result: @escaping Flutter.FlutterResult)
+  public func onMessage(index: Swift.Int64, message: flutter_inappwebview_ios.WebMessage?)
+  override public func dispose()
+  @objc deinit
+}
+@objc public class WebMessageListener : flutter_inappwebview_ios.FlutterMethodCallDelegate {
+  public init(plugin: flutter_inappwebview_ios.SwiftFlutterPlugin, id: Swift.String, jsObjectName: Swift.String, allowedOriginRules: Swift.Set<Swift.String>)
+  public func assertOriginRulesValid() throws
+  public func initJsInstance(webView: flutter_inappwebview_ios.InAppWebView)
+  public static func fromMap(plugin: flutter_inappwebview_ios.SwiftFlutterPlugin, map: [Swift.String : Any?]?) -> flutter_inappwebview_ios.WebMessageListener?
+  public func isOriginAllowed(scheme: Swift.String?, host: Swift.String?, port: Swift.Int?) -> Swift.Bool
+  public func dispose()
+  @objc deinit
+}
+@objc public class WebMessageListenerChannelDelegate : flutter_inappwebview_ios.ChannelDelegate {
+  public init(webMessageListener: flutter_inappwebview_ios.WebMessageListener, channel: Flutter.FlutterMethodChannel)
+  override public func handle(_ call: Flutter.FlutterMethodCall, result: @escaping Flutter.FlutterResult)
+  public func onPostMessage(message: flutter_inappwebview_ios.WebMessage?, sourceOrigin: Foundation.URL?, isMainFrame: Swift.Bool)
+  override public func dispose()
+  @objc deinit
+}
+@objc public class WebMessagePort : ObjectiveC.NSObject {
+  public init(name: Swift.String, index: Swift.Int64, webMessageChannelId: Swift.String, webMessageChannel: flutter_inappwebview_ios.WebMessageChannel?)
+  public func setWebMessageCallback(completionHandler: ((Any?) -> Swift.Void)? = nil) throws
+  public func postMessage(message: flutter_inappwebview_ios.WebMessage, completionHandler: ((Any?) -> Swift.Void)? = nil) throws
+  public func close(completionHandler: ((Any?) -> Swift.Void)? = nil) throws
+  public static func fromMap(map: [Swift.String : Any?]) -> flutter_inappwebview_ios.WebMessagePort
+  public func toMap() -> [Swift.String : Any?]
+  public func dispose()
+  @objc deinit
+}
+@objc public class WebResourceError : ObjectiveC.NSObject {
+  public init(type: Swift.Int, errorDescription: Swift.String)
+  public func toMap() -> [Swift.String : Any?]
+  @objc deinit
+}
+@objc public class WebResourceRequest : ObjectiveC.NSObject {
+  public init(url: Foundation.URL, headers: [Swift.AnyHashable : Any]?)
+  public init(url: Foundation.URL, headers: [Swift.AnyHashable : Any]?, isForMainFrame: Swift.Bool)
+  public init(fromURLRequest: Foundation.URLRequest)
+  public init(fromWKNavigationResponse: WebKit.WKNavigationResponse)
+  public func toMap() -> [Swift.String : Any?]
+  @objc deinit
+}
+@objc public class WebResourceResponse : ObjectiveC.NSObject {
+  public init(contentType: Swift.String, contentEncoding: Swift.String, data: Foundation.Data?, headers: [Swift.AnyHashable : Any]?, statusCode: Swift.Int?, reasonPhrase: Swift.String?)
+  public init(fromWKNavigationResponse: WebKit.WKNavigationResponse)
+  public func toMap() -> [Swift.String : Any?]
+  @objc deinit
+}
+@objc public class WebViewChannelDelegate : flutter_inappwebview_ios.ChannelDelegate {
+  public init(webView: flutter_inappwebview_ios.InAppWebView, channel: Flutter.FlutterMethodChannel)
+  override public func handle(_ call: Flutter.FlutterMethodCall, result: @escaping Flutter.FlutterResult)
+  @available(*, deprecated, message: "Use FindInteractionChannelDelegate.onFindResultReceived instead.")
+  public func onFindResultReceived(activeMatchOrdinal: Swift.Int, numberOfMatches: Swift.Int, isDoneCounting: Swift.Bool)
+  public func onLongPressHitTestResult(hitTestResult: flutter_inappwebview_ios.HitTestResult)
+  public func onScrollChanged(x: Swift.Int, y: Swift.Int)
+  public func onContentSizeChanged(oldContentSize: CoreFoundation.CGSize, newContentSize: CoreFoundation.CGSize)
+  public func onDownloadStartRequest(request: flutter_inappwebview_ios.DownloadStartRequest)
+  public func onCreateContextMenu(hitTestResult: flutter_inappwebview_ios.HitTestResult)
+  public func onOverScrolled(x: Swift.Int, y: Swift.Int, clampedX: Swift.Bool, clampedY: Swift.Bool)
+  public func onContextMenuActionItemClicked(id: Any, title: Swift.String)
+  public func onHideContextMenu()
+  public func onEnterFullscreen()
+  public func onExitFullscreen()
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class JsAlertCallback : flutter_inappwebview_ios.BaseCallbackResult<flutter_inappwebview_ios.JsAlertResponse> {
+    @objc deinit
+  }
+  public func onJsAlert(url: Foundation.URL?, message: Swift.String, isMainFrame: Swift.Bool, callback: flutter_inappwebview_ios.WebViewChannelDelegate.JsAlertCallback)
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class JsConfirmCallback : flutter_inappwebview_ios.BaseCallbackResult<flutter_inappwebview_ios.JsConfirmResponse> {
+    @objc deinit
+  }
+  public func onJsConfirm(url: Foundation.URL?, message: Swift.String, isMainFrame: Swift.Bool, callback: flutter_inappwebview_ios.WebViewChannelDelegate.JsConfirmCallback)
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class JsPromptCallback : flutter_inappwebview_ios.BaseCallbackResult<flutter_inappwebview_ios.JsPromptResponse> {
+    @objc deinit
+  }
+  public func onJsPrompt(url: Foundation.URL?, message: Swift.String, defaultValue: Swift.String?, isMainFrame: Swift.Bool, callback: flutter_inappwebview_ios.WebViewChannelDelegate.JsPromptCallback)
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class CreateWindowCallback : flutter_inappwebview_ios.BaseCallbackResult<Swift.Bool> {
+    @objc deinit
+  }
+  public func onCreateWindow(createWindowAction: flutter_inappwebview_ios.CreateWindowAction, callback: flutter_inappwebview_ios.WebViewChannelDelegate.CreateWindowCallback)
+  public func onCloseWindow()
+  public func onConsoleMessage(message: Swift.String, messageLevel: Swift.Int)
+  public func onProgressChanged(progress: Swift.Int)
+  public func onTitleChanged(title: Swift.String?)
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class PermissionRequestCallback : flutter_inappwebview_ios.BaseCallbackResult<flutter_inappwebview_ios.PermissionResponse> {
+    @objc deinit
+  }
+  public func onPermissionRequest(request: flutter_inappwebview_ios.PermissionRequest, callback: flutter_inappwebview_ios.WebViewChannelDelegate.PermissionRequestCallback)
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ShouldOverrideUrlLoadingCallback : flutter_inappwebview_ios.BaseCallbackResult<WebKit.WKNavigationActionPolicy> {
+    @objc deinit
+  }
+  public func shouldOverrideUrlLoading(navigationAction: WebKit.WKNavigationAction, callback: flutter_inappwebview_ios.WebViewChannelDelegate.ShouldOverrideUrlLoadingCallback)
+  public func onLoadStart(url: Swift.String?)
+  public func onLoadStop(url: Swift.String?)
+  public func onUpdateVisitedHistory(url: Swift.String?, isReload: Swift.Bool?)
+  public func onReceivedError(request: flutter_inappwebview_ios.WebResourceRequest, error: flutter_inappwebview_ios.WebResourceError)
+  public func onReceivedHttpError(request: flutter_inappwebview_ios.WebResourceRequest, errorResponse: flutter_inappwebview_ios.WebResourceResponse)
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ReceivedHttpAuthRequestCallback : flutter_inappwebview_ios.BaseCallbackResult<flutter_inappwebview_ios.HttpAuthResponse> {
+    @objc deinit
+  }
+  public func onReceivedHttpAuthRequest(challenge: flutter_inappwebview_ios.HttpAuthenticationChallenge, callback: flutter_inappwebview_ios.WebViewChannelDelegate.ReceivedHttpAuthRequestCallback)
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ReceivedServerTrustAuthRequestCallback : flutter_inappwebview_ios.BaseCallbackResult<flutter_inappwebview_ios.ServerTrustAuthResponse> {
+    @objc deinit
+  }
+  public func onReceivedServerTrustAuthRequest(challenge: flutter_inappwebview_ios.ServerTrustChallenge, callback: flutter_inappwebview_ios.WebViewChannelDelegate.ReceivedServerTrustAuthRequestCallback)
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ReceivedClientCertRequestCallback : flutter_inappwebview_ios.BaseCallbackResult<flutter_inappwebview_ios.ClientCertResponse> {
+    @objc deinit
+  }
+  public func onReceivedClientCertRequest(challenge: flutter_inappwebview_ios.ClientCertChallenge, callback: flutter_inappwebview_ios.WebViewChannelDelegate.ReceivedClientCertRequestCallback)
+  public func onZoomScaleChanged(newScale: Swift.Float, oldScale: Swift.Float)
+  public func onPageCommitVisible(url: Swift.String?)
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class LoadResourceWithCustomSchemeCallback : flutter_inappwebview_ios.BaseCallbackResult<flutter_inappwebview_ios.CustomSchemeResponse> {
+    @objc deinit
+  }
+  public func onLoadResourceWithCustomScheme(request: flutter_inappwebview_ios.WebResourceRequest, callback: flutter_inappwebview_ios.WebViewChannelDelegate.LoadResourceWithCustomSchemeCallback)
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class CallJsHandlerCallback : flutter_inappwebview_ios.BaseCallbackResult<Any> {
+    @objc deinit
+  }
+  public func onCallJsHandler(handlerName: Swift.String, args: Swift.String, callback: flutter_inappwebview_ios.WebViewChannelDelegate.CallJsHandlerCallback)
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class NavigationResponseCallback : flutter_inappwebview_ios.BaseCallbackResult<WebKit.WKNavigationResponsePolicy> {
+    @objc deinit
+  }
+  public func onNavigationResponse(navigationResponse: WebKit.WKNavigationResponse, callback: flutter_inappwebview_ios.WebViewChannelDelegate.NavigationResponseCallback)
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ShouldAllowDeprecatedTLSCallback : flutter_inappwebview_ios.BaseCallbackResult<Swift.Bool> {
+    @objc deinit
+  }
+  public func shouldAllowDeprecatedTLS(challenge: Foundation.URLAuthenticationChallenge, callback: flutter_inappwebview_ios.WebViewChannelDelegate.ShouldAllowDeprecatedTLSCallback)
+  public func onWebContentProcessDidTerminate()
+  public func onDidReceiveServerRedirectForProvisionalNavigation()
+  @available(iOS 15.0, *)
+  public func onCameraCaptureStateChanged(oldState: WebKit.WKMediaCaptureState?, newState: WebKit.WKMediaCaptureState?)
+  @available(iOS 15.0, *)
+  public func onMicrophoneCaptureStateChanged(oldState: WebKit.WKMediaCaptureState?, newState: WebKit.WKMediaCaptureState?)
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class PrintRequestCallback : flutter_inappwebview_ios.BaseCallbackResult<Swift.Bool> {
+    @objc deinit
+  }
+  public func onPrintRequest(url: Foundation.URL?, printJobId: Swift.String?, callback: flutter_inappwebview_ios.WebViewChannelDelegate.PrintRequestCallback)
+  override public func dispose()
+  @objc deinit
+}
+public enum WebViewChannelDelegateMethods : Swift.String {
+  case getUrl
+  case getTitle
+  case getProgress
+  case loadUrl
+  case postUrl
+  case loadData
+  case loadFile
+  case evaluateJavascript
+  case injectJavascriptFileFromUrl
+  case injectCSSCode
+  case injectCSSFileFromUrl
+  case reload
+  case goBack
+  case canGoBack
+  case goForward
+  case canGoForward
+  case goBackOrForward
+  case canGoBackOrForward
+  case stopLoading
+  case isLoading
+  case takeScreenshot
+  case setSettings
+  case getSettings
+  case close
+  case show
+  case hide
+  case isHidden
+  case getCopyBackForwardList
+  @available(*, deprecated, message: "Use FindInteractionController.findAll instead.")
+  case findAll
+  @available(*, deprecated, message: "Use FindInteractionController.findNext instead.")
+  case findNext
+  @available(*, deprecated, message: "Use FindInteractionController.clearMatches instead.")
+  case clearMatches
+  @available(*, deprecated, message: "Use InAppWebViewManager.clearAllCache instead.")
+  case clearCache
+  case scrollTo
+  case scrollBy
+  case pauseTimers
+  case resumeTimers
+  case printCurrentPage
+  case getContentHeight
+  case getContentWidth
+  case zoomBy
+  case reloadFromOrigin
+  case getOriginalUrl
+  case getZoomScale
+  case hasOnlySecureContent
+  case getSelectedText
+  case getHitTestResult
+  case clearFocus
+  case setContextMenu
+  case requestFocusNodeHref
+  case requestImageRef
+  case getScrollX
+  case getScrollY
+  case getCertificate
+  case addUserScript
+  case removeUserScript
+  case removeUserScriptsByGroupName
+  case removeAllUserScripts
+  case callAsyncJavaScript
+  case createPdf
+  case createWebArchiveData
+  case saveWebArchive
+  case isSecureContext
+  case createWebMessageChannel
+  case postWebMessage
+  case addWebMessageListener
+  case canScrollVertically
+  case canScrollHorizontally
+  case pauseAllMediaPlayback
+  case setAllMediaPlaybackSuspended
+  case closeAllMediaPresentations
+  case requestMediaPlaybackState
+  case getMetaThemeColor
+  case isInFullscreen
+  case getCameraCaptureState
+  case setCameraCaptureState
+  case getMicrophoneCaptureState
+  case setMicrophoneCaptureState
+  case loadSimulatedRequest
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers public class WebViewTransport : ObjectiveC.NSObject {
+  @objc deinit
+}
+@available(iOS 14.0, *)
+extension WebKit.WKContentWorld {
+  @_Concurrency.MainActor @preconcurrency public static func fromMap(map: [Swift.String : Any?]?, windowId: Swift.Int64?) -> WebKit.WKContentWorld?
+}
+extension WebKit.WKFrameInfo {
+  @_Concurrency.MainActor @preconcurrency public func toMap() -> [Swift.String : Any?]
+}
+extension WebKit.WKNavigationAction {
+  @_Concurrency.MainActor @preconcurrency public func toMap() -> [Swift.String : Any?]
+}
+extension WebKit.WKNavigationResponse {
+  @_Concurrency.MainActor @preconcurrency public func toMap() -> [Swift.String : Any?]
+}
+@_hasMissingDesignatedInitializers public class WKProcessPoolManager {
+  @objc deinit
+}
+@available(iOS 9.0, *)
+extension WebKit.WKSecurityOrigin {
+  @_Concurrency.MainActor @preconcurrency public func toMap() -> [Swift.String : Any?]
+}
+extension WebKit.WKUserContentController {
+  @_Concurrency.MainActor @preconcurrency public func initialize()
+  @_Concurrency.MainActor @preconcurrency public func dispose(windowId: Swift.Int64?)
+  @_Concurrency.MainActor @preconcurrency public func sync(scriptMessageHandler: any WebKit.WKScriptMessageHandler)
+  @_Concurrency.MainActor @preconcurrency public func addUserOnlyScript(_ userOnlyScript: flutter_inappwebview_ios.UserScript)
+  @_Concurrency.MainActor @preconcurrency public func addUserOnlyScripts(_ userOnlyScripts: [flutter_inappwebview_ios.UserScript])
+  @_Concurrency.MainActor @preconcurrency public func addPluginScript(_ pluginScript: flutter_inappwebview_ios.PluginScript)
+  @_Concurrency.MainActor @preconcurrency public func addPluginScripts(_ pluginScripts: [flutter_inappwebview_ios.PluginScript])
+  @_Concurrency.MainActor @preconcurrency public func getPluginScriptsRequiredInAllContentWorlds() -> [flutter_inappwebview_ios.PluginScript]
+  @available(iOS 14.0, *)
+  @_Concurrency.MainActor @preconcurrency public func generateCodeForScriptEvaluation(scriptMessageHandler: any WebKit.WKScriptMessageHandler, source: Swift.String, contentWorld: WebKit.WKContentWorld) -> Swift.String
+  @_Concurrency.MainActor @preconcurrency public func removeUserOnlyScript(_ userOnlyScript: flutter_inappwebview_ios.UserScript)
+  @_Concurrency.MainActor @preconcurrency public func removeUserOnlyScript(at index: Swift.Int, injectionTime: WebKit.WKUserScriptInjectionTime)
+  @_Concurrency.MainActor @preconcurrency public func removeAllUserOnlyScripts()
+  @_Concurrency.MainActor @preconcurrency public func removePluginScript(_ pluginScript: flutter_inappwebview_ios.PluginScript)
+  @_Concurrency.MainActor @preconcurrency public func removeAllPluginScripts()
+  @_Concurrency.MainActor @preconcurrency public func removeAllPluginScriptMessageHandlers()
+  @available(iOS 14.0, *)
+  @_Concurrency.MainActor @preconcurrency public func resetContentWorlds(windowId: Swift.Int64?)
+  @_Concurrency.MainActor @preconcurrency public func removeUserOnlyScripts(with groupName: Swift.String, shouldAddPreviousScripts: Swift.Bool = true)
+  @_Concurrency.MainActor @preconcurrency public func removePluginScripts(with groupName: Swift.String, shouldAddPreviousScripts: Swift.Bool = true)
+  @_Concurrency.MainActor @preconcurrency public func containsPluginScript(pluginScript: flutter_inappwebview_ios.PluginScript) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func containsPluginScript(with groupName: Swift.String) -> Swift.Bool
+  @available(iOS 14.0, *)
+  @_Concurrency.MainActor @preconcurrency public func containsPluginScript(pluginScript: flutter_inappwebview_ios.PluginScript, in contentWorld: WebKit.WKContentWorld) -> Swift.Bool
+  @available(iOS 14.0, *)
+  @_Concurrency.MainActor @preconcurrency public func containsPluginScript(with groupName: Swift.String, in contentWorld: WebKit.WKContentWorld) -> Swift.Bool
+  @available(iOS 14.0, *)
+  @_Concurrency.MainActor @preconcurrency public func getContentWorlds(with windowId: Swift.Int64?) -> Swift.Set<WebKit.WKContentWorld>
+}
+extension WebKit.WKWindowFeatures {
+  @_Concurrency.MainActor @preconcurrency public func toMap() -> [Swift.String : Any?]
+}
+@available(iOS 11.0, *)
+extension flutter_inappwebview_ios.CustomSchemeHandler : Swift.Sendable {}
+extension flutter_inappwebview_ios.HitTestResultType : Swift.Equatable {}
+extension flutter_inappwebview_ios.HitTestResultType : Swift.Hashable {}
+extension flutter_inappwebview_ios.HitTestResultType : Swift.RawRepresentable {}
+extension flutter_inappwebview_ios.PrintJobState : Swift.Equatable {}
+extension flutter_inappwebview_ios.PrintJobState : Swift.Hashable {}
+extension flutter_inappwebview_ios.PrintJobState : Swift.RawRepresentable {}
+extension flutter_inappwebview_ios.PrintJobController : Swift.Sendable {}
+extension flutter_inappwebview_ios.WebAuthenticationSession : Swift.Sendable {}
+extension flutter_inappwebview_ios.WebMessageType : Swift.Equatable {}
+extension flutter_inappwebview_ios.WebMessageType : Swift.Hashable {}
+extension flutter_inappwebview_ios.WebMessageType : Swift.RawRepresentable {}
+extension flutter_inappwebview_ios.WebViewChannelDelegateMethods : Swift.Equatable {}
+extension flutter_inappwebview_ios.WebViewChannelDelegateMethods : Swift.Hashable {}
+extension flutter_inappwebview_ios.WebViewChannelDelegateMethods : Swift.RawRepresentable {}
