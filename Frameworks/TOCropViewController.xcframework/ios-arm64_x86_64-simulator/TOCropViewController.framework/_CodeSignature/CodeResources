@@ -50,7 +50,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LlW7vcTKQYh3HVj4qL9delOakvg=
+		vBtWiSa1idyCLySGWR+FuxNA/ds=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		</dict>
 		<key>TOCropViewControllerBundle.bundle/Info.plist</key>
 		<data>
-		tACDxROvnUfeR55b38j1Pg0uRWI=
+		0zhFDCT2zOYF6pt4ftFzNMLJ05U=
 		</data>
 		<key>TOCropViewControllerBundle.bundle/ar.lproj/TOCropViewControllerLocalizable.strings</key>
 		<dict>
@@ -473,11 +473,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tACDxROvnUfeR55b38j1Pg0uRWI=
+			0zhFDCT2zOYF6pt4ftFzNMLJ05U=
 			</data>
 			<key>hash2</key>
 			<data>
-			57PYODeenJ3Vp7+thxJCigpNZ5u04b52sovGg/8HGFA=
+			7Ph1zUMf6pn04mlQ/gYsBECp8TKyZER881gM5N3ZC3U=
 			</data>
 		</dict>
 		<key>TOCropViewControllerBundle.bundle/ar.lproj/TOCropViewControllerLocalizable.strings</key>

@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		HOd1eWXTMRIK+/ubZdqVLH4SUcE=
+		yucvRnNTLJc7vSGVkh1Kwi9iCns=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		byukO7E1re7is5qyHsqszXX3Cw4=
+		hZJXF9KCRAG4Rg88QSKmcx9+iS8=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		7orkhRfLJ/8EePaYwhKjcYau31w=
+		RjYblTBFJPHnG4NNJiBLT+uWFy0=
 		</data>
 		<key>flutter_assets/assets/.DS_Store</key>
 		<data>
@@ -304,6 +304,10 @@
 		<data>
 		tl36ndi1OMK2MztemaxylSc2fPU=
 		</data>
+		<key>flutter_assets/assets/abc/abccompany.png</key>
+		<data>
+		plzU/Dh9v6F21ykDF/BdWgHyONw=
+		</data>
 		<key>flutter_assets/assets/abc/abcemail.png</key>
 		<data>
 		osImOc5+tHnD8I8PrRSWk/x+MX4=
@@ -323,6 +327,10 @@
 		<key>flutter_assets/assets/abc/abcprofile.png</key>
 		<data>
 		4uIs9FxMQcbXZdaPWVV6wChvTCY=
+		</data>
+		<key>flutter_assets/assets/abc/company_branding.png</key>
+		<data>
+		WFX3lQJuKDss6MH9z7aiGOqQKm0=
 		</data>
 		<key>flutter_assets/assets/acelifedesignation.png</key>
 		<data>
@@ -1084,6 +1092,10 @@
 		<data>
 		M08fTOwxlZWvQy9BK7qhgNQVrdw=
 		</data>
+		<key>flutter_assets/assets/vswins.png</key>
+		<data>
+		HmbjA2ULfJTbTA7km4noiAkO4uU=
+		</data>
 		<key>flutter_assets/assets/w_1.png</key>
 		<data>
 		n7VgGUiR96jr9ifGprgeAOoflKM=
@@ -1095,6 +1107,10 @@
 		<key>flutter_assets/assets/w_3.png</key>
 		<data>
 		jqTZOmHcR8yHsygFGNFk4G9mlaQ=
+		</data>
+		<key>flutter_assets/assets/watch2.png</key>
+		<data>
+		Ththk4EEDiilNJzofrDTkXLQlnI=
 		</data>
 		<key>flutter_assets/assets/whatsapapp2.png</key>
 		<data>
@@ -1130,7 +1146,7 @@
 		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
-		mb0p7C0sMCfd4sbR8UIrkCpg3Xk=
+		h1TnrByZ5qXFRE0A25Ma80hjHNs=
 		</data>
 		<key>flutter_assets/fonts/Merriweather-Bold.ttf</key>
 		<data>
@@ -1166,7 +1182,7 @@
 		</data>
 		<key>flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf</key>
 		<data>
-		zs9F8C4eZwuPJXWPD2O3svJ5qs4=
+		pOAWiFQmUUrHTRAnLQO6mgEhx48=
 		</data>
 		<key>flutter_assets/packages/linkedin_login/assets/linked_in_logo.png</key>
 		<data>
@@ -1187,14 +1203,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VRclgl+iQcNzDSC5Vxu/Xb5AnfNWdQMDzg2zrOeZ68U=
+			mJwMTA2eVK7ummjLhgT9qW1WY7CcSAWnS2Wkcc2xsmk=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W5co1PUykHKCsGqxg8gDuIDpG3UB7Q61X8XV4liJ31w=
+			Y5m8jZcNx035dD4VEDe6eKTzDRS/rx3mmga/6QWxneQ=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -1208,7 +1224,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IOUHLRPgeONPlWxOc2eA2NOX8gShCRDsHILPwX50OKw=
+			EzgDgIfp/0Hw/SQCku95d8eVS+Aqp4pw8Qmkx2t7s5Q=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/2.0x/NewWhatsapp.png</key>
@@ -1694,6 +1710,13 @@
 			ovsUFpERTj2+sCnLA3zdyNVKJWAHl8kvVKZzzeDITf8=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/abc/abccompany.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bWUhC5lS9BDk2VsXD0FIhuHZZkbS21KsrVQRl4XX1O4=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/abc/abcemail.png</key>
 		<dict>
 			<key>hash2</key>
@@ -1727,6 +1750,13 @@
 			<key>hash2</key>
 			<data>
 			Ri58a+r5hIcFKFJvv3QrURNWR80Lh54OEg+n1xjOVCo=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/abc/company_branding.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Vd4BZKMxkt6jM1KGIQwhd29OxPHYlI6CRRHyTZmc7FU=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/acelifedesignation.png</key>
@@ -3045,6 +3075,13 @@
 			QLc+iats2V6K7OlQndQLarvNdd0zKSuLpWbqVQdm/UA=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/vswins.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			P+H6IywewOXEIzLKgP8LuROZHKISYqAPPNHz0BySfro=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/w_1.png</key>
 		<dict>
 			<key>hash2</key>
@@ -3064,6 +3101,13 @@
 			<key>hash2</key>
 			<data>
 			ygIF+0A9rTKeLFvLKfEUQ3UK/hZbsrFpF1m5FIWj3ps=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/watch2.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VW0yCVFpyiLWXs5XUOAkY9SCdX9ldeSonax6NkC0s7Q=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/whatsapapp2.png</key>
@@ -3126,7 +3170,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vEiXtrmJKIK0HZaqFb70FLQhxgrP0iTmplmn4qcJBiM=
+			hn80K1mRpx5YbPMuV66g8u+nSXMqQjcKPxngyffJ8cE=
 			</data>
 		</dict>
 		<key>flutter_assets/fonts/Merriweather-Bold.ttf</key>
@@ -3189,7 +3233,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SfucvzIETWmjQ5hCVPj7z8lrj0m7UQnd52ecmcCAWdo=
+			prjVPnJApw1Iq7E4dd6CY8K3Q0xH+nskqOF5dYbsnmg=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/linkedin_login/assets/linked_in_logo.png</key>

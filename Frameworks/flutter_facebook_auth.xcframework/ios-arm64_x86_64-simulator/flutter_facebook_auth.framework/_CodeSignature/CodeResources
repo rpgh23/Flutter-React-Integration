@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/flutter_facebook_auth-Swift.h</key>
 		<data>
-		BGh68GvcGYPgePfRIoFWkoqtGuM=
+		dg+ATAIxwlfPYeGB7J5496B4bjA=
 		</data>
 		<key>Headers/flutter_facebook_auth-umbrella.h</key>
 		<data>
@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		d6RoQs5yS7bXs2aNrBXqbTXDUug=
+		zpI+qV4ln0w74A54IJOCy7sYbd4=
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		a6ptDxEfY3C2DCR+kNfgjy5hc0g=
+		ML3JkMUaPxyxX5zF3HOeNRxYZ68=
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		yu3RFR9kiqnJowTSTmIs7OpX27o=
+		89iCBeA+5JEqDwWWUXp2ug3C0tc=
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		uLiGekUpXJO4EaphfvECbSbbog0=
+		hDJn6Poz+MeHn0sGveHy5uh2c40=
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		XSvw/K1jCSH9s4aoc5C9nTfQVi4=
+		avMuTnGTx8weVCspveLqzf8ogu4=
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		uLiGekUpXJO4EaphfvECbSbbog0=
+		hDJn6Poz+MeHn0sGveHy5uh2c40=
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		fuvad67cfx1rPf9pNRCWNhhFJLw=
+		AG2rmJl+X8aYtEuC4IDcdJq6Jfg=
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -54,19 +54,19 @@
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		LbN3fKrf3feBPnwFMGY+m3M5lfM=
+		r7Q0mN7VHrmw9pcdjGNcNx1xJq0=
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		xPqLq7W3how0qefNJoAc4slh+Cc=
+		liouzPgWlSmY1eVZ8saPGVT0Yd0=
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		LbN3fKrf3feBPnwFMGY+m3M5lfM=
+		r7Q0mN7VHrmw9pcdjGNcNx1xJq0=
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VAyyvHy6nSj2eHyuQ8CaiidplCY=
+		aHCQk4SYcxmQ6jC/R9seafjeGOE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -86,7 +86,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dQnmMhw3+HdLwidXFUnNG6OAMkpMv1cDOQ3Rip30VxU=
+			Tsr/zD8mM8nprjU0+gco4GPntWixAnPFbfZqcBDJgrM=
 			</data>
 		</dict>
 		<key>Headers/flutter_facebook_auth-umbrella.h</key>
@@ -100,14 +100,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ztHhXtaj1om3wn7GHjIhjmyIje4m6MhT39/qSi3sTno=
+			bxrZXdxk0Sl3hXUDCZX3qj76knYH8n4v/JrB2l05x9c=
 			</data>
 		</dict>
 		<key>Modules/flutter_facebook_auth.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vKSBZsMJkVp+t/FEppC9tVhMJQuEk6bU75XIMcOzrGY=
+			1p7yZM0xT3aUaJcuOXAWLbbh3iJet4DcD7IBTs19KGE=
 			</data>
 		</dict>
 		<key>Modules/flutter_facebook_auth.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -121,28 +121,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3NGH8iH9JquRUJTciWLe+7LIAUmwZf4R1NCa0FbOfsg=
+			rPmU/vfHlFdsy6lIjUHBrN46WloVKCTsLLIPxus+GeY=
 			</data>
 		</dict>
 		<key>Modules/flutter_facebook_auth.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			I3S9ctC0XQhu4zp0fGt/BeUdAelXQ20V4kPvN/73mZ8=
+			oqi+7YFwtlRc68lGn6NdR2J5qCdgB5C5H98GUjtm6mQ=
 			</data>
 		</dict>
 		<key>Modules/flutter_facebook_auth.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3NGH8iH9JquRUJTciWLe+7LIAUmwZf4R1NCa0FbOfsg=
+			rPmU/vfHlFdsy6lIjUHBrN46WloVKCTsLLIPxus+GeY=
 			</data>
 		</dict>
 		<key>Modules/flutter_facebook_auth.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YFWLC+j1wOAZhoyvEXLWNENS4oMtWyjkl8kimLGBJz0=
+			kLG7uSCackWjbTtvQA3OBpf+LIZC3SQFt8jQ8xvQgGE=
 			</data>
 		</dict>
 		<key>Modules/flutter_facebook_auth.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -156,28 +156,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			X31afUal6/dQT6HrAZUlN405N8YcZtm8eqU/sdzDhP8=
+			skr29tasYEryYZ7WRPnfQTizS+oBXm6X6373kOh9J+g=
 			</data>
 		</dict>
 		<key>Modules/flutter_facebook_auth.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GkgOf33g6IRdN5LMfLykakm3x1N7PWTUvaebPaMUN4A=
+			52WWaIW6qARZDheFhl6yIeJ2/1A+XNJLpfVpbJVAjF0=
 			</data>
 		</dict>
 		<key>Modules/flutter_facebook_auth.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X31afUal6/dQT6HrAZUlN405N8YcZtm8eqU/sdzDhP8=
+			skr29tasYEryYZ7WRPnfQTizS+oBXm6X6373kOh9J+g=
 			</data>
 		</dict>
 		<key>Modules/flutter_facebook_auth.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			07axtrfnua1p0bfLde2VQWneNSGiZbi/Dz1RnCYm9Ms=
+			4Vl+Q1km4T3LiBnr/phocEDk6luWLHKA5LQyD8XpN6s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

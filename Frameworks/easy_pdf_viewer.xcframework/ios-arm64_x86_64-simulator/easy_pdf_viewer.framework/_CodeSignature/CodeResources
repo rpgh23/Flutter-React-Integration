@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/easy_pdf_viewer-Swift.h</key>
 		<data>
-		V+TXDkiwpDk89X3jDjJ+8A1sRKM=
+		JOLDj1gnQwiQWcE4Zw3MR7oBYlI=
 		</data>
 		<key>Headers/easy_pdf_viewer-umbrella.h</key>
 		<data>
@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UU0zxBf5Lf+Cjnbk+ME90Js7B1g=
+		zDD08gckD5J8EtRmi98HrZHlSbA=
 		</data>
 		<key>Modules/easy_pdf_viewer.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		DE07yarYlPkvs8uAaBDCGoe3h7w=
+		QTNoGJ8zpUCJ4jIudgNDMQOLgGg=
 		</data>
 		<key>Modules/easy_pdf_viewer.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		laFCc3Rt+w+vvGxdkoRTX761v6c=
+		8WlA4x+pdB9bXFOMvdWJVGfZ1fk=
 		</data>
 		<key>Modules/easy_pdf_viewer.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/easy_pdf_viewer.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		eL7YTQNtV182NXp4bpk/Il+l6MM=
+		9lKXpU6NH1H+0TL9dfjbLCyn71w=
 		</data>
 		<key>Modules/easy_pdf_viewer.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Rb8i9NDCcVhuuEFdTdm9OzRlXx4=
+		hX3+HIHJqsWCX+4kLUgOBvtNuh4=
 		</data>
 		<key>Modules/easy_pdf_viewer.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		eL7YTQNtV182NXp4bpk/Il+l6MM=
+		9lKXpU6NH1H+0TL9dfjbLCyn71w=
 		</data>
 		<key>Modules/easy_pdf_viewer.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Tm37NLJ1MHJHagCQbShCz5d5WeQ=
+		7//Qdjc/k8cLPyWA4x+YXk+MR1w=
 		</data>
 		<key>Modules/easy_pdf_viewer.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -54,19 +54,19 @@
 		</data>
 		<key>Modules/easy_pdf_viewer.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		VE0JD4BZSNWXh8nRMi8QT0+OjxU=
+		/ieQrp8CXNWX9v/2OOO7IeM+ImU=
 		</data>
 		<key>Modules/easy_pdf_viewer.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		HXrL4pKbeYenFQNawvUU3Aq5CKw=
+		EZ8pBsJ7XGU5H6wTinflMhzc3Zc=
 		</data>
 		<key>Modules/easy_pdf_viewer.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		VE0JD4BZSNWXh8nRMi8QT0+OjxU=
+		/ieQrp8CXNWX9v/2OOO7IeM+ImU=
 		</data>
 		<key>Modules/easy_pdf_viewer.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VdAjSiTcNQ00p5ObVgGq90Tjdbw=
+		QJIwfFFbyvUNYBjfvtFkfrb8qDU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -86,7 +86,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+W9dtOU/xOBJxtWpTlRrLVNZFj4pmipvo2QA+qBy45U=
+			N1tPLroTAnug8cQ4P2KStlcB+MCtQCLKfHD6GTn0d8k=
 			</data>
 		</dict>
 		<key>Headers/easy_pdf_viewer-umbrella.h</key>
@@ -100,14 +100,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XS+HmdyGaC5Ob1leBAFYdWm9hVMlryYpbjKWdZvhvW8=
+			ci+5FHGtU7nzESNePucBM4DuOIK99fxmikb10Sv301c=
 			</data>
 		</dict>
 		<key>Modules/easy_pdf_viewer.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7ie4lzy3Y6ZuSFSny2kbJ1WwNzMI0p/65+N8z7JGfEg=
+			qr1W/BThoMeitHEVUa+HKr1p1qdIjvT6u0bMaK8syLU=
 			</data>
 		</dict>
 		<key>Modules/easy_pdf_viewer.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -121,28 +121,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lAFe3igF6q/K9qKukvkwfJLlulcQECFkY4nN92LeALc=
+			Ub9YwtBF5JaWIaPgXB94m5BY7XlUg7EhgR1Zqw3LM3s=
 			</data>
 		</dict>
 		<key>Modules/easy_pdf_viewer.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Puh2dJLQcMKTdWnKJwgb1tf15EdGeSfbzHxIQleWvc0=
+			87CnKpvKWYzvAs1t8M/TD8PxCboPgmXqBMPrkpO/Jek=
 			</data>
 		</dict>
 		<key>Modules/easy_pdf_viewer.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lAFe3igF6q/K9qKukvkwfJLlulcQECFkY4nN92LeALc=
+			Ub9YwtBF5JaWIaPgXB94m5BY7XlUg7EhgR1Zqw3LM3s=
 			</data>
 		</dict>
 		<key>Modules/easy_pdf_viewer.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0jHHK0ZS06NvylEiZI3I8kYgmxbaP551K9eYYT8Ifns=
+			rMZvXPeb8c97996hw0ITTOzt/tGGaPgAlYTV00bPzXM=
 			</data>
 		</dict>
 		<key>Modules/easy_pdf_viewer.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -156,28 +156,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9dqMFw/yhPbz2QTGrDJ6RGXgUoIHvwXYdEH/V0E8w7M=
+			gdk+X+sfTzxrzVtXOt0WJGXCdWcyqYs5Zd4n3HZ758s=
 			</data>
 		</dict>
 		<key>Modules/easy_pdf_viewer.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			73JQ1hIObbQ+lbPglHs+7RcayEboErdImrPGfErzUG4=
+			4ly9egk0BdvkJc0v2KZqWW+2qqYvt8zalKMza/vF/C4=
 			</data>
 		</dict>
 		<key>Modules/easy_pdf_viewer.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9dqMFw/yhPbz2QTGrDJ6RGXgUoIHvwXYdEH/V0E8w7M=
+			gdk+X+sfTzxrzVtXOt0WJGXCdWcyqYs5Zd4n3HZ758s=
 			</data>
 		</dict>
 		<key>Modules/easy_pdf_viewer.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c1ofXKfOtz9kaJXjl5ydKZo6chPHjzIcGgH782/ARgg=
+			H6GESViknyOGq8Qs/zf3WQWTC3MyGLZcS1l53VPqo20=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

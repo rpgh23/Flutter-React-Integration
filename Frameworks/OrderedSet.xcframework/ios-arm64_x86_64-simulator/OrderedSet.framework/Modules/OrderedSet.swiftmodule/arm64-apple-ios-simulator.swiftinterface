@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name OrderedSet
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 @_exported import OrderedSet
 import Swift
 import _Concurrency
@@ -11,13 +11,19 @@ public struct OrderedSet<T> where T : Swift.Hashable {
   public init()
   public init<S>(sequence: S) where T == S.Element, S : Swift.Sequence
   public init(arrayLiteral elements: T...)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func index(of object: T) -> OrderedSet.OrderedSet<T>.Index?
+  #endif
   public mutating func append(_ object: T)
   public mutating func append<S>(contentsOf sequence: S) where T == S.Element, S : Swift.Sequence
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public mutating func remove(_ object: T) -> OrderedSet.OrderedSet<T>.Index?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public mutating func remove<S>(_ objects: S) -> [OrderedSet.OrderedSet<T>.Index]? where T == S.Element, S : Swift.Sequence
+  #endif
   public mutating func removeObject(at index: OrderedSet.OrderedSet<T>.Index)
   @discardableResult
   public mutating func removeAllObjects(where shouldBeRemoved: (T) -> Swift.Bool) -> OrderedSet.OrderedSet<T>
@@ -29,9 +35,11 @@ public struct OrderedSet<T> where T : Swift.Hashable {
   public mutating func moveObject(at index: OrderedSet.OrderedSet<T>.Index, to toIndex: OrderedSet.OrderedSet<T>.Index)
   public mutating func insert(_ object: T, at index: OrderedSet.OrderedSet<T>.Index)
   public mutating func insert<S>(_ objects: S, at index: OrderedSet.OrderedSet<T>.Index) where T == S.Element, S : Swift.Sequence
+  #if compiler(>=5.3) && $NonescapableTypes
   public var last: T? {
     get
   }
+  #endif
 }
 extension OrderedSet.OrderedSet : Swift.ExpressibleByArrayLiteral {
   public typealias ArrayLiteralElement = T
@@ -43,9 +51,11 @@ extension OrderedSet.OrderedSet {
   public var isEmpty: Swift.Bool {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var first: T? {
     get
   }
+  #endif
   public func index(after index: Swift.Int) -> Swift.Int
   public typealias Index = Swift.Int
   public var startIndex: Swift.Int {

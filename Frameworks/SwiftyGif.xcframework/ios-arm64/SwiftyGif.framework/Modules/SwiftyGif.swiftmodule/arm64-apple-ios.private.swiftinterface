@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SwiftyGif
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import Foundation
 import ImageIO
 import Swift
@@ -36,8 +36,12 @@ extension Swift.Float {
   public static let superLowForSlideShow: SwiftyGif.GifLevelOfIntegrity
 }
 extension UIKit.UIImage {
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init?(imageData: Foundation.Data, levelOfIntegrity: SwiftyGif.GifLevelOfIntegrity = .default) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init?(imageName: Swift.String, levelOfIntegrity: SwiftyGif.GifLevelOfIntegrity = .default, bundle: Foundation.Bundle = Bundle.main) throws
+  #endif
 }
 extension UIKit.UIImage {
   convenience public init(gifData: Foundation.Data, levelOfIntegrity: SwiftyGif.GifLevelOfIntegrity = .default) throws
@@ -49,37 +53,51 @@ extension UIKit.UIImage {
   public func clear()
 }
 extension UIKit.UIImage {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var imageSource: ImageIO.CGImageSource? {
     get
     set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var displayRefreshFactor: Swift.Int? {
     get
     set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var imageSize: Swift.Int? {
     get
     set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var imageCount: Swift.Int? {
     get
     set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var displayOrder: [Swift.Int]? {
     get
     set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var imageData: Foundation.Data? {
     get
     set
   }
+  #endif
 }
 @objc public protocol SwiftyGifDelegate {
   @objc optional func gifDidStart(sender: UIKit.UIImageView)
   @objc optional func gifDidLoop(sender: UIKit.UIImageView)
   @objc optional func gifDidStop(sender: UIKit.UIImageView)
   @objc optional func gifURLDidFinish(sender: UIKit.UIImageView)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func gifURLDidFail(sender: UIKit.UIImageView, url: Foundation.URL, error: (any Swift.Error)?)
+  #endif
 }
 extension UIKit.UIImageView {
   @_Concurrency.MainActor @preconcurrency public func setImage(_ image: UIKit.UIImage, manager: SwiftyGif.SwiftyGifManager = .defaultManager, loopCount: Swift.Int = -1)
@@ -90,8 +108,10 @@ extension UIKit.UIImageView {
   @_Concurrency.MainActor @preconcurrency public func setGifImage(_ gifImage: UIKit.UIImage, manager: SwiftyGif.SwiftyGifManager = .defaultManager, loopCount: Swift.Int = -1)
 }
 extension UIKit.UIImageView {
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   @_Concurrency.MainActor @preconcurrency public func setGifFromURL(_ url: Foundation.URL, manager: SwiftyGif.SwiftyGifManager = .defaultManager, loopCount: Swift.Int = -1, levelOfIntegrity: SwiftyGif.GifLevelOfIntegrity = .default, session: Foundation.URLSession = URLSession.shared, showLoader: Swift.Bool = true, customLoader: UIKit.UIView? = nil) -> Foundation.URLSessionDataTask?
+  #endif
 }
 extension UIKit.UIImageView {
   @_Concurrency.MainActor @preconcurrency public func startAnimatingGif()
@@ -103,31 +123,43 @@ extension UIKit.UIImageView {
   @_Concurrency.MainActor @preconcurrency public func updateCurrentImage()
   @_Concurrency.MainActor @preconcurrency public func currentFrameIndex() -> Swift.Int
   @_Concurrency.MainActor @preconcurrency public func frameAtIndex(index: Swift.Int) -> UIKit.UIImage
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func isDiscarded(_ imageView: UIKit.UIView?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func isDisplayedInScreen(_ imageView: UIKit.UIView?) -> Swift.Bool
+  #endif
   @_Concurrency.MainActor @preconcurrency public func clear()
 }
 extension UIKit.UIImageView {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public var gifImage: UIKit.UIImage? {
     get
     set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public var currentImage: UIKit.UIImage? {
     get
     set
   }
+  #endif
   @_Concurrency.MainActor @preconcurrency public var loopCount: Swift.Int {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public var animationManager: SwiftyGif.SwiftyGifManager? {
     get
     set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public var delegate: (any SwiftyGif.SwiftyGifDelegate)? {
     get
     set
   }
+  #endif
   @_Concurrency.MainActor @preconcurrency public var displaying: Swift.Bool {
     get
     set
