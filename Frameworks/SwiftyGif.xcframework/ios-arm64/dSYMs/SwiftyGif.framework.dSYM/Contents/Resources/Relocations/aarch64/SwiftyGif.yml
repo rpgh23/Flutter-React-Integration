@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-framework/Release/iphoneos/Release-iphoneos/SwiftyGif/SwiftyGif.framework/SwiftyGif'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/SwiftyGif/SwiftyGif.framework/SwiftyGif'
 relocations:
   - { offset: 0x707C0, size: 0x8, addend: 0x0, symName: _SwiftyGifVersionString, symObjAddr: 0x0, symBinAddr: 0x13EE0, symSize: 0x0 }
   - { offset: 0x707F7, size: 0x8, addend: 0x0, symName: _SwiftyGifVersionNumber, symObjAddr: 0x28, symBinAddr: 0x13F08, symSize: 0x0 }

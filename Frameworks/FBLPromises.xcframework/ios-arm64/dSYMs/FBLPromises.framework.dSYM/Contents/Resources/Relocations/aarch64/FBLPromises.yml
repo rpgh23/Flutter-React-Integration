@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-framework/Release/iphoneos/Release-iphoneos/PromisesObjC/FBLPromises.framework/FBLPromises'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/PromisesObjC/FBLPromises.framework/FBLPromises'
 relocations:
   - { offset: 0x341E5, size: 0x8, addend: 0x0, symName: _FBLPromisesVersionString, symObjAddr: 0x0, symBinAddr: 0xBFE0, symSize: 0x0 }
   - { offset: 0x3421A, size: 0x8, addend: 0x0, symName: _FBLPromisesVersionNumber, symObjAddr: 0x30, symBinAddr: 0xC010, symSize: 0x0 }
@@ -194,8 +194,8 @@ relocations:
   - { offset: 0x3B921, size: 0x8, addend: 0x0, symName: _FBLWaitForPromisesWithTimeout, symObjAddr: 0x0, symBinAddr: 0x862C, symSize: 0x120 }
   - { offset: 0x3B92F, size: 0x8, addend: 0x0, symName: _FBLWaitForPromisesWithTimeout, symObjAddr: 0x0, symBinAddr: 0x862C, symSize: 0x120 }
   - { offset: 0x3BA29, size: 0x8, addend: 0x0, symName: '+[FBLPromise(TestingAdditions) dispatchGroup]', symObjAddr: 0x120, symBinAddr: 0x874C, symSize: 0x30 }
-  - { offset: 0x3BA53, size: 0x8, addend: 0x0, symName: _dispatchGroup.gDispatchGroup, symObjAddr: 0x2098, symBinAddr: 0x122E0, symSize: 0x0 }
-  - { offset: 0x3BA69, size: 0x8, addend: 0x0, symName: _dispatchGroup.onceToken, symObjAddr: 0x20A0, symBinAddr: 0x122E8, symSize: 0x0 }
+  - { offset: 0x3BA53, size: 0x8, addend: 0x0, symName: _dispatchGroup.gDispatchGroup, symObjAddr: 0x20A0, symBinAddr: 0x122E0, symSize: 0x0 }
+  - { offset: 0x3BA69, size: 0x8, addend: 0x0, symName: _dispatchGroup.onceToken, symObjAddr: 0x20A8, symBinAddr: 0x122E8, symSize: 0x0 }
   - { offset: 0x3BB1B, size: 0x8, addend: 0x0, symName: '+[FBLPromise(TestingAdditions) dispatchGroup].cold.1', symObjAddr: 0x178, symBinAddr: 0xB0B0, symSize: 0x14 }
   - { offset: 0x3BB37, size: 0x8, addend: 0x0, symName: '+[FBLPromise(TestingAdditions) dispatchGroup].cold.1', symObjAddr: 0x178, symBinAddr: 0xB0B0, symSize: 0x14 }
   - { offset: 0x3BB49, size: 0x8, addend: 0x0, symName: '___45+[FBLPromise(TestingAdditions) dispatchGroup]_block_invoke', symObjAddr: 0x150, symBinAddr: 0x877C, symSize: 0x24 }

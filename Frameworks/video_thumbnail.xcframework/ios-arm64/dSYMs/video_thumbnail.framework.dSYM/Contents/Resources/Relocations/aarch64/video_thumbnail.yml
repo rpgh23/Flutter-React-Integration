@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-framework/Release/iphoneos/Release-iphoneos/video_thumbnail/video_thumbnail.framework/video_thumbnail'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/video_thumbnail/video_thumbnail.framework/video_thumbnail'
 relocations:
   - { offset: 0x5B20A, size: 0x8, addend: 0x0, symName: _video_thumbnailVersionString, symObjAddr: 0x0, symBinAddr: 0x57F0, symSize: 0x0 }
   - { offset: 0x5B23F, size: 0x8, addend: 0x0, symName: _video_thumbnailVersionNumber, symObjAddr: 0x30, symBinAddr: 0x5820, symSize: 0x0 }

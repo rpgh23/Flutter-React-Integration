@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-framework/Release/iphoneos/Release-iphoneos/video_player_avfoundation/video_player_avfoundation.framework/video_player_avfoundation'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/video_player_avfoundation/video_player_avfoundation.framework/video_player_avfoundation'
 relocations:
   - { offset: 0xCA84A, size: 0x8, addend: 0x0, symName: _video_player_avfoundationVersionString, symObjAddr: 0x0, symBinAddr: 0xD4E0, symSize: 0x0 }
   - { offset: 0xCA87F, size: 0x8, addend: 0x0, symName: _video_player_avfoundationVersionNumber, symObjAddr: 0x38, symBinAddr: 0xD518, symSize: 0x0 }

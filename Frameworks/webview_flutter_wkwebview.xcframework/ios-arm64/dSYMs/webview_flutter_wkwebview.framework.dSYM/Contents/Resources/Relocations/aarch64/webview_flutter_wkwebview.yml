@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-framework/Release/iphoneos/Release-iphoneos/webview_flutter_wkwebview/webview_flutter_wkwebview.framework/webview_flutter_wkwebview'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/webview_flutter_wkwebview/webview_flutter_wkwebview.framework/webview_flutter_wkwebview'
 relocations:
   - { offset: 0xA869F, size: 0x8, addend: 0x0, symName: _webview_flutter_wkwebviewVersionString, symObjAddr: 0x0, symBinAddr: 0x1B560, symSize: 0x0 }
   - { offset: 0xA86D4, size: 0x8, addend: 0x0, symName: _webview_flutter_wkwebviewVersionNumber, symObjAddr: 0x38, symBinAddr: 0x1B598, symSize: 0x0 }

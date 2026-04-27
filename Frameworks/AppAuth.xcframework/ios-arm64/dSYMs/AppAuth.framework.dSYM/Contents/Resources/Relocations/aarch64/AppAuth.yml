@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-framework/Release/iphoneos/Release-iphoneos/AppAuth/AppAuth.framework/AppAuth'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/AppAuth/AppAuth.framework/AppAuth'
 relocations:
   - { offset: 0x3B1F4, size: 0x8, addend: 0x0, symName: _AppAuthVersionString, symObjAddr: 0x0, symBinAddr: 0x166E0, symSize: 0x0 }
   - { offset: 0x3B229, size: 0x8, addend: 0x0, symName: _AppAuthVersionNumber, symObjAddr: 0x28, symBinAddr: 0x16708, symSize: 0x0 }
@@ -361,8 +361,8 @@ relocations:
   - { offset: 0x46845, size: 0x8, addend: 0x0, symName: _OIDRegistrationAccessTokenParam, symObjAddr: 0xD08, symBinAddr: 0x20668, symSize: 0x0 }
   - { offset: 0x4685B, size: 0x8, addend: 0x0, symName: _OIDRegistrationClientURIParam, symObjAddr: 0xD10, symBinAddr: 0x20670, symSize: 0x0 }
   - { offset: 0x46865, size: 0x8, addend: 0x0, symName: '+[OIDRegistrationResponse fieldMap]', symObjAddr: 0x0, symBinAddr: 0xF0FC, symSize: 0x30 }
-  - { offset: 0x4688F, size: 0x8, addend: 0x0, symName: _fieldMap.fieldMap, symObjAddr: 0x4D58, symBinAddr: 0x29310, symSize: 0x0 }
-  - { offset: 0x468A5, size: 0x8, addend: 0x0, symName: _fieldMap.onceToken, symObjAddr: 0x4D60, symBinAddr: 0x29318, symSize: 0x0 }
+  - { offset: 0x4688F, size: 0x8, addend: 0x0, symName: _fieldMap.fieldMap, symObjAddr: 0x4D60, symBinAddr: 0x29310, symSize: 0x0 }
+  - { offset: 0x468A5, size: 0x8, addend: 0x0, symName: _fieldMap.onceToken, symObjAddr: 0x4D68, symBinAddr: 0x29318, symSize: 0x0 }
   - { offset: 0x46AC7, size: 0x8, addend: 0x0, symName: '+[OIDRegistrationResponse fieldMap].cold.1', symObjAddr: 0x850, symBinAddr: 0x141B8, symSize: 0x14 }
   - { offset: 0x46AE3, size: 0x8, addend: 0x0, symName: '+[OIDRegistrationResponse fieldMap].cold.1', symObjAddr: 0x850, symBinAddr: 0x141B8, symSize: 0x14 }
   - { offset: 0x46AF5, size: 0x8, addend: 0x0, symName: '___35+[OIDRegistrationResponse fieldMap]_block_invoke', symObjAddr: 0x30, symBinAddr: 0xF12C, symSize: 0x2CC }
@@ -526,7 +526,7 @@ relocations:
   - { offset: 0x4A63E, size: 0x8, addend: 0x0, symName: '+[OIDTokenUtilities redact:]', symObjAddr: 0x1EC, symBinAddr: 0x12C98, symSize: 0x9C }
   - { offset: 0x4A681, size: 0x8, addend: 0x0, symName: '+[OIDTokenUtilities formUrlEncode:]', symObjAddr: 0x288, symBinAddr: 0x12D34, symSize: 0xB8 }
   - { offset: 0x4A75A, size: 0x8, addend: 0x0, symName: '-[OIDURLQueryComponent init]', symObjAddr: 0x0, symBinAddr: 0x12DEC, symSize: 0x6C }
-  - { offset: 0x4A774, size: 0x8, addend: 0x0, symName: _gOIDURLQueryComponentForceIOS7Handling, symObjAddr: 0x44BE, symBinAddr: 0x29370, symSize: 0x0 }
+  - { offset: 0x4A774, size: 0x8, addend: 0x0, symName: _gOIDURLQueryComponentForceIOS7Handling, symObjAddr: 0x44C6, symBinAddr: 0x29370, symSize: 0x0 }
   - { offset: 0x4A845, size: 0x8, addend: 0x0, symName: '-[OIDURLQueryComponent init]', symObjAddr: 0x0, symBinAddr: 0x12DEC, symSize: 0x6C }
   - { offset: 0x4A87C, size: 0x8, addend: 0x0, symName: '-[OIDURLQueryComponent initWithURL:]', symObjAddr: 0x6C, symBinAddr: 0x12E58, symSize: 0x3B4 }
   - { offset: 0x4A996, size: 0x8, addend: 0x0, symName: '-[OIDURLQueryComponent parameters]', symObjAddr: 0x420, symBinAddr: 0x1320C, symSize: 0x8 }
@@ -542,7 +542,7 @@ relocations:
   - { offset: 0x4ADFA, size: 0x8, addend: 0x0, symName: '-[OIDURLQueryComponent description]', symObjAddr: 0xDEC, symBinAddr: 0x13BD8, symSize: 0x7C }
   - { offset: 0x4AE65, size: 0x8, addend: 0x0, symName: '-[OIDURLQueryComponent .cxx_destruct]', symObjAddr: 0xE68, symBinAddr: 0x13C54, symSize: 0xC }
   - { offset: 0x4AF35, size: 0x8, addend: 0x0, symName: '+[OIDURLSessionProvider session]', symObjAddr: 0x0, symBinAddr: 0x13C60, symSize: 0x4C }
-  - { offset: 0x4AF4F, size: 0x8, addend: 0x0, symName: _gURLSession, symObjAddr: 0xDA8, symBinAddr: 0x29340, symSize: 0x0 }
+  - { offset: 0x4AF4F, size: 0x8, addend: 0x0, symName: _gURLSession, symObjAddr: 0xDB0, symBinAddr: 0x29340, symSize: 0x0 }
   - { offset: 0x4AF7C, size: 0x8, addend: 0x0, symName: '+[OIDURLSessionProvider session]', symObjAddr: 0x0, symBinAddr: 0x13C60, symSize: 0x4C }
   - { offset: 0x4AFAF, size: 0x8, addend: 0x0, symName: '+[OIDURLSessionProvider setSession:]', symObjAddr: 0x4C, symBinAddr: 0x13CAC, symSize: 0x10 }
 ...

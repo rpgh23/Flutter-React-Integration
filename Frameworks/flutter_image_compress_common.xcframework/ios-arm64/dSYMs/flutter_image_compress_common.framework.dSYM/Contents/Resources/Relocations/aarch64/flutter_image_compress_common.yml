@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-framework/Release/iphoneos/Release-iphoneos/flutter_image_compress_common/flutter_image_compress_common.framework/flutter_image_compress_common'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/flutter_image_compress_common/flutter_image_compress_common.framework/flutter_image_compress_common'
 relocations:
   - { offset: 0x8F24C, size: 0x8, addend: 0x0, symName: _flutter_image_compress_commonVersionString, symObjAddr: 0x0, symBinAddr: 0x133E8, symSize: 0x0 }
   - { offset: 0x8F281, size: 0x8, addend: 0x0, symName: _flutter_image_compress_commonVersionNumber, symObjAddr: 0x40, symBinAddr: 0x13428, symSize: 0x0 }

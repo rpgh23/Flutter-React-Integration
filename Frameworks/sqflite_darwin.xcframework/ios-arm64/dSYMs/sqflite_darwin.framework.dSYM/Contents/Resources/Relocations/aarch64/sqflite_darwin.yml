@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-framework/Release/iphoneos/Release-iphoneos/sqflite_darwin/sqflite_darwin.framework/sqflite_darwin'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/sqflite_darwin/sqflite_darwin.framework/sqflite_darwin'
 relocations:
   - { offset: 0x3F775, size: 0x8, addend: 0x0, symName: _sqflite_darwinVersionString, symObjAddr: 0x0, symBinAddr: 0x12700, symSize: 0x0 }
   - { offset: 0x3F7AA, size: 0x8, addend: 0x0, symName: _sqflite_darwinVersionNumber, symObjAddr: 0x30, symBinAddr: 0x12730, symSize: 0x0 }

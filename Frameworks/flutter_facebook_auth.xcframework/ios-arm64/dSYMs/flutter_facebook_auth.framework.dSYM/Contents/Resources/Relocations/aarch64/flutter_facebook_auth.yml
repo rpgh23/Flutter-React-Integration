@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-framework/Release/iphoneos/Release-iphoneos/flutter_facebook_auth/flutter_facebook_auth.framework/flutter_facebook_auth'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/flutter_facebook_auth/flutter_facebook_auth.framework/flutter_facebook_auth'
 relocations:
   - { offset: 0x9EA7A, size: 0x8, addend: 0x0, symName: _flutter_facebook_authVersionString, symObjAddr: 0x0, symBinAddr: 0x9F60, symSize: 0x0 }
   - { offset: 0x9EAAF, size: 0x8, addend: 0x0, symName: _flutter_facebook_authVersionNumber, symObjAddr: 0x38, symBinAddr: 0x9F98, symSize: 0x0 }

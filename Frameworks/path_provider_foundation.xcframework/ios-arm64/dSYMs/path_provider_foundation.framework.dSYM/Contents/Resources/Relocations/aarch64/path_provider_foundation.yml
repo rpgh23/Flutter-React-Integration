@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-framework/Release/iphoneos/Release-iphoneos/path_provider_foundation/path_provider_foundation.framework/path_provider_foundation'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/path_provider_foundation/path_provider_foundation.framework/path_provider_foundation'
 relocations:
   - { offset: 0x592E9, size: 0x8, addend: 0x0, symName: _path_provider_foundationVersionString, symObjAddr: 0x0, symBinAddr: 0x8250, symSize: 0x0 }
   - { offset: 0x59320, size: 0x8, addend: 0x0, symName: _path_provider_foundationVersionNumber, symObjAddr: 0x38, symBinAddr: 0x8288, symSize: 0x0 }

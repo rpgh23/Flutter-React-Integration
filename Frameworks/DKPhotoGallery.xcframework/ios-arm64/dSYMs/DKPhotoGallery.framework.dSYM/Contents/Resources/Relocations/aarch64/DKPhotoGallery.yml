@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-framework/Release/iphoneos/Release-iphoneos/DKPhotoGallery/DKPhotoGallery.framework/DKPhotoGallery'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/DKPhotoGallery/DKPhotoGallery.framework/DKPhotoGallery'
 relocations:
   - { offset: 0xA06A5, size: 0x8, addend: 0x0, symName: _DKPhotoGalleryVersionString, symObjAddr: 0x0, symBinAddr: 0x3E7D0, symSize: 0x0 }
   - { offset: 0xA06DC, size: 0x8, addend: 0x0, symName: _DKPhotoGalleryVersionNumber, symObjAddr: 0x30, symBinAddr: 0x3E800, symSize: 0x0 }

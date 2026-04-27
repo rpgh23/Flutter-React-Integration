@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-framework/Release/iphoneos/Release-iphoneos/image_cropper/image_cropper.framework/image_cropper'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/image_cropper/image_cropper.framework/image_cropper'
 relocations:
   - { offset: 0xA4DD4, size: 0x8, addend: 0x0, symName: _image_cropperVersionString, symObjAddr: 0x0, symBinAddr: 0x6120, symSize: 0x0 }
   - { offset: 0xA4E09, size: 0x8, addend: 0x0, symName: _image_cropperVersionNumber, symObjAddr: 0x30, symBinAddr: 0x6150, symSize: 0x0 }

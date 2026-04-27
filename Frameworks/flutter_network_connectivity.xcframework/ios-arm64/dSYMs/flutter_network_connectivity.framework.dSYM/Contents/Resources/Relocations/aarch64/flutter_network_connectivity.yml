@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-framework/Release/iphoneos/Release-iphoneos/flutter_network_connectivity/flutter_network_connectivity.framework/flutter_network_connectivity'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/flutter_network_connectivity/flutter_network_connectivity.framework/flutter_network_connectivity'
 relocations:
   - { offset: 0x91964, size: 0x8, addend: 0x0, symName: _flutter_network_connectivityVersionString, symObjAddr: 0x0, symBinAddr: 0x72A0, symSize: 0x0 }
   - { offset: 0x91999, size: 0x8, addend: 0x0, symName: _flutter_network_connectivityVersionNumber, symObjAddr: 0x40, symBinAddr: 0x72E0, symSize: 0x0 }

@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-framework/Release/iphoneos/Release-iphoneos/AppCheckCore/AppCheckCore.framework/AppCheckCore'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/AppCheckCore/AppCheckCore.framework/AppCheckCore'
 relocations:
   - { offset: 0x2E461, size: 0x8, addend: 0x0, symName: _AppCheckCoreVersionString, symObjAddr: 0x0, symBinAddr: 0x14AE0, symSize: 0x0 }
   - { offset: 0x2E495, size: 0x8, addend: 0x0, symName: _AppCheckCoreVersionNumber, symObjAddr: 0x30, symBinAddr: 0x14B10, symSize: 0x0 }

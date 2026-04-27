@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name         = 'MyPrivateSDK'
-  s.version      = '1.1.3'
+  s.version      = '1.1.4'
   s.summary      = 'Internal Flutter based SDK'
   s.description  = 'Private SDK wrapping Flutter engine and plugins'
-  s.homepage     = 'https://github.com/saurabhdwive/FlutterFramework'
+  s.homepage     = 'https://github.com/rpgh23/Flutter-React-Integration'
   s.license      = { :type => 'MIT' }
   s.author       = { 'YourOrg' => 'dev@yourorg.com' }
 
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   # ✅ HTTPS REQUIRED
   s.source = {
-    :git => 'https://github.com/saurabhdwive/FlutterFramework.git',
+    :git => 'https://github.com/rpgh23/Flutter-React-Integration.git',
     :tag => s.version.to_s
   }
 

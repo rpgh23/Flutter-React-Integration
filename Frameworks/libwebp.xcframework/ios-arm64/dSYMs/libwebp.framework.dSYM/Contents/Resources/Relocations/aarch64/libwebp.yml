@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-framework/Release/iphoneos/Release-iphoneos/libwebp/libwebp.framework/libwebp'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/libwebp/libwebp.framework/libwebp'
 relocations:
   - { offset: 0x7D39, size: 0x8, addend: 0x0, symName: _libwebpVersionString, symObjAddr: 0x0, symBinAddr: 0x48E90, symSize: 0x0 }
   - { offset: 0x7D6D, size: 0x8, addend: 0x0, symName: _libwebpVersionNumber, symObjAddr: 0x28, symBinAddr: 0x48EB8, symSize: 0x0 }

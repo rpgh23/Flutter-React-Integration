@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-framework/Release/iphoneos/Release-iphoneos/screen_protector/screen_protector.framework/screen_protector'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/screen_protector/screen_protector.framework/screen_protector'
 relocations:
   - { offset: 0x8FC01, size: 0x8, addend: 0x0, symName: _screen_protectorVersionString, symObjAddr: 0x0, symBinAddr: 0x7710, symSize: 0x0 }
   - { offset: 0x8FC36, size: 0x8, addend: 0x0, symName: _screen_protectorVersionNumber, symObjAddr: 0x30, symBinAddr: 0x7740, symSize: 0x0 }

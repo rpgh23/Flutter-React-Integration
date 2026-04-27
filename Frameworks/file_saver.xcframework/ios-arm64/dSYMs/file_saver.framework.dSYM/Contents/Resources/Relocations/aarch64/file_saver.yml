@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-framework/Release/iphoneos/Release-iphoneos/file_saver/file_saver.framework/file_saver'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/file_saver/file_saver.framework/file_saver'
 relocations:
   - { offset: 0x90049, size: 0x8, addend: 0x0, symName: _file_saverVersionString, symObjAddr: 0x0, symBinAddr: 0x90E0, symSize: 0x0 }
   - { offset: 0x9007E, size: 0x8, addend: 0x0, symName: _file_saverVersionNumber, symObjAddr: 0x28, symBinAddr: 0x9108, symSize: 0x0 }

@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-framework/Release/iphoneos/Release-iphoneos/flutter_contacts/flutter_contacts.framework/flutter_contacts'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/flutter_contacts/flutter_contacts.framework/flutter_contacts'
 relocations:
   - { offset: 0x93500, size: 0x8, addend: 0x0, symName: _flutter_contactsVersionString, symObjAddr: 0x0, symBinAddr: 0x211A0, symSize: 0x0 }
   - { offset: 0x93535, size: 0x8, addend: 0x0, symName: _flutter_contactsVersionNumber, symObjAddr: 0x30, symBinAddr: 0x211D0, symSize: 0x0 }

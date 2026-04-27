@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-framework/Release/iphoneos/Release-iphoneos/OrderedSet/OrderedSet.framework/OrderedSet'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/OrderedSet/OrderedSet.framework/OrderedSet'
 relocations:
   - { offset: 0x4DC13, size: 0x8, addend: 0x0, symName: _OrderedSetVersionString, symObjAddr: 0x0, symBinAddr: 0xB060, symSize: 0x0 }
   - { offset: 0x4DC4A, size: 0x8, addend: 0x0, symName: _OrderedSetVersionNumber, symObjAddr: 0x28, symBinAddr: 0xB088, symSize: 0x0 }

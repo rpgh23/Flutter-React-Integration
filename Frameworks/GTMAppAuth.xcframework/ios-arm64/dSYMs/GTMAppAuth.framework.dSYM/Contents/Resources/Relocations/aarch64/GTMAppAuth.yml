@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-framework/Release/iphoneos/Release-iphoneos/GTMAppAuth/GTMAppAuth.framework/GTMAppAuth'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/GTMAppAuth/GTMAppAuth.framework/GTMAppAuth'
 relocations:
   - { offset: 0x5FC2E, size: 0x8, addend: 0x0, symName: _GTMAppAuthVersionString, symObjAddr: 0x0, symBinAddr: 0x17D10, symSize: 0x0 }
   - { offset: 0x5FC63, size: 0x8, addend: 0x0, symName: _GTMAppAuthVersionNumber, symObjAddr: 0x28, symBinAddr: 0x17D38, symSize: 0x0 }

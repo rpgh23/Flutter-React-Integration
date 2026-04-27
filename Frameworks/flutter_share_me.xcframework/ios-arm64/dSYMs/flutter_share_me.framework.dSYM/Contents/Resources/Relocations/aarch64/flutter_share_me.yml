@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-framework/Release/iphoneos/Release-iphoneos/flutter_share_me/flutter_share_me.framework/flutter_share_me'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/flutter_share_me/flutter_share_me.framework/flutter_share_me'
 relocations:
   - { offset: 0xB4FCC, size: 0x8, addend: 0x0, symName: _flutter_share_meVersionString, symObjAddr: 0x0, symBinAddr: 0xF3C0, symSize: 0x0 }
   - { offset: 0xB5001, size: 0x8, addend: 0x0, symName: _flutter_share_meVersionNumber, symObjAddr: 0x30, symBinAddr: 0xF3F0, symSize: 0x0 }

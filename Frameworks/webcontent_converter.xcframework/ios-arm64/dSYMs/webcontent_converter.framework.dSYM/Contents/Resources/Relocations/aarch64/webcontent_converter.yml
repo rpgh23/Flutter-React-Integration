@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-framework/Release/iphoneos/Release-iphoneos/webcontent_converter/webcontent_converter.framework/webcontent_converter'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/webcontent_converter/webcontent_converter.framework/webcontent_converter'
 relocations:
   - { offset: 0x96337, size: 0x8, addend: 0x0, symName: _webcontent_converterVersionString, symObjAddr: 0x0, symBinAddr: 0xC940, symSize: 0x0 }
   - { offset: 0x9636C, size: 0x8, addend: 0x0, symName: _webcontent_converterVersionNumber, symObjAddr: 0x38, symBinAddr: 0xC978, symSize: 0x0 }

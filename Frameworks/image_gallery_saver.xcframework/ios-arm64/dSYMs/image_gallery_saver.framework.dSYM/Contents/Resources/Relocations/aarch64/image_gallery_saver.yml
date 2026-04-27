@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-framework/Release/iphoneos/Release-iphoneos/image_gallery_saver/image_gallery_saver.framework/image_gallery_saver'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/image_gallery_saver/image_gallery_saver.framework/image_gallery_saver'
 relocations:
   - { offset: 0xB571C, size: 0x8, addend: 0x0, symName: _image_gallery_saverVersionString, symObjAddr: 0x0, symBinAddr: 0x9D30, symSize: 0x0 }
   - { offset: 0xB5751, size: 0x8, addend: 0x0, symName: _image_gallery_saverVersionNumber, symObjAddr: 0x38, symBinAddr: 0x9D68, symSize: 0x0 }
