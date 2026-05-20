@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'MyPrivateSDK'
-  s.version      = '1.1.5'
+  s.version      = '1.1.6'
   s.summary      = 'Internal Flutter based SDK'
   s.description  = 'Private SDK wrapping Flutter engine and plugins'
   s.homepage     = 'https://github.com/rpgh23/Flutter-React-Integration'
@@ -23,9 +23,16 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = [
     'Frameworks/*.xcframework'
   ]
+
+  # ✅ Stub library: provides ffmpegkit symbols on simulator (no-op stubs)
+  s.vendored_libraries = ['Libraries/libffmpegkit_stub.a']
+
   s.source_files = 'Sources/FlutterBridge/**/*.{swift,h,m}'
+
   s.dependency 'React-Core'
 
-  # ❌ DO NOT EXCLUDE ARCHS
-  # ❌ DO NOT USE source_files
+  # ✅ Facebook SDK — required by flutter_facebook_auth and flutter_share_me
+  s.dependency 'FBSDKCoreKit', '~> 16.3.1'
+  s.dependency 'FBSDKLoginKit', '~> 16.3.1'
+  s.dependency 'FBSDKShareKit', '~> 16.3.1'
 end
