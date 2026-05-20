@@ -98,23 +98,52 @@ PYEOF
 fi
 
 # ----------------------------------------------------------
-# Step 3: Recompile libffmpegkit_stub.a from source
+# Step 3: Recompile libffmpegkit_stub.xcframework from source
+#         Produces two slices:
+#           ios-arm64                — real device (platform 2)
+#           ios-arm64_x86_64-simulator — simulator (platform 7)
 # ----------------------------------------------------------
 STUB_SRC="$SCRIPT_DIR/Sources/ffmpegkit_stub/ffmpegkit_stub.m"
-STUB_LIB="$SCRIPT_DIR/Libraries/libffmpegkit_stub.a"
+STUB_XCFW="$SCRIPT_DIR/Libraries/libffmpegkit_stub.xcframework"
 
 if [ -f "$STUB_SRC" ]; then
-  echo "▶ Recompiling libffmpegkit_stub.a..."
-  TMP_OBJ=$(mktemp /tmp/ffmpegkit_stub_XXXX.o)
-  xcrun -sdk iphonesimulator clang \
-    -arch arm64 -arch x86_64 \
-    -mios-simulator-version-min=14.0 \
+  echo "▶ Recompiling libffmpegkit_stub.xcframework..."
+  TMPDIR_STUB=$(mktemp -d /tmp/ffmpegkit_stub_build_XXXX)
+  # Both slices must use the same filename for CocoaPods xcframework validation
+  mkdir -p "$TMPDIR_STUB/dev" "$TMPDIR_STUB/sim"
+
+  # --- device slice (arm64, iOS) ---
+  xcrun -sdk iphoneos clang \
+    -arch arm64 \
+    -mios-version-min=13.0 \
     -fobjc-arc \
-    -c "$STUB_SRC" -o "$TMP_OBJ"
+    -c "$STUB_SRC" -o "$TMPDIR_STUB/dev/stub.o"
+  libtool -static "$TMPDIR_STUB/dev/stub.o" -o "$TMPDIR_STUB/dev/libffmpegkit_stub.a"
+
+  # --- simulator slice (arm64 + x86_64) ---
+  xcrun -sdk iphonesimulator clang \
+    -arch arm64 \
+    -mios-simulator-version-min=13.0 \
+    -fobjc-arc \
+    -c "$STUB_SRC" -o "$TMPDIR_STUB/sim/stub_arm64.o"
+  xcrun -sdk iphonesimulator clang \
+    -arch x86_64 \
+    -mios-simulator-version-min=13.0 \
+    -fobjc-arc \
+    -c "$STUB_SRC" -o "$TMPDIR_STUB/sim/stub_x86.o"
+  libtool -static "$TMPDIR_STUB/sim/stub_arm64.o" "$TMPDIR_STUB/sim/stub_x86.o" \
+    -o "$TMPDIR_STUB/sim/libffmpegkit_stub.a"
+
+  # --- assemble xcframework ---
+  rm -rf "$STUB_XCFW"
   mkdir -p "$SCRIPT_DIR/Libraries"
-  libtool -static "$TMP_OBJ" -o "$STUB_LIB"
-  rm -f "$TMP_OBJ"
-  echo "  ✓ libffmpegkit_stub.a recompiled"
+  xcodebuild -create-xcframework \
+    -library "$TMPDIR_STUB/dev/libffmpegkit_stub.a" \
+    -library "$TMPDIR_STUB/sim/libffmpegkit_stub.a" \
+    -output "$STUB_XCFW"
+
+  rm -rf "$TMPDIR_STUB"
+  echo "  ✓ libffmpegkit_stub.xcframework rebuilt (device + simulator)"
 else
   echo "  ⚠ Stub source not found at $STUB_SRC, skipping recompile"
 fi

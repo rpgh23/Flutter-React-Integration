@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'MyPrivateSDK'
-  s.version      = '1.1.6'
+  s.version      = '1.1.7'
   s.summary      = 'Internal Flutter based SDK'
   s.description  = 'Private SDK wrapping Flutter engine and plugins'
   s.homepage     = 'https://github.com/rpgh23/Flutter-React-Integration'
@@ -20,12 +20,12 @@ Pod::Spec.new do |s|
   s.static_framework = true
 
   # ✅ XCFrameworks (Flutter, App, Plugins, FFmpeg, etc.)
+  # libffmpegkit_stub.xcframework provides empty ffmpegkit symbols for both
+  # device (arm64) and simulator (arm64 + x86_64) so the app links on all targets.
   s.vendored_frameworks = [
-    'Frameworks/*.xcframework'
+    'Frameworks/*.xcframework',
+    'Libraries/libffmpegkit_stub.xcframework'
   ]
-
-  # ✅ Stub library: provides ffmpegkit symbols on simulator (no-op stubs)
-  s.vendored_libraries = ['Libraries/libffmpegkit_stub.a']
 
   s.source_files = 'Sources/FlutterBridge/**/*.{swift,h,m}'
 
