@@ -101,18 +101,30 @@ class FlutterMethodChannelModule: NSObject {
       }
 
       let deepLink = "sp://\(pageKey)//\(id)//\(token)//debug//moamc"
+      resolve(["success": true, "deepLink": deepLink])
 
-      if FlutterMethodChannelModule.dartReady {
-        // Dart handler already registered — send immediately
-        NSLog("🔵 [MC] Dart ready — sending deepLink now: %@", deepLink)
-        let ch = FlutterMethodChannel(name: "com.salespandadm.app/call", binaryMessenger: engine.binaryMessenger)
-        ch.invokeMethod(deepLink, arguments: nil) { _ in }
-        resolve(["success": true, "deepLink": deepLink])
+      // Retry sending the deeplink every 2s until Dart accepts it (max 10 attempts = 20s)
+      FlutterMethodChannelModule.sendDeepLinkWithRetry(deepLink: deepLink, engine: engine, attemptsLeft: 10)
+    }
+  }
+
+  private static func sendDeepLinkWithRetry(deepLink: String, engine: FlutterEngine, attemptsLeft: Int) {
+    let ch = FlutterMethodChannel(name: "com.salespandadm.app/call", binaryMessenger: engine.binaryMessenger)
+    NSLog("🔵 [MC] Sending deepLink (attempts left: %d): %@", attemptsLeft, deepLink)
+    ch.invokeMethod(deepLink, arguments: nil) { result in
+      if result == nil {
+        // nil = Dart handler returned void/nil — success
+        NSLog("✅ [MC] Dart accepted deepLink successfully")
       } else {
-        // Dart not ready yet — store deeplink; sent automatically when flutterReady fires
-        NSLog("🟡 [MC] Dart not ready — storing deepLink for later: %@", deepLink)
-        FlutterMethodChannelModule.pendingDeeplink = deepLink
-        resolve(["success": true, "deepLink": deepLink])
+        // non-nil = FlutterMethodNotImplemented (no handler yet) or FlutterError — retry
+        if attemptsLeft > 0 {
+          NSLog("🟡 [MC] Dart not ready yet (result: %@), retrying in 2s...", String(describing: result))
+          DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            sendDeepLinkWithRetry(deepLink: deepLink, engine: engine, attemptsLeft: attemptsLeft - 1)
+          }
+        } else {
+          NSLog("❌ [MC] Max retries reached, giving up")
+        }
       }
     }
   }
