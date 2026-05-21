@@ -5,9 +5,13 @@ import FlutterPluginRegistrant
 
 @objc(FlutterMethodChannelModule)
 class FlutterMethodChannelModule: NSObject {
-  
+
   private static var sharedEngine: FlutterEngine?
   private static var sharedMethodChannel: FlutterMethodChannel?
+  // Set to true once Dart's initState registers its handler and fires 'flutterReady'
+  private static var dartReady = false
+  // Deeplink stored here when callFlutterMethodChannel is called before dartReady
+  private static var pendingDeeplink: String? = nil
   
   @objc
   static func requiresMainQueueSetup() -> Bool {
@@ -53,6 +57,19 @@ class FlutterMethodChannelModule: NSObject {
           FlutterBridgeEventEmitter.shared?.sendCloseEvent()
         }
         result(nil)
+      } else if call.method == "flutterReady" {
+        dartReady = true
+        DispatchQueue.main.async {
+          FlutterBridgeEventEmitter.shared?.sendReadyEvent()
+          // If a deeplink was stored while Dart was still starting, send it now
+          if let deeplink = pendingDeeplink, let engine = sharedEngine {
+            pendingDeeplink = nil
+            NSLog("🟢 [MC] Dart ready — sending stored deeplink: %@", deeplink)
+            let ch = FlutterMethodChannel(name: "com.salespandadm.app/call", binaryMessenger: engine.binaryMessenger)
+            ch.invokeMethod(deeplink, arguments: nil) { _ in }
+          }
+        }
+        result(nil)
       } else {
         result(FlutterMethodNotImplemented)
       }
@@ -82,44 +99,20 @@ class FlutterMethodChannelModule: NSObject {
         reject("NO_ENGINE", "Failed to create Flutter engine", nil)
         return
       }
-      
-      let methodChannel = FlutterMethodChannel(
-        name: "com.salespandadm.app/call",
-        binaryMessenger: engine.binaryMessenger
-      )
-      
-      // Construct deepLink using the provided parameters
-      // Format: sp://home//{id}//{token}//debug//moamc
+
       let deepLink = "sp://\(pageKey)//\(id)//\(token)//debug//moamc"
-      
-      //          let sessionToken = "VFRKRk1VUXdWRWswTWpkRlJEWWtXVXc0VmxWTU9sUkpOREkzUlNvMUpGa2lNelV4TFQ0MFhUUTVWbEV0T2xSVlRETTJTU282Umlrbk95WlJRZ3BOTzBVcFJqZzFQVEU3SkZWS01qWlJMU3drTlV3ek5ra3FOU1UxSmpRM1JTNDZSanhSTXpaSk5TdzBTVFF5TjBVcU5TUkpKREpGTVNrK05qRWpDazAxTjBVdE9qVTFXalExTVNVc1ZGbEtPbE1sTFRVa1JWY3pOVEVoT3lSVlN6TTJVUzA2UkVsTE1rVXhLVDQwU1RRelJDa3FOU1JGV1RNMlNTRUtTVDQwV1Vrc0p6MHRORk1oV1ROSFJUVStORlVrTVRNcEtqVWtXU0l6TjBrNU95UlVVREV6SlMwd1ZUVlpNelpGTlN4VktTRXZNMVJnQ21BSw=="
-      //          let deepLink = "sp://home//1//\(sessionToken)//debug//moamc"
-      
-      NSLog("🔵 [MC] invokeMethod sending deepLink to Flutter Dart side")
 
-      var replied = false
-      let timer = DispatchSource.makeTimerSource(queue: .main)
-      timer.schedule(deadline: .now() + 10)
-      timer.setEventHandler {
-        guard !replied else { return }
-        replied = true
-        timer.cancel()
-        NSLog("⏰ [MC] TIMEOUT — Dart never replied after 10s. Proceeding anyway.")
+      if FlutterMethodChannelModule.dartReady {
+        // Dart handler already registered — send immediately
+        NSLog("🔵 [MC] Dart ready — sending deepLink now: %@", deepLink)
+        let ch = FlutterMethodChannel(name: "com.salespandadm.app/call", binaryMessenger: engine.binaryMessenger)
+        ch.invokeMethod(deepLink, arguments: nil) { _ in }
         resolve(["success": true, "deepLink": deepLink])
-      }
-      timer.resume()
-
-      methodChannel.invokeMethod(deepLink, arguments: nil) { (result: Any?) in
-        guard !replied else { return }
-        replied = true
-        timer.cancel()
-        if let error = result as? FlutterError {
-          NSLog("❌ [MC] Flutter returned error: %@", error.message ?? "unknown")
-          reject("METHOD_ERROR", error.message ?? "Unknown error", nil)
-        } else {
-          NSLog("✅ [MC] Flutter replied successfully")
-          resolve(["success": true, "deepLink": deepLink])
-        }
+      } else {
+        // Dart not ready yet — store deeplink; sent automatically when flutterReady fires
+        NSLog("🟡 [MC] Dart not ready — storing deepLink for later: %@", deepLink)
+        FlutterMethodChannelModule.pendingDeeplink = deepLink
+        resolve(["success": true, "deepLink": deepLink])
       }
     }
   }

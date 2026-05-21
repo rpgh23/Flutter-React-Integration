@@ -13,10 +13,14 @@ class FlutterBridgeEventEmitter: RCTEventEmitter {
   @objc override static func requiresMainQueueSetup() -> Bool { return true }
 
   override func supportedEvents() -> [String]! {
-    return ["onFlutterSDKClose"]
+    return ["onFlutterSDKClose", "onFlutterReady"]
   }
 
   func sendCloseEvent() {
     sendEvent(withName: "onFlutterSDKClose", body: nil)
+  }
+
+  func sendReadyEvent() {
+    sendEvent(withName: "onFlutterReady", body: nil)
   }
 }
