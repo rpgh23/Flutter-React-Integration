@@ -8,47 +8,42 @@ class FlutterMethodChannelModule: NSObject {
 
   private static var sharedEngine: FlutterEngine?
   private static var sharedMethodChannel: FlutterMethodChannel?
-  // Set to true once Dart's initState registers its handler and fires 'flutterReady'
   private static var dartReady = false
-  // Deeplink stored here when callFlutterMethodChannel is called before dartReady
+  private static var deeplinkDelivered = false
+  // Stored here so flutterReady can send it immediately when Dart signals
   private static var pendingDeeplink: String? = nil
-  
+
   @objc
   static func requiresMainQueueSetup() -> Bool {
     return true
   }
-  
-  // Get or create the Flutter engine
+
   static func getOrCreateEngine() -> FlutterEngine? {
     if let existingEngine = sharedEngine {
       return existingEngine
     }
-    
+
     print("🚀 FlutterMethodChannelModule: Creating Flutter engine...")
-    
-    // Find the App.framework bundle
+
     var appBundle: Bundle? = Bundle(identifier: "io.flutter.flutter.app")
-    
     if appBundle == nil {
       if let frameworksPath = Bundle.main.privateFrameworksPath {
         let appFrameworkPath = (frameworksPath as NSString).appendingPathComponent("App.framework")
         appBundle = Bundle(path: appFrameworkPath)
       }
     }
-    
+
     let flutterDartProject: FlutterDartProject
     if let bundle = appBundle {
       flutterDartProject = FlutterDartProject(precompiledDartBundle: bundle)
     } else {
       flutterDartProject = FlutterDartProject()
     }
-    
-    let engineName = "flutter_engine_shared"
-    let engine = FlutterEngine(name: engineName, project: flutterDartProject)
+
+    let engine = FlutterEngine(name: "flutter_engine_shared", project: flutterDartProject)
     engine.run()
     GeneratedPluginRegistrant.register(with: engine)
 
-    // Keep a persistent channel to receive calls FROM Dart (e.g. closeSDK)
     let channel = FlutterMethodChannel(name: "com.salespandadm.app/call", binaryMessenger: engine.binaryMessenger)
     channel.setMethodCallHandler { (call: FlutterMethodCall, result: @escaping FlutterResult) in
       NSLog("📲 [MC] Dart→iOS call: %@", call.method)
@@ -58,29 +53,29 @@ class FlutterMethodChannelModule: NSObject {
         }
         result(nil)
       } else if call.method == "flutterReady" {
+        // Dart handler is now registered — send pending deeplink immediately
         dartReady = true
+        result(nil)
         DispatchQueue.main.async {
           FlutterBridgeEventEmitter.shared?.sendReadyEvent()
-          // If a deeplink was stored while Dart was still starting, send it now
-          if let deeplink = pendingDeeplink, let engine = sharedEngine {
+          if let deeplink = pendingDeeplink, let engine = sharedEngine, !deeplinkDelivered {
             pendingDeeplink = nil
-            NSLog("🟢 [MC] Dart ready — sending stored deeplink: %@", deeplink)
+            deeplinkDelivered = true
+            NSLog("🟢 [MC] flutterReady — sending pending deeplink immediately: %@", deeplink)
             let ch = FlutterMethodChannel(name: "com.salespandadm.app/call", binaryMessenger: engine.binaryMessenger)
             ch.invokeMethod(deeplink, arguments: nil) { _ in }
           }
         }
-        result(nil)
       } else {
         result(FlutterMethodNotImplemented)
       }
     }
     sharedMethodChannel = channel
-
     sharedEngine = engine
     print("✅ FlutterMethodChannelModule: Flutter engine created")
     return engine
   }
-  
+
   @objc
   func initializeFlutterEngine(_ resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) {
     DispatchQueue.main.async {
@@ -91,7 +86,7 @@ class FlutterMethodChannelModule: NSObject {
       }
     }
   }
-  
+
   @objc
   func callFlutterMethodChannel(_ pageKey: String, id: String, token: String, resolver resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) {
     DispatchQueue.main.async {
@@ -103,30 +98,54 @@ class FlutterMethodChannelModule: NSObject {
       let deepLink = "sp://\(pageKey)//\(id)//\(token)//debug//moamc"
       resolve(["success": true, "deepLink": deepLink])
 
-      // Retry sending the deeplink every 2s until Dart accepts it (max 10 attempts = 20s)
-      FlutterMethodChannelModule.sendDeepLinkWithRetry(deepLink: deepLink, engine: engine, attemptsLeft: 10)
+      // Reset state for this session
+      FlutterMethodChannelModule.deeplinkDelivered = false
+      FlutterMethodChannelModule.pendingDeeplink = deepLink
+
+      // If Dart already signalled ready in a previous session, send immediately
+      if FlutterMethodChannelModule.dartReady {
+        FlutterMethodChannelModule.pendingDeeplink = nil
+        NSLog("🟢 [MC] dartReady already true — sending deeplink immediately")
+        let ch = FlutterMethodChannel(name: "com.salespandadm.app/call", binaryMessenger: engine.binaryMessenger)
+        ch.invokeMethod(deepLink, arguments: nil) { result in
+          if result == nil {
+            FlutterMethodChannelModule.deeplinkDelivered = true
+          }
+        }
+      }
+
+      // Timer-based retry: every 2s for up to 60 attempts (120s).
+      // Covers cold-start Dart JIT under Rosetta which can be very slow.
+      // Stops as soon as deeplinkDelivered = true.
+      FlutterMethodChannelModule.scheduleDeepLinkRetry(deepLink: deepLink, engine: engine, attemptsLeft: 60)
     }
   }
 
-  private static func sendDeepLinkWithRetry(deepLink: String, engine: FlutterEngine, attemptsLeft: Int) {
+  private static func scheduleDeepLinkRetry(deepLink: String, engine: FlutterEngine, attemptsLeft: Int) {
+    guard !deeplinkDelivered else { return }
+
     let ch = FlutterMethodChannel(name: "com.salespandadm.app/call", binaryMessenger: engine.binaryMessenger)
     NSLog("🔵 [MC] Sending deepLink (attempts left: %d): %@", attemptsLeft, deepLink)
+
     ch.invokeMethod(deepLink, arguments: nil) { result in
       if result == nil {
-        // nil = Dart handler returned void/nil — success
-        NSLog("✅ [MC] Dart accepted deepLink successfully")
-      } else {
-        // non-nil = FlutterMethodNotImplemented (no handler yet) or FlutterError — retry
-        if attemptsLeft > 0 {
-          NSLog("🟡 [MC] Dart not ready yet (result: %@), retrying in 2s...", String(describing: result))
-          DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            sendDeepLinkWithRetry(deepLink: deepLink, engine: engine, attemptsLeft: attemptsLeft - 1)
-          }
-        } else {
-          NSLog("❌ [MC] Max retries reached, giving up")
-        }
+        NSLog("✅ [MC] Dart accepted deepLink via callback")
+        deeplinkDelivered = true
+        pendingDeeplink = nil
       }
+    }
+
+    guard attemptsLeft > 0 else {
+      NSLog("❌ [MC] Max retries reached, giving up")
+      return
+    }
+
+    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+      guard !deeplinkDelivered else {
+        NSLog("✅ [MC] Deeplink already delivered, stopping retries")
+        return
+      }
+      scheduleDeepLinkRetry(deepLink: deepLink, engine: engine, attemptsLeft: attemptsLeft - 1)
     }
   }
 }
-
