@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'MyPrivateSDK'
-  s.version      = '2.0.4'
+  s.version      = '2.0.5'
   s.summary      = 'Internal Flutter based SDK'
   s.description  = 'Private SDK wrapping Flutter engine and plugins'
   s.homepage     = 'https://github.com/rpgh23/Flutter-React-Integration'
@@ -26,6 +26,10 @@ Pod::Spec.new do |s|
   ]
 
 s.source_files = 'Sources/FlutterBridge/**/*.{swift,h,m}'
+
+  s.user_target_xcconfig = {
+    'DEBUG_INFORMATION_FORMAT[config=Debug]' => 'dwarf'
+  }
 
   s.dependency 'React-Core'
 
