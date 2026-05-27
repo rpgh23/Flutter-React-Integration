@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/url_launcher_ios/url_launcher_ios.framework/url_launcher_ios'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-frameworks/Release/iphoneos/Release-iphoneos/url_launcher_ios/url_launcher_ios.framework/url_launcher_ios'
 relocations:
   - { offset: 0x6DE3F, size: 0x8, addend: 0x0, symName: _url_launcher_iosVersionString, symObjAddr: 0x0, symBinAddr: 0xAE60, symSize: 0x0 }
   - { offset: 0x6DE76, size: 0x8, addend: 0x0, symName: _url_launcher_iosVersionNumber, symObjAddr: 0x30, symBinAddr: 0xAE90, symSize: 0x0 }
@@ -22,7 +22,7 @@ relocations:
   - { offset: 0x6E563, size: 0x8, addend: 0x0, symName: '_$sSo38UIApplicationOpenExternalURLOptionsKeyas35_HasCustomAnyHashableRepresentationSCsACP03_toghI0s0hI0VSgyFTW', symObjAddr: 0x3A0, symBinAddr: 0x4390, symSize: 0x6C }
   - { offset: 0x6E5CE, size: 0x8, addend: 0x0, symName: '_$sSo38UIApplicationOpenExternalURLOptionsKeyaSYSCSY8rawValuexSg03RawG0Qz_tcfCTW', symObjAddr: 0x2E4, symBinAddr: 0x42D4, symSize: 0x44 }
   - { offset: 0x6E5F8, size: 0x8, addend: 0x0, symName: '_$sSo38UIApplicationOpenExternalURLOptionsKeyaSYSCSY8rawValue03RawG0QzvgTW', symObjAddr: 0x328, symBinAddr: 0x4318, symSize: 0x28 }
-  - { offset: 0x6E71F, size: 0x8, addend: 0x0, symName: '_$s16url_launcher_ios19messagesPigeonCodecC6sharedACvpZ', symObjAddr: 0x12670, symBinAddr: 0x13310, symSize: 0x0 }
+  - { offset: 0x6E71F, size: 0x8, addend: 0x0, symName: '_$s16url_launcher_ios19messagesPigeonCodecC6sharedACvpZ', symObjAddr: 0x12678, symBinAddr: 0x13310, symSize: 0x0 }
   - { offset: 0x6E739, size: 0x8, addend: 0x0, symName: '_$sSbIeghy_SbIeyBhy_TR', symObjAddr: 0x0, symBinAddr: 0x44A8, symSize: 0x3C }
   - { offset: 0x6E78A, size: 0x8, addend: 0x0, symName: '_$s16url_launcher_ios11PigeonErrorCMa', symObjAddr: 0x80, symBinAddr: 0x4528, symSize: 0x20 }
   - { offset: 0x6E7CA, size: 0x8, addend: 0x0, symName: '_$s16url_launcher_ios9wrapError33_18E2D00254F08AAFEBD837F211A129F7LLySayypSgGypF', symObjAddr: 0xB0, symBinAddr: 0x4558, symSize: 0x398 }

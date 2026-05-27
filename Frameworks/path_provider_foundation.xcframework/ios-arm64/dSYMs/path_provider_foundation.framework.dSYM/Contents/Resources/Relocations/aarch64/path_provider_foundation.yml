@@ -1,10 +1,10 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/path_provider_foundation/path_provider_foundation.framework/path_provider_foundation'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-frameworks/Release/iphoneos/Release-iphoneos/path_provider_foundation/path_provider_foundation.framework/path_provider_foundation'
 relocations:
   - { offset: 0x592E9, size: 0x8, addend: 0x0, symName: _path_provider_foundationVersionString, symObjAddr: 0x0, symBinAddr: 0x8250, symSize: 0x0 }
   - { offset: 0x59320, size: 0x8, addend: 0x0, symName: _path_provider_foundationVersionNumber, symObjAddr: 0x38, symBinAddr: 0x8288, symSize: 0x0 }
-  - { offset: 0x59386, size: 0x8, addend: 0x0, symName: '_$s24path_provider_foundation19messagesPigeonCodecC6sharedACvpZ', symObjAddr: 0xAEE0, symBinAddr: 0xDFC0, symSize: 0x0 }
+  - { offset: 0x59386, size: 0x8, addend: 0x0, symName: '_$s24path_provider_foundation19messagesPigeonCodecC6sharedACvpZ', symObjAddr: 0xAEE8, symBinAddr: 0xDFC0, symSize: 0x0 }
   - { offset: 0x593D9, size: 0x8, addend: 0x0, symName: '_$s24path_provider_foundation11PigeonErrorCMa', symObjAddr: 0x44, symBinAddr: 0x4044, symSize: 0x20 }
   - { offset: 0x593ED, size: 0x8, addend: 0x0, symName: '_$s24path_provider_foundation10nilOrValue33_7EDA05D020E1F315CC375C7C1D72F461LLyxSgypSglFSi_Tg5', symObjAddr: 0x74, symBinAddr: 0x4074, symSize: 0x10C }
   - { offset: 0x5964B, size: 0x8, addend: 0x0, symName: '_$s24path_provider_foundation25messagesPigeonCodecReader33_7EDA05D020E1F315CC375C7C1D72F461LLCMa', symObjAddr: 0x5A4, symBinAddr: 0x45A4, symSize: 0x20 }

@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/AppAuth/AppAuth.framework/AppAuth'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-frameworks/Release/iphoneos/Release-iphoneos/AppAuth/AppAuth.framework/AppAuth'
 relocations:
   - { offset: 0x3B1F4, size: 0x8, addend: 0x0, symName: _AppAuthVersionString, symObjAddr: 0x0, symBinAddr: 0x166E0, symSize: 0x0 }
   - { offset: 0x3B229, size: 0x8, addend: 0x0, symName: _AppAuthVersionNumber, symObjAddr: 0x28, symBinAddr: 0x16708, symSize: 0x0 }
@@ -38,8 +38,8 @@ relocations:
   - { offset: 0x3BEF4, size: 0x8, addend: 0x0, symName: '-[OIDAuthorizationRequest .cxx_destruct]', symObjAddr: 0x1080, symBinAddr: 0x5080, symSize: 0xA8 }
   - { offset: 0x3BFE5, size: 0x8, addend: 0x0, symName: '+[OIDAuthorizationResponse fieldMap]', symObjAddr: 0x0, symBinAddr: 0x5128, symSize: 0x30 }
   - { offset: 0x3C01B, size: 0x8, addend: 0x0, symName: '+[OIDAuthorizationResponse fieldMap]', symObjAddr: 0x0, symBinAddr: 0x5128, symSize: 0x30 }
-  - { offset: 0x3C045, size: 0x8, addend: 0x0, symName: _fieldMap.fieldMap, symObjAddr: 0x5500, symBinAddr: 0x292E0, symSize: 0x0 }
-  - { offset: 0x3C05B, size: 0x8, addend: 0x0, symName: _fieldMap.onceToken, symObjAddr: 0x5508, symBinAddr: 0x292E8, symSize: 0x0 }
+  - { offset: 0x3C045, size: 0x8, addend: 0x0, symName: _fieldMap.fieldMap, symObjAddr: 0x5508, symBinAddr: 0x292E0, symSize: 0x0 }
+  - { offset: 0x3C05B, size: 0x8, addend: 0x0, symName: _fieldMap.onceToken, symObjAddr: 0x5510, symBinAddr: 0x292E8, symSize: 0x0 }
   - { offset: 0x3C2A0, size: 0x8, addend: 0x0, symName: '+[OIDAuthorizationResponse fieldMap].cold.1', symObjAddr: 0x998, symBinAddr: 0x1417C, symSize: 0x14 }
   - { offset: 0x3C2BC, size: 0x8, addend: 0x0, symName: '+[OIDAuthorizationResponse fieldMap].cold.1', symObjAddr: 0x998, symBinAddr: 0x1417C, symSize: 0x14 }
   - { offset: 0x3C2CE, size: 0x8, addend: 0x0, symName: '___36+[OIDAuthorizationResponse fieldMap]_block_invoke', symObjAddr: 0x30, symBinAddr: 0x5158, symSize: 0x250 }
@@ -218,8 +218,8 @@ relocations:
   - { offset: 0x42C0B, size: 0x8, addend: 0x0, symName: '-[OIDEndSessionRequest .cxx_destruct]', symObjAddr: 0x734, symBinAddr: 0xB1CC, symSize: 0x54 }
   - { offset: 0x42CEB, size: 0x8, addend: 0x0, symName: '-[OIDEndSessionResponse init]', symObjAddr: 0x0, symBinAddr: 0xB220, symSize: 0xA4 }
   - { offset: 0x42D21, size: 0x8, addend: 0x0, symName: '+[OIDEndSessionResponse fieldMap]', symObjAddr: 0x198, symBinAddr: 0xB3B8, symSize: 0x30 }
-  - { offset: 0x42D4B, size: 0x8, addend: 0x0, symName: _fieldMap.fieldMap, symObjAddr: 0x37C8, symBinAddr: 0x292F0, symSize: 0x0 }
-  - { offset: 0x42D61, size: 0x8, addend: 0x0, symName: _fieldMap.onceToken, symObjAddr: 0x37D0, symBinAddr: 0x292F8, symSize: 0x0 }
+  - { offset: 0x42D4B, size: 0x8, addend: 0x0, symName: _fieldMap.fieldMap, symObjAddr: 0x37D0, symBinAddr: 0x292F0, symSize: 0x0 }
+  - { offset: 0x42D61, size: 0x8, addend: 0x0, symName: _fieldMap.onceToken, symObjAddr: 0x37D8, symBinAddr: 0x292F8, symSize: 0x0 }
   - { offset: 0x42E71, size: 0x8, addend: 0x0, symName: '-[OIDEndSessionResponse init]', symObjAddr: 0x0, symBinAddr: 0xB220, symSize: 0xA4 }
   - { offset: 0x42F03, size: 0x8, addend: 0x0, symName: '-[OIDEndSessionResponse initWithRequest:parameters:]', symObjAddr: 0xA4, symBinAddr: 0xB2C4, symSize: 0xF4 }
   - { offset: 0x42FB4, size: 0x8, addend: 0x0, symName: '+[OIDEndSessionResponse fieldMap].cold.1', symObjAddr: 0x4EC, symBinAddr: 0x14190, symSize: 0x14 }
@@ -312,8 +312,8 @@ relocations:
   - { offset: 0x454E6, size: 0x8, addend: 0x0, symName: _OIDGrantTypeClientCredentials, symObjAddr: 0xD8, symBinAddr: 0x205C0, symSize: 0x0 }
   - { offset: 0x45525, size: 0x8, addend: 0x0, symName: '-[OIDIDToken initWithIDTokenString:]', symObjAddr: 0x0, symBinAddr: 0xDC90, symSize: 0x1D0 }
   - { offset: 0x45556, size: 0x8, addend: 0x0, symName: '+[OIDIDToken fieldMap]', symObjAddr: 0x1D0, symBinAddr: 0xDE60, symSize: 0x30 }
-  - { offset: 0x45580, size: 0x8, addend: 0x0, symName: _fieldMap.fieldMap, symObjAddr: 0x40E8, symBinAddr: 0x29300, symSize: 0x0 }
-  - { offset: 0x45596, size: 0x8, addend: 0x0, symName: _fieldMap.onceToken, symObjAddr: 0x40F0, symBinAddr: 0x29308, symSize: 0x0 }
+  - { offset: 0x45580, size: 0x8, addend: 0x0, symName: _fieldMap.fieldMap, symObjAddr: 0x40F0, symBinAddr: 0x29300, symSize: 0x0 }
+  - { offset: 0x45596, size: 0x8, addend: 0x0, symName: _fieldMap.onceToken, symObjAddr: 0x40F8, symBinAddr: 0x29308, symSize: 0x0 }
   - { offset: 0x456D1, size: 0x8, addend: 0x0, symName: '-[OIDIDToken initWithIDTokenString:]', symObjAddr: 0x0, symBinAddr: 0xDC90, symSize: 0x1D0 }
   - { offset: 0x45764, size: 0x8, addend: 0x0, symName: '+[OIDIDToken fieldMap].cold.1', symObjAddr: 0x8B8, symBinAddr: 0x141A4, symSize: 0x14 }
   - { offset: 0x45780, size: 0x8, addend: 0x0, symName: '+[OIDIDToken fieldMap].cold.1', symObjAddr: 0x8B8, symBinAddr: 0x141A4, symSize: 0x14 }

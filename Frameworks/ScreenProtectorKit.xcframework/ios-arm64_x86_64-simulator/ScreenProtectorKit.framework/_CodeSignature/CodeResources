@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/ScreenProtectorKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		1RsYYsB5tBHqB9aTekTJFb3CUN0=
+		ommIRoUXZVrXBERHYzk1aR+bbAE=
 		</data>
 		<key>Modules/ScreenProtectorKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		i6GvY/ZispEkMOW4V0V9IkQ0w68=
+		lVXShGwHS+ZoS4LRMkLKr57xEnI=
 		</data>
 		<key>Modules/ScreenProtectorKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/ScreenProtectorKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		b0y/gd7M/BIIpOVoZ9K7wX+W1yY=
+		6fWtT8/AIQuOyxPNYShhDbalFnI=
 		</data>
 		<key>Modules/ScreenProtectorKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/ScreenProtectorKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dBJWSoPII8aJBNDGKTqhPzAszIA=
+		VMGwduz/Bck5fSz5hWkHoDmNfKk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -97,22 +97,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1RsYYsB5tBHqB9aTekTJFb3CUN0=
+			ommIRoUXZVrXBERHYzk1aR+bbAE=
 			</data>
 			<key>hash2</key>
 			<data>
-			sujZomGuHuiRJHnpPJYR8thU5ga3gPto1Rr9TDk2WzM=
+			T3E28s3fkXIHxZVyfUS/b2aaYhPB8Vrp3Wbp9YE0oic=
 			</data>
 		</dict>
 		<key>Modules/ScreenProtectorKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			i6GvY/ZispEkMOW4V0V9IkQ0w68=
+			lVXShGwHS+ZoS4LRMkLKr57xEnI=
 			</data>
 			<key>hash2</key>
 			<data>
-			S29iRKMOpzgjVrFpRoYKYBP7pVTXUHQyIL29gl2/wTM=
+			F5yq66dRO+Oc6LfvQCZil+RW723TPEu6wjCMONOJz+I=
 			</data>
 		</dict>
 		<key>Modules/ScreenProtectorKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -163,11 +163,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b0y/gd7M/BIIpOVoZ9K7wX+W1yY=
+			6fWtT8/AIQuOyxPNYShhDbalFnI=
 			</data>
 			<key>hash2</key>
 			<data>
-			o1UPO3GenwNiQu5OhTjpeTBNxu/xuhMKih/nZZBmxM0=
+			JQ6rn/Te5DCHmCcX7HRlncMn88OpzPdBrWcIaPW10EE=
 			</data>
 		</dict>
 		<key>Modules/ScreenProtectorKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -218,11 +218,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dBJWSoPII8aJBNDGKTqhPzAszIA=
+			VMGwduz/Bck5fSz5hWkHoDmNfKk=
 			</data>
 			<key>hash2</key>
 			<data>
-			YHeTiUhqp+VJEnqflFvTFIA8JGBkfhxButR94GRFTWU=
+			wbLYU5zmvPUFdgYPowvsWG6NOXV3XtTOHVfgpattt7A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
