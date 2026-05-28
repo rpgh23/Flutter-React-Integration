@@ -4,7 +4,7 @@ import Flutter
 import FlutterPluginRegistrant
 
 @objc(FlutterMethodChannelModule)
-class FlutterMethodChannelModule: NSObject {
+public class FlutterMethodChannelModule: NSObject {
 
   private static var sharedEngine: FlutterEngine?
   private static var sharedMethodChannel: FlutterMethodChannel?
@@ -18,7 +18,7 @@ class FlutterMethodChannelModule: NSObject {
     return true
   }
 
-  static func getOrCreateEngine() -> FlutterEngine? {
+  public static func getOrCreateEngine() -> FlutterEngine? {
     if let existingEngine = sharedEngine {
       return existingEngine
     }
@@ -102,22 +102,28 @@ class FlutterMethodChannelModule: NSObject {
       FlutterMethodChannelModule.deeplinkDelivered = false
       FlutterMethodChannelModule.pendingDeeplink = deepLink
 
-      // If Dart already signalled ready in a previous session, send immediately
       if FlutterMethodChannelModule.dartReady {
+        // Dart handler already registered — send once, use retry only as fallback.
+        // Without this guard, scheduleDeepLinkRetry also fires immediately, sending
+        // TWO deeplinks at once → Dart pushes the screen twice → nav stack gets dirty
+        // → subsequent presses freeze or go to wrong screen.
         FlutterMethodChannelModule.pendingDeeplink = nil
-        NSLog("🟢 [MC] dartReady already true — sending deeplink immediately")
+        NSLog("🟢 [MC] dartReady — sending deeplink immediately: %@", deepLink)
         let ch = FlutterMethodChannel(name: "com.salespandadm.app/call", binaryMessenger: engine.binaryMessenger)
         ch.invokeMethod(deepLink, arguments: nil) { result in
           if result == nil {
+            NSLog("✅ [MC] dartReady — deeplink delivered")
             FlutterMethodChannelModule.deeplinkDelivered = true
+          } else {
+            // Dart rejected — handler may have been re-registered; fall back to retry
+            NSLog("⚠️ [MC] dartReady send rejected, starting retry loop")
+            FlutterMethodChannelModule.scheduleDeepLinkRetry(deepLink: deepLink, engine: engine, attemptsLeft: 60)
           }
         }
+      } else {
+        // Cold start: Dart not ready yet — retry every 2s until flutterReady fires
+        FlutterMethodChannelModule.scheduleDeepLinkRetry(deepLink: deepLink, engine: engine, attemptsLeft: 60)
       }
-
-      // Timer-based retry: every 2s for up to 60 attempts (120s).
-      // Covers cold-start Dart JIT under Rosetta which can be very slow.
-      // Stops as soon as deeplinkDelivered = true.
-      FlutterMethodChannelModule.scheduleDeepLinkRetry(deepLink: deepLink, engine: engine, attemptsLeft: 60)
     }
   }
 

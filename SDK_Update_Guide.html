@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyPrivateSDK — Update Guide</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #fff;
+    padding: 40px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  /* ── Cover ── */
+  .cover {
+    text-align: center;
+    padding: 60px 0 40px;
+    border-bottom: 3px solid #0066cc;
+    margin-bottom: 40px;
+  }
+  .cover h1 { font-size: 28px; color: #0066cc; margin-bottom: 8px; }
+  .cover .subtitle { font-size: 15px; color: #555; margin-bottom: 20px; }
+  .cover .meta { font-size: 12px; color: #888; }
+  .cover .badge {
+    display: inline-block;
+    background: #0066cc;
+    color: #fff;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 4px;
+  }
+
+  /* ── Section ── */
+  .section {
+    margin-bottom: 36px;
+  }
+  .section-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #0055aa;
+    border-left: 4px solid #0066cc;
+    padding-left: 10px;
+    margin-bottom: 14px;
+    margin-top: 30px;
+  }
+
+  /* ── Step card ── */
+  .step {
+    border: 1px solid #d8e4f0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    page-break-inside: avoid;
+  }
+  .step-header {
+    display: flex;
+    align-items: center;
+    background: #f0f6ff;
+    padding: 10px 16px;
+    border-bottom: 1px solid #d8e4f0;
+  }
+  .step-number {
+    background: #0066cc;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
+  .step-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #003380;
+    flex: 1;
+  }
+  .step-tag {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-left: 8px;
+  }
+  .tag-required { background: #ffe0e0; color: #c00; }
+  .tag-optional { background: #e0ffe0; color: #060; }
+  .tag-auto     { background: #fff3d0; color: #a60; }
+
+  .step-body { padding: 14px 16px; }
+  .step-body p { margin-bottom: 10px; color: #333; }
+
+  /* ── Code block ── */
+  pre {
+    background: #1e1e2e;
+    color: #cdd6f4;
+    padding: 14px 16px;
+    border-radius: 6px;
+    font-family: 'SF Mono', 'Fira Mono', Menlo, Monaco, Consolas, monospace;
+    font-size: 11.5px;
+    line-height: 1.7;
+    overflow-x: auto;
+    white-space: pre;
+    margin: 8px 0;
+  }
+  .comment { color: #6c7086; }
+  .keyword { color: #cba6f7; }
+  .string  { color: #a6e3a1; }
+  .echo-ok { color: #a6e3a1; }
+  .echo-fail { color: #f38ba8; }
+  .path    { color: #89dceb; }
+
+  /* ── Note / warning box ── */
+  .note {
+    border-left: 4px solid #f0a800;
+    background: #fffbe6;
+    padding: 10px 14px;
+    border-radius: 0 6px 6px 0;
+    margin: 10px 0;
+    font-size: 12px;
+    color: #555;
+  }
+  .note strong { color: #a06000; }
+  .info {
+    border-left: 4px solid #0099cc;
+    background: #e8f6fd;
+    padding: 10px 14px;
+    border-radius: 0 6px 6px 0;
+    margin: 10px 0;
+    font-size: 12px;
+    color: #006688;
+  }
+  .info strong { color: #004466; }
+
+  /* ── Paths table ── */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 12px;
+  }
+  th {
+    background: #f0f6ff;
+    color: #003380;
+    font-weight: 700;
+    text-align: left;
+    padding: 8px 12px;
+    border: 1px solid #d8e4f0;
+  }
+  td {
+    padding: 7px 12px;
+    border: 1px solid #e0e8f0;
+    vertical-align: top;
+  }
+  td:first-child { font-weight: 600; color: #333; white-space: nowrap; }
+  td code {
+    font-family: 'SF Mono', Menlo, Monaco, monospace;
+    font-size: 11px;
+    background: #f0f0f0;
+    padding: 1px 5px;
+    border-radius: 3px;
+    color: #c00;
+  }
+  tr:nth-child(even) td { background: #f8fafd; }
+
+  /* ── Checklist ── */
+  .checklist { list-style: none; padding: 0; }
+  .checklist li {
+    padding: 5px 0 5px 26px;
+    position: relative;
+    font-size: 12px;
+    border-bottom: 1px dashed #e8e8e8;
+  }
+  .checklist li:before {
+    content: '☐';
+    position: absolute;
+    left: 4px;
+    color: #0066cc;
+    font-size: 14px;
+  }
+
+  /* ── Flow overview ── */
+  .flow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 14px 0;
+    align-items: center;
+  }
+  .flow-item {
+    background: #f0f6ff;
+    border: 1px solid #b0ccee;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #003380;
+    text-align: center;
+  }
+  .flow-arrow {
+    color: #0066cc;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  /* ── Print ── */
+  @media print {
+    body { padding: 20px; }
+    .step { page-break-inside: avoid; }
+    pre { page-break-inside: avoid; }
+    .section-title { page-break-after: avoid; }
+  }
+
+  hr { border: none; border-top: 1px solid #e0e8f4; margin: 30px 0; }
+  .small { font-size: 11px; color: #888; }
+  .green { color: #186018; font-weight: 600; }
+  .red   { color: #a00; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════ COVER ══ -->
+<div class="cover">
+  <h1>MyPrivateSDK — iOS Framework Update Guide</h1>
+  <div class="subtitle">Complete step-by-step commands for building, fixing, and releasing a new SDK version</div>
+  <div>
+    <span class="badge">Flutter + React Native</span>
+    <span class="badge">iOS</span>
+    <span class="badge">CocoaPods</span>
+  </div>
+  <div class="meta" style="margin-top:16px;">
+    SDK Repo: <strong>github.com/rpgh23/Flutter-React-Integration</strong> &nbsp;|&nbsp;
+    Podspec: <strong>MyPrivateSDK.podspec</strong>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════ PATHS ══ -->
+<div class="section">
+  <div class="section-title">Important Paths</div>
+  <table>
+    <tr><th>Name</th><th>Path</th></tr>
+    <tr><td>Flutter project</td><td><code>/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk</code></td></tr>
+    <tr><td>SDK repo (this guide)</td><td><code>/Users/salespanda/rahul_work_space/React-SDK/Flutter-React-Integration</code></td></tr>
+    <tr><td>React Native app</td><td><code>/Users/salespanda/rahul_work_space/ReactIOS</code></td></tr>
+    <tr><td>Frameworks folder</td><td><code>.../Flutter-React-Integration/Frameworks/</code></td></tr>
+    <tr><td>Libraries folder</td><td><code>.../Flutter-React-Integration/Libraries/</code></td></tr>
+    <tr><td>Fix script</td><td><code>.../Flutter-React-Integration/fix_simulator_frameworks.sh</code></td></tr>
+    <tr><td>Stub source</td><td><code>.../Flutter-React-Integration/Sources/ffmpegkit_stub/ffmpegkit_stub.m</code></td></tr>
+  </table>
+</div>
+
+<!-- ══════════════════════════════════════════════ FLOW ══ -->
+<div class="section">
+  <div class="section-title">Process Overview</div>
+  <div class="flow">
+    <div class="flow-item">1. Build Debug<br><span style="font-weight:400;color:#555">(Simulator)</span></div>
+    <span class="flow-arrow">→</span>
+    <div class="flow-item">2. Build Release<br><span style="font-weight:400;color:#555">(Real Device)</span></div>
+    <span class="flow-arrow">→</span>
+    <div class="flow-item">3. Copy Release<br><span style="font-weight:400;color:#555">Frameworks</span></div>
+    <span class="flow-arrow">→</span>
+    <div class="flow-item">4. Create Mixed<br><span style="font-weight:400;color:#555">App.xcframework</span></div>
+    <span class="flow-arrow">→</span>
+    <div class="flow-item">5. Run Fix<br><span style="font-weight:400;color:#555">Script</span></div>
+    <span class="flow-arrow">→</span>
+    <div class="flow-item">6. Update<br><span style="font-weight:400;color:#555">Version</span></div>
+    <span class="flow-arrow">→</span>
+    <div class="flow-item">7. Test<br><span style="font-weight:400;color:#555">Locally</span></div>
+    <span class="flow-arrow">→</span>
+    <div class="flow-item">8. Push &amp;<br><span style="font-weight:400;color:#555">Tag</span></div>
+    <span class="flow-arrow">→</span>
+    <div class="flow-item">9. Update<br><span style="font-weight:400;color:#555">Podfile</span></div>
+  </div>
+
+  <div class="info">
+    <strong>Why two builds?</strong><br>
+    The Release Flutter engine (AOT compiled) requires an AOT <code>App.xcframework</code> device slice — only produced by a Release build.<br>
+    The Simulator needs a Debug <code>App.xcframework</code> slice (contains <code>kernel_blob.bin</code>) — only produced by a Debug build.<br>
+    We combine them into one mixed <code>App.xcframework</code>.
+  </div>
+</div>
+
+<hr>
+
+<!-- ══════════════════════════════════════════════ STEPS ══ -->
+<div class="section-title">Detailed Steps with Commands</div>
+
+<!-- STEP 1 -->
+<div class="step">
+  <div class="step-header">
+    <div class="step-number">1</div>
+    <div class="step-title">Build Debug Flutter Frameworks (Simulator slice)</div>
+    <span class="step-tag tag-required">REQUIRED</span>
+  </div>
+  <div class="step-body">
+    <p>This produces the Debug <code>App.xcframework</code> simulator slice with <code>kernel_blob.bin</code>. Only needed when Flutter code changes.</p>
+    <pre><span class="comment"># [1/9] Build Debug Flutter frameworks</span>
+echo <span class="string">"=== [1/9] Building Debug Flutter frameworks ==="</span>
+
+cd <span class="path">/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk</span>
+
+flutter build ios-framework \
+  --no-release \
+  --no-profile \
+  --flavor DummyTarget \
+  && echo <span class="echo-ok">"✅ [1/9] Debug build SUCCESS"</span> \
+  || echo <span class="echo-fail">"❌ [1/9] Debug build FAILED — check Flutter output above"</span></pre>
+    <div class="note">
+      <strong>Note:</strong> Flutter 3.24+ may show a <em>"FileSystemException: Deletion failed, Directory not empty"</em> crash at the end.
+      This is a known Flutter bug — the build <strong>still succeeds</strong>. Check that
+      <code>build/ios/framework/Debug/App.xcframework</code> exists before continuing.
+    </div>
+    <p><strong>Output location:</strong> <code>build/ios/framework/Debug/</code></p>
+  </div>
+</div>
+
+<!-- STEP 2 -->
+<div class="step">
+  <div class="step-header">
+    <div class="step-number">2</div>
+    <div class="step-title">Build Release Flutter Frameworks (Real Device slice)</div>
+    <span class="step-tag tag-required">REQUIRED</span>
+  </div>
+  <div class="step-body">
+    <p>Produces AOT-compiled device binaries and all plugin xcframeworks. This is the primary build.</p>
+    <pre><span class="comment"># [2/9] Build Release Flutter frameworks</span>
+echo <span class="string">"=== [2/9] Building Release Flutter frameworks ==="</span>
+
+cd <span class="path">/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk</span>
+
+flutter build ios-framework \
+  --no-debug \
+  --no-profile \
+  --flavor DummyTarget \
+  && echo <span class="echo-ok">"✅ [2/9] Release build SUCCESS"</span> \
+  || echo <span class="echo-fail">"❌ [2/9] Release build FAILED — check Flutter output above"</span></pre>
+    <div class="note">
+      <strong>Note:</strong> Same FileSystemException may appear — same fix (check output exists, continue).
+    </div>
+    <p><strong>Output location:</strong> <code>build/ios/framework/Release/</code></p>
+  </div>
+</div>
+
+<!-- STEP 3 -->
+<div class="step">
+  <div class="step-header">
+    <div class="step-number">3</div>
+    <div class="step-title">Copy Release Frameworks to SDK (skip App.xcframework)</div>
+    <span class="step-tag tag-required">REQUIRED</span>
+  </div>
+  <div class="step-body">
+    <p>Copies all xcframeworks from the Release build into the SDK <code>Frameworks/</code> folder.
+    <strong>Skips App.xcframework</strong> — that is handled separately in Step 4.</p>
+    <pre><span class="comment"># [3/9] Copy Release frameworks (skip App.xcframework)</span>
+echo <span class="string">"=== [3/9] Copying Release frameworks ==="</span>
+
+RELEASE_DIR=<span class="string">"/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release"</span>
+SDK_FRAMES=<span class="string">"/Users/salespanda/rahul_work_space/React-SDK/Flutter-React-Integration/Frameworks"</span>
+
+for xcfw in <span class="string">"$RELEASE_DIR"</span>/*.xcframework; do
+  name=$(basename <span class="string">"$xcfw"</span>)
+
+  <span class="keyword">if</span> [ <span class="string">"$name"</span> = <span class="string">"App.xcframework"</span> ]; then
+    echo <span class="string">"  → Skipping App.xcframework (handled in Step 4)"</span>
+    <span class="keyword">continue</span>
+  fi
+
+  rm -rf <span class="string">"$SDK_FRAMES/$name"</span> \
+    && cp -R <span class="string">"$xcfw"</span> <span class="string">"$SDK_FRAMES/$name"</span> \
+    && echo <span class="echo-ok">"  ✅ Copied: $name"</span> \
+    || echo <span class="echo-fail">"  ❌ FAILED: $name"</span>
+done
+
+echo <span class="echo-ok">"✅ [3/9] Release frameworks copy complete"</span></pre>
+    <div class="note">
+      <strong>Important:</strong> Always <code>rm -rf</code> the destination before <code>cp -R</code>.
+      If you skip this, <code>cp -R</code> will merge into the old folder instead of replacing it, causing corrupted xcframeworks.
+    </div>
+  </div>
+</div>
+
+<!-- STEP 4 -->
+<div class="step">
+  <div class="step-header">
+    <div class="step-number">4</div>
+    <div class="step-title">Create Mixed App.xcframework (Device from Release + Simulator from Debug)</div>
+    <span class="step-tag tag-required">REQUIRED</span>
+  </div>
+  <div class="step-body">
+    <p>The Flutter engine in Release mode (AOT) needs an AOT App binary for the device, and the Debug engine needs
+    a <code>kernel_blob.bin</code> for the simulator. We combine both into one xcframework.</p>
+    <pre><span class="comment"># [4/9] Create mixed App.xcframework</span>
+echo <span class="string">"=== [4/9] Creating mixed App.xcframework ==="</span>
+
+RELEASE_DIR=<span class="string">"/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release"</span>
+DEBUG_DIR=<span class="string">"/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Debug"</span>
+SDK_FRAMES=<span class="string">"/Users/salespanda/rahul_work_space/React-SDK/Flutter-React-Integration/Frameworks"</span>
+
+<span class="comment"># Verify both slices exist before proceeding</span>
+DEVICE_FW=<span class="string">"$RELEASE_DIR/App.xcframework/ios-arm64/App.framework"</span>
+SIM_FW=<span class="string">"$DEBUG_DIR/App.xcframework/ios-arm64_x86_64-simulator/App.framework"</span>
+
+<span class="keyword">if</span> [ ! -d <span class="string">"$DEVICE_FW"</span> ]; then
+  echo <span class="echo-fail">"❌ [4/9] Device framework missing: $DEVICE_FW"</span>
+  echo <span class="string">"   Did Step 2 (Release build) complete successfully?"</span>
+  exit 1
+fi
+
+<span class="keyword">if</span> [ ! -d <span class="string">"$SIM_FW"</span> ]; then
+  echo <span class="echo-fail">"❌ [4/9] Simulator framework missing: $SIM_FW"</span>
+  echo <span class="string">"   Did Step 1 (Debug build) complete successfully?"</span>
+  exit 1
+fi
+
+TMPDIR_APP=$(mktemp -d /tmp/app_mix_XXXX)
+
+<span class="comment"># Copy device slice (Release AOT — ~15 MB binary)</span>
+cp -R <span class="string">"$DEVICE_FW"</span> <span class="string">"$TMPDIR_APP/device_fw"</span> \
+  && echo <span class="echo-ok">"  ✅ Device framework copied (Release AOT)"</span> \
+  || { echo <span class="echo-fail">"  ❌ Failed to copy device framework"</span>; rm -rf <span class="string">"$TMPDIR_APP"</span>; exit 1; }
+
+<span class="comment"># Copy simulator slice (Debug — contains kernel_blob.bin, ~84 KB)</span>
+cp -R <span class="string">"$SIM_FW"</span> <span class="string">"$TMPDIR_APP/sim_fw"</span> \
+  && echo <span class="echo-ok">"  ✅ Simulator framework copied (Debug)"</span> \
+  || { echo <span class="echo-fail">"  ❌ Failed to copy simulator framework"</span>; rm -rf <span class="string">"$TMPDIR_APP"</span>; exit 1; }
+
+<span class="comment"># Remove old App.xcframework and build the mixed one</span>
+rm -rf <span class="string">"$SDK_FRAMES/App.xcframework"</span>
+
+xcodebuild -create-xcframework \
+  -framework <span class="string">"$TMPDIR_APP/device_fw"</span> \
+  -framework <span class="string">"$TMPDIR_APP/sim_fw"</span> \
+  -output <span class="string">"$SDK_FRAMES/App.xcframework"</span> \
+  && echo <span class="echo-ok">"✅ [4/9] Mixed App.xcframework created"</span> \
+  || echo <span class="echo-fail">"❌ [4/9] Failed to create mixed App.xcframework"</span>
+
+rm -rf <span class="string">"$TMPDIR_APP"</span></pre>
+    <div class="info">
+      <strong>Why mixed?</strong> Device slice uses AOT (Ahead-Of-Time compiled Dart VM snapshot, ~15 MB).
+      Simulator slice uses JIT (kernel_blob.bin, ~84 KB). Mixing the wrong mode causes
+      <em>"VM snapshot invalid / Could not create Dart VM instance"</em> crash on device.
+    </div>
+  </div>
+</div>
+
+<!-- STEP 5 -->
+<div class="step">
+  <div class="step-header">
+    <div class="step-number">5</div>
+    <div class="step-title">Run fix_simulator_frameworks.sh</div>
+    <span class="step-tag tag-required">REQUIRED</span>
+  </div>
+  <div class="step-body">
+    <p>The Release build only produces an <code>x86_64</code> simulator slice for FFmpeg.
+    This script adds the <code>arm64</code> simulator slice so Apple Silicon Macs can run the simulator.
+    It also rebuilds <code>libffmpegkit_stub.xcframework</code>.</p>
+    <pre><span class="comment"># [5/9] Fix FFmpeg simulator slice and rebuild libffmpegkit_stub</span>
+echo <span class="string">"=== [5/9] Running fix_simulator_frameworks.sh ==="</span>
+
+cd <span class="path">/Users/salespanda/rahul_work_space/React-SDK/Flutter-React-Integration</span>
+
+./fix_simulator_frameworks.sh \
+  && echo <span class="echo-ok">"✅ [5/9] Simulator fix complete"</span> \
+  || echo <span class="echo-fail">"❌ [5/9] Simulator fix FAILED — see output above"</span></pre>
+    <div class="note">
+      <strong>What this script does internally:</strong><br>
+      &nbsp;&nbsp;1. Checks if <code>ffmpeg_kit_flutter_new.xcframework</code> already has arm64 simulator — skips if yes<br>
+      &nbsp;&nbsp;2. Compiles arm64 simulator stub from <code>Sources/ffmpegkit_stub/ffmpegkit_stub.m</code><br>
+      &nbsp;&nbsp;3. Lipo-combines with existing x86_64 binary to create fat simulator binary<br>
+      &nbsp;&nbsp;4. Rebuilds xcframework with device + fat simulator slices<br>
+      &nbsp;&nbsp;5. Rebuilds <code>libffmpegkit_stub.xcframework</code> (device + simulator)
+    </div>
+  </div>
+</div>
+
+<!-- STEP 6 -->
+<div class="step">
+  <div class="step-header">
+    <div class="step-number">6</div>
+    <div class="step-title">Update SDK Version in Podspec</div>
+    <span class="step-tag tag-required">REQUIRED</span>
+  </div>
+  <div class="step-body">
+    <p>Bump the version number in <code>MyPrivateSDK.podspec</code>. Use semantic versioning: <code>MAJOR.MINOR.PATCH</code></p>
+    <pre><span class="comment"># [6/9] Open podspec and update version</span>
+echo <span class="string">"=== [6/9] Current version ==="</span>
+grep <span class="string">"s.version"</span> <span class="path">/Users/salespanda/rahul_work_space/React-SDK/Flutter-React-Integration/MyPrivateSDK.podspec</span>
+
+<span class="comment"># Edit the file — change the version line:</span>
+<span class="comment">#   s.version = '2.0.5.1'   →   s.version = '2.0.6'   (example)</span>
+
+open <span class="path">/Users/salespanda/rahul_work_space/React-SDK/Flutter-React-Integration/MyPrivateSDK.podspec</span></pre>
+    <div class="note">
+      <strong>Version guide:</strong> Patch (2.0.5 → 2.0.6) for bug fixes or minor framework updates.
+      Minor (2.0.x → 2.1.0) for new features. Major (2.x → 3.0) for breaking changes.
+    </div>
+    <p>After editing, verify the change:</p>
+    <pre>grep <span class="string">"s.version"</span> <span class="path">/Users/salespanda/rahul_work_space/React-SDK/Flutter-React-Integration/MyPrivateSDK.podspec</span></pre>
+  </div>
+</div>
+
+<!-- STEP 7 -->
+<div class="step">
+  <div class="step-header">
+    <div class="step-number">7</div>
+    <div class="step-title">Test Locally with Path Dependency</div>
+    <span class="step-tag tag-required">REQUIRED</span>
+  </div>
+  <div class="step-body">
+    <p>Before pushing to GitHub, test the SDK locally. Make sure the Podfile uses <code>:path =></code> (not the git tag).</p>
+    <p><strong>Podfile should have:</strong></p>
+    <pre>pod <span class="string">'MyPrivateSDK'</span>, :path => <span class="string">'/Users/salespanda/rahul_work_space/React-SDK/Flutter-React-Integration'</span>
+<span class="comment">#pod 'MyPrivateSDK', :git => 'https://github.com/rpgh23/Flutter-React-Integration.git', :tag => '2.x.x'</span></pre>
+
+    <p><strong>Run pod install:</strong></p>
+    <pre><span class="comment"># [7/9] Fresh pod install</span>
+echo <span class="string">"=== [7/9] Running pod install ==="</span>
+
+cd <span class="path">/Users/salespanda/rahul_work_space/ReactIOS/ios</span>
+
+pod install \
+  && echo <span class="echo-ok">"✅ [7/9] pod install SUCCESS"</span> \
+  || echo <span class="echo-fail">"❌ [7/9] pod install FAILED — see output above"</span></pre>
+
+    <p><strong>If pod install fails (stale DerivedData issue), do a full clean first:</strong></p>
+    <pre><span class="comment"># Full clean — run only if pod install failed</span>
+echo <span class="string">"=== Clean: removing DerivedData, Pods, Podfile.lock ==="</span>
+
+rm -rf ~/Library/Developer/Xcode/DerivedData/* \
+  && echo <span class="echo-ok">"  ✅ DerivedData cleared"</span> \
+  || echo <span class="echo-fail">"  ❌ DerivedData clear failed"</span>
+
+rm -rf <span class="path">/Users/salespanda/rahul_work_space/ReactIOS/ios/Pods</span> \
+  && echo <span class="echo-ok">"  ✅ Pods folder removed"</span> \
+  || echo <span class="echo-fail">"  ❌ Pods removal failed"</span>
+
+rm -f <span class="path">/Users/salespanda/rahul_work_space/ReactIOS/ios/Podfile.lock</span> \
+  && echo <span class="echo-ok">"  ✅ Podfile.lock removed"</span> \
+  || echo <span class="echo-fail">"  ❌ Podfile.lock removal failed"</span>
+
+cd <span class="path">/Users/salespanda/rahul_work_space/ReactIOS/ios</span>
+
+pod install \
+  && echo <span class="echo-ok">"✅ Clean pod install SUCCESS"</span> \
+  || echo <span class="echo-fail">"❌ Clean pod install FAILED"</span></pre>
+
+    <p><strong>Test checklist before proceeding to Step 8:</strong></p>
+    <ul class="checklist">
+      <li>App builds and runs on iOS Simulator (Debug)</li>
+      <li>Flutter screen loads without crash</li>
+      <li>App builds and runs on Real Device (Debug)</li>
+      <li>App builds on Real Device (Release) — via Xcode → Product → Archive</li>
+      <li>No <em>"VM snapshot invalid"</em> crash on real device</li>
+      <li>No <em>"Command GenerateDSYMFile failed"</em> error</li>
+    </ul>
+  </div>
+</div>
+
+<!-- STEP 8 -->
+<div class="step">
+  <div class="step-header">
+    <div class="step-number">8</div>
+    <div class="step-title">Commit, Tag and Push to GitHub</div>
+    <span class="step-tag tag-required">REQUIRED</span>
+  </div>
+  <div class="step-body">
+    <p>Replace <code>NEW_VERSION</code> with the version number from Step 6 (e.g. <code>2.0.6</code>).</p>
+    <pre><span class="comment"># [8/9] Commit and push to GitHub</span>
+echo <span class="string">"=== [8/9] Committing and tagging SDK ==="</span>
+
+<span class="comment"># ⬇ SET YOUR VERSION HERE</span>
+NEW_VERSION=<span class="string">"2.0.6"</span>
+
+cd <span class="path">/Users/salespanda/rahul_work_space/React-SDK/Flutter-React-Integration</span>
+
+<span class="comment"># Stage framework files and podspec</span>
+git add Frameworks/ Libraries/ MyPrivateSDK.podspec \
+  && echo <span class="echo-ok">"  ✅ Files staged"</span> \
+  || { echo <span class="echo-fail">"  ❌ git add FAILED"</span>; exit 1; }
+
+<span class="comment"># Commit</span>
+git commit -m <span class="string">"Release SDK $NEW_VERSION"</span> \
+  && echo <span class="echo-ok">"  ✅ Committed"</span> \
+  || { echo <span class="echo-fail">"  ❌ git commit FAILED"</span>; exit 1; }
+
+<span class="comment"># Create tag</span>
+git tag <span class="string">"$NEW_VERSION"</span> \
+  && echo <span class="echo-ok">"  ✅ Tag $NEW_VERSION created"</span> \
+  || { echo <span class="echo-fail">"  ❌ git tag FAILED"</span>; exit 1; }
+
+<span class="comment"># Push branch</span>
+git push origin main \
+  && echo <span class="echo-ok">"  ✅ Branch pushed"</span> \
+  || { echo <span class="echo-fail">"  ❌ Branch push FAILED"</span>; exit 1; }
+
+<span class="comment"># Push tag</span>
+git push origin <span class="string">"$NEW_VERSION"</span> \
+  && echo <span class="echo-ok">"✅ [8/9] Tag $NEW_VERSION pushed to GitHub"</span> \
+  || echo <span class="echo-fail">"❌ [8/9] Tag push FAILED"</span></pre>
+    <div class="info">
+      <strong>Verify on GitHub:</strong> Go to <code>github.com/rpgh23/Flutter-React-Integration/tags</code>
+      and confirm the new tag appears before telling the client.
+    </div>
+  </div>
+</div>
+
+<!-- STEP 9 -->
+<div class="step">
+  <div class="step-header">
+    <div class="step-number">9</div>
+    <div class="step-title">Switch Podfile back to Git Tag</div>
+    <span class="step-tag tag-required">REQUIRED</span>
+  </div>
+  <div class="step-body">
+    <p>Switch from the local <code>:path =></code> back to the GitHub git tag. Update the tag to your new version.</p>
+    <p><strong>Podfile should become:</strong></p>
+    <pre><span class="comment">#pod 'MyPrivateSDK', :path => '/Users/salespanda/rahul_work_space/React-SDK/Flutter-React-Integration'</span>
+pod <span class="string">'MyPrivateSDK'</span>, :git => <span class="string">'https://github.com/rpgh23/Flutter-React-Integration.git'</span>, :tag => <span class="string">'2.0.6'</span></pre>
+
+    <p>Then run pod install again:</p>
+    <pre><span class="comment"># [9/9] Final pod install with git tag</span>
+echo <span class="string">"=== [9/9] pod install with git tag ==="</span>
+
+cd <span class="path">/Users/salespanda/rahul_work_space/ReactIOS/ios</span>
+
+pod install \
+  && echo <span class="echo-ok">"✅ [9/9] pod install SUCCESS — SDK is ready to share!"</span> \
+  || echo <span class="echo-fail">"❌ [9/9] pod install FAILED"</span></pre>
+    <div class="note">
+      <strong>For the client:</strong> They only need to update the tag number in their Podfile and run <code>pod install</code>.
+      No other changes are required on their side.
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- ══════════════════════════════════════════════ TROUBLESHOOTING ══ -->
+<div class="section-title">Troubleshooting</div>
+
+<table>
+  <tr>
+    <th>Error</th>
+    <th>Cause</th>
+    <th>Fix</th>
+  </tr>
+  <tr>
+    <td><code>VM snapshot invalid / Could not create Dart VM instance</code></td>
+    <td>Release Flutter engine (device) paired with Debug App.xcframework (simulator slice)</td>
+    <td>Redo Step 4 — mixed App.xcframework must have Release device + Debug simulator slices</td>
+  </tr>
+  <tr>
+    <td><code>Command GenerateDSYMFile failed</code></td>
+    <td>Release App.xcframework binary has no debug symbols; dsymutil fails</td>
+    <td>Podspec must have <code>s.user_target_xcconfig = { 'DEBUG_INFORMATION_FORMAT[config=Debug]' => 'dwarf' }</code> — already in 2.0.5+</td>
+  </tr>
+  <tr>
+    <td><code>Command PhaseScriptExecution failed / No space left on device</code></td>
+    <td>Disk is full during xcframework copy (~50 frameworks)</td>
+    <td>Free disk space: delete DerivedData (<code>~/Library/Developer/Xcode/DerivedData</code>) and CocoaPods cache (<code>~/Library/Caches/CocoaPods</code>)</td>
+  </tr>
+  <tr>
+    <td><code>App_mixed.xcframework inside App.xcframework</code> (nested)</td>
+    <td><code>cp -R source dest</code> when dest exists merges instead of replacing</td>
+    <td>Always <code>rm -rf dest</code> before <code>cp -R source dest</code></td>
+  </tr>
+  <tr>
+    <td><code>facebook::react::Sealable undefined symbols</code></td>
+    <td>Stale DerivedData codegen conflicts with React Native prebuilt libs</td>
+    <td>Full clean: remove DerivedData + Pods + Podfile.lock, then fresh pod install</td>
+  </tr>
+  <tr>
+    <td><code>fix_simulator_frameworks.sh: No such file or directory</code></td>
+    <td>Script targets wrong filename or xcframework not found</td>
+    <td>Confirm <code>Frameworks/ffmpeg_kit_flutter_new.xcframework</code> exists (Step 3 must run first)</td>
+  </tr>
+  <tr>
+    <td>Simulator works, real device crashes</td>
+    <td>App.xcframework device slice is Debug (not AOT)</td>
+    <td>Step 4 — ensure device slice comes from <code>Release/App.xcframework/ios-arm64/</code></td>
+  </tr>
+  <tr>
+    <td>arm64 simulator fails (Apple Silicon Mac)</td>
+    <td>FFmpeg xcframework only has x86_64 simulator slice after Release build</td>
+    <td>Run Step 5 (fix_simulator_frameworks.sh) after every framework update</td>
+  </tr>
+</table>
+
+<hr>
+
+<!-- ══════════════════════════════════════════════ FACEBOOK ══ -->
+<div class="section-title">Facebook SDK Integration Note</div>
+<div class="info">
+  <strong>Facebook App ID goes in the HOST app — not in the SDK.</strong><br><br>
+  The SDK depends on FBSDKCoreKit/LoginKit/ShareKit (already in podspec). The client app must add to their
+  <code>Info.plist</code>:
+  <pre style="margin-top:8px; font-size:11px;">
+&lt;key&gt;CFBundleURLTypes&lt;/key&gt;
+&lt;array&gt;
+  &lt;dict&gt;
+    &lt;key&gt;CFBundleURLSchemes&lt;/key&gt;
+    &lt;array&gt;&lt;string&gt;fb&lt;YOUR_APP_ID&gt;&lt;/string&gt;&lt;/array&gt;
+  &lt;/dict&gt;
+&lt;/array&gt;
+&lt;key&gt;FacebookAppID&lt;/key&gt;&lt;string&gt;&lt;YOUR_APP_ID&gt;&lt;/string&gt;
+&lt;key&gt;FacebookClientToken&lt;/key&gt;&lt;string&gt;&lt;YOUR_CLIENT_TOKEN&gt;&lt;/string&gt;
+&lt;key&gt;FacebookDisplayName&lt;/key&gt;&lt;string&gt;&lt;YOUR_APP_NAME&gt;&lt;/string&gt;</pre>
+  No changes needed in the SDK itself for different clients.
+</div>
+
+<hr>
+
+<!-- ══════════════════════════════════════════════ QUICK REF ══ -->
+<div class="section-title">Quick Reference — Commands Only</div>
+<div class="step">
+  <div class="step-header">
+    <div class="step-title" style="margin-left:0">All 9 steps as a single script (run from Terminal)</div>
+  </div>
+  <div class="step-body">
+    <div class="note"><strong>Edit the two variables at the top before running:</strong> <code>NEW_VERSION</code> and <code>FLUTTER_PROJECT</code></div>
+    <pre><span class="comment">#!/bin/bash
+# SDK Update Script — edit variables below before running</span>
+
+NEW_VERSION=<span class="string">"2.0.6"</span>
+FLUTTER_PROJECT=<span class="string">"/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk"</span>
+SDK_DIR=<span class="string">"/Users/salespanda/rahul_work_space/React-SDK/Flutter-React-Integration"</span>
+SDK_FRAMES=<span class="string">"$SDK_DIR/Frameworks"</span>
+RN_IOS=<span class="string">"/Users/salespanda/rahul_work_space/ReactIOS/ios"</span>
+
+<span class="comment"># ── Step 1: Debug build ────────────────────────────────────</span>
+echo <span class="string">"=== [1/9] Debug build ==="</span>
+cd <span class="string">"$FLUTTER_PROJECT"</span>
+flutter build ios-framework --no-release --no-profile --flavor DummyTarget \
+  && echo <span class="echo-ok">"✅ [1/9] Debug build SUCCESS"</span> || echo <span class="echo-fail">"❌ [1/9] Debug build FAILED"</span>
+
+<span class="comment"># ── Step 2: Release build ──────────────────────────────────</span>
+echo <span class="string">"=== [2/9] Release build ==="</span>
+flutter build ios-framework --no-debug --no-profile --flavor DummyTarget \
+  && echo <span class="echo-ok">"✅ [2/9] Release build SUCCESS"</span> || echo <span class="echo-fail">"❌ [2/9] Release build FAILED"</span>
+
+<span class="comment"># ── Step 3: Copy Release frameworks ───────────────────────</span>
+echo <span class="string">"=== [3/9] Copy Release frameworks ==="</span>
+for xcfw in <span class="string">"$FLUTTER_PROJECT/build/ios/framework/Release"</span>/*.xcframework; do
+  name=$(basename <span class="string">"$xcfw"</span>)
+  [ <span class="string">"$name"</span> = <span class="string">"App.xcframework"</span> ] && echo <span class="string">"  → Skip App.xcframework"</span> && <span class="keyword">continue</span>
+  rm -rf <span class="string">"$SDK_FRAMES/$name"</span> && cp -R <span class="string">"$xcfw"</span> <span class="string">"$SDK_FRAMES/$name"</span> \
+    && echo <span class="echo-ok">"  ✅ $name"</span> || echo <span class="echo-fail">"  ❌ $name"</span>
+done
+echo <span class="echo-ok">"✅ [3/9] Done"</span>
+
+<span class="comment"># ── Step 4: Mixed App.xcframework ─────────────────────────</span>
+echo <span class="string">"=== [4/9] Mixed App.xcframework ==="</span>
+TMPDIR_APP=$(mktemp -d /tmp/app_mix_XXXX)
+cp -R <span class="string">"$FLUTTER_PROJECT/build/ios/framework/Release/App.xcframework/ios-arm64/App.framework"</span> <span class="string">"$TMPDIR_APP/device_fw"</span> \
+  && echo <span class="echo-ok">"  ✅ Device slice copied"</span> || { echo <span class="echo-fail">"  ❌ Device slice FAILED"</span>; exit 1; }
+cp -R <span class="string">"$FLUTTER_PROJECT/build/ios/framework/Debug/App.xcframework/ios-arm64_x86_64-simulator/App.framework"</span> <span class="string">"$TMPDIR_APP/sim_fw"</span> \
+  && echo <span class="echo-ok">"  ✅ Simulator slice copied"</span> || { echo <span class="echo-fail">"  ❌ Simulator slice FAILED"</span>; exit 1; }
+rm -rf <span class="string">"$SDK_FRAMES/App.xcframework"</span>
+xcodebuild -create-xcframework \
+  -framework <span class="string">"$TMPDIR_APP/device_fw"</span> \
+  -framework <span class="string">"$TMPDIR_APP/sim_fw"</span> \
+  -output <span class="string">"$SDK_FRAMES/App.xcframework"</span> \
+  && echo <span class="echo-ok">"✅ [4/9] Mixed App.xcframework created"</span> || echo <span class="echo-fail">"❌ [4/9] FAILED"</span>
+rm -rf <span class="string">"$TMPDIR_APP"</span>
+
+<span class="comment"># ── Step 5: Fix FFmpeg simulator slice ────────────────────</span>
+echo <span class="string">"=== [5/9] Fix FFmpeg simulator slice ==="</span>
+cd <span class="string">"$SDK_DIR"</span>
+./fix_simulator_frameworks.sh \
+  && echo <span class="echo-ok">"✅ [5/9] FFmpeg fix done"</span> || echo <span class="echo-fail">"❌ [5/9] FFmpeg fix FAILED"</span>
+
+<span class="comment"># ── Step 6: Bump version ───────────────────────────────────</span>
+echo <span class="string">"=== [6/9] Bump version in podspec ==="</span>
+sed -i <span class="string">''</span> <span class="string">"s/s.version      = '.*/s.version      = '$NEW_VERSION'/"</span> <span class="string">"$SDK_DIR/MyPrivateSDK.podspec"</span>
+grep <span class="string">"s.version"</span> <span class="string">"$SDK_DIR/MyPrivateSDK.podspec"</span> \
+  && echo <span class="echo-ok">"✅ [6/9] Version updated to $NEW_VERSION"</span> || echo <span class="echo-fail">"❌ [6/9] Version update FAILED"</span>
+
+<span class="comment"># ── Step 7: pod install (local path test) ─────────────────</span>
+echo <span class="string">"=== [7/9] pod install (make sure Podfile uses :path) ==="</span>
+cd <span class="string">"$RN_IOS"</span>
+pod install \
+  && echo <span class="echo-ok">"✅ [7/9] pod install SUCCESS"</span> || echo <span class="echo-fail">"❌ [7/9] pod install FAILED"</span>
+
+echo <span class="string">"⚠️  TEST THE APP ON SIMULATOR AND REAL DEVICE NOW. Continue to Step 8 only if tests pass."</span>
+echo <span class="string">"   Press Enter to continue to git push, or Ctrl+C to abort."</span>
+read
+
+<span class="comment"># ── Step 8: Commit, tag, push ─────────────────────────────</span>
+echo <span class="string">"=== [8/9] Commit, tag, push ==="</span>
+cd <span class="string">"$SDK_DIR"</span>
+git add Frameworks/ Libraries/ MyPrivateSDK.podspec \
+  && echo <span class="echo-ok">"  ✅ Files staged"</span> || { echo <span class="echo-fail">"  ❌ git add FAILED"</span>; exit 1; }
+git commit -m <span class="string">"Release SDK $NEW_VERSION"</span> \
+  && echo <span class="echo-ok">"  ✅ Committed"</span> || { echo <span class="echo-fail">"  ❌ git commit FAILED"</span>; exit 1; }
+git tag <span class="string">"$NEW_VERSION"</span> \
+  && echo <span class="echo-ok">"  ✅ Tag $NEW_VERSION created"</span> || { echo <span class="echo-fail">"  ❌ git tag FAILED"</span>; exit 1; }
+git push origin main \
+  && echo <span class="echo-ok">"  ✅ Branch pushed"</span> || { echo <span class="echo-fail">"  ❌ Branch push FAILED"</span>; exit 1; }
+git push origin <span class="string">"$NEW_VERSION"</span> \
+  && echo <span class="echo-ok">"✅ [8/9] Tag $NEW_VERSION pushed to GitHub"</span> || echo <span class="echo-fail">"❌ [8/9] Tag push FAILED"</span>
+
+echo <span class="string">""</span>
+echo <span class="echo-ok">"🎉 SDK $NEW_VERSION released!"</span>
+echo <span class="string">"   Update Podfile :tag => to '$NEW_VERSION' and run pod install (Step 9)"</span></pre>
+  </div>
+</div>
+
+<hr>
+<div class="small" style="text-align:center; padding: 16px 0;">
+  MyPrivateSDK Update Guide &nbsp;·&nbsp; SDK v2.0.5+ &nbsp;·&nbsp; React Native 0.84.1 + Flutter 3.24 &nbsp;·&nbsp; github.com/rpgh23/Flutter-React-Integration
+</div>
+
+</body>
+</html>

@@ -1,15 +1,15 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-frameworks/Release/iphoneos/Release-iphoneos/Mantle/Mantle.framework/Mantle'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/Mantle/Mantle.framework/Mantle'
 relocations:
   - { offset: 0x208B7, size: 0x8, addend: 0x0, symName: _MantleVersionString, symObjAddr: 0x0, symBinAddr: 0x101C0, symSize: 0x0 }
   - { offset: 0x208EB, size: 0x8, addend: 0x0, symName: _MantleVersionNumber, symObjAddr: 0x28, symBinAddr: 0x101E8, symSize: 0x0 }
   - { offset: 0x20927, size: 0x8, addend: 0x0, symName: _mtl_injectMethods, symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x164 }
   - { offset: 0x20A14, size: 0x8, addend: 0x0, symName: _specialProtocolsLock, symObjAddr: 0x1A68, symBinAddr: 0x16BF8, symSize: 0x0 }
-  - { offset: 0x20A29, size: 0x8, addend: 0x0, symName: _specialProtocolCount, symObjAddr: 0x95A0, symBinAddr: 0x16EA0, symSize: 0x0 }
-  - { offset: 0x20A3E, size: 0x8, addend: 0x0, symName: _specialProtocolCapacity, symObjAddr: 0x95A8, symBinAddr: 0x16EA8, symSize: 0x0 }
-  - { offset: 0x20A53, size: 0x8, addend: 0x0, symName: _specialProtocols, symObjAddr: 0x95B0, symBinAddr: 0x16EB0, symSize: 0x0 }
-  - { offset: 0x20AB9, size: 0x8, addend: 0x0, symName: _specialProtocolsReady, symObjAddr: 0x95B8, symBinAddr: 0x16EB8, symSize: 0x0 }
+  - { offset: 0x20A29, size: 0x8, addend: 0x0, symName: _specialProtocolCount, symObjAddr: 0x9598, symBinAddr: 0x16EA0, symSize: 0x0 }
+  - { offset: 0x20A3E, size: 0x8, addend: 0x0, symName: _specialProtocolCapacity, symObjAddr: 0x95A0, symBinAddr: 0x16EA8, symSize: 0x0 }
+  - { offset: 0x20A53, size: 0x8, addend: 0x0, symName: _specialProtocols, symObjAddr: 0x95A8, symBinAddr: 0x16EB0, symSize: 0x0 }
+  - { offset: 0x20AB9, size: 0x8, addend: 0x0, symName: _specialProtocolsReady, symObjAddr: 0x95B0, symBinAddr: 0x16EB8, symSize: 0x0 }
   - { offset: 0x20B6A, size: 0x8, addend: 0x0, symName: _mtl_injectMethods, symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x164 }
   - { offset: 0x20E5A, size: 0x8, addend: 0x0, symName: _mtl_injectMethodsFromClass, symObjAddr: 0x164, symBinAddr: 0x4164, symSize: 0xC8 }
   - { offset: 0x21020, size: 0x8, addend: 0x0, symName: _mtl_classBeforeSuperclass, symObjAddr: 0x22C, symBinAddr: 0x422C, symSize: 0x5C }

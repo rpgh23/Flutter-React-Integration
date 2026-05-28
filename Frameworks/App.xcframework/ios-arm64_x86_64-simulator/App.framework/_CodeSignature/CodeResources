@@ -1170,15 +1170,23 @@
 		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
-		mb0p7C0sMCfd4sbR8UIrkCpg3Xk=
+		/CUoTuPQqqdexfyOT9lpJhV+2MQ=
 		</data>
 		<key>flutter_assets/fonts/Merriweather-Bold.ttf</key>
 		<data>
 		CcdClAjGJLmZHETpl1qRKfstL+c=
 		</data>
+		<key>flutter_assets/isolate_snapshot_data</key>
+		<data>
+		wfMZXW4WDbU/feCTp08dh+q7SKY=
+		</data>
+		<key>flutter_assets/kernel_blob.bin</key>
+		<data>
+		Ew1gQUn6ZzDkLhkwc+UMZvE3KME=
+		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
-		GNqkd6iKVymHbTQkAW3cA9qm9Pc=
+		Bvk+P1ykE1PGRdktwgwDyz6AOqM=
 		</data>
 		<key>flutter_assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.css</key>
 		<data>
@@ -1194,19 +1202,19 @@
 		</data>
 		<key>flutter_assets/packages/flutter_phosphor_icons/fonts/Phosphor.ttf</key>
 		<data>
-		a0qy3UtiHT8RyS6GHZMu0Gvrc9s=
+		TUBhxcioKlUdq790fQFeQIAlZVU=
 		</data>
 		<key>flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf</key>
 		<data>
-		mGO9LHosEMGkGIwOWFK4tOPdG90=
+		7teGwHCZ+RaeOlmcHre5BoeqKQI=
 		</data>
 		<key>flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf</key>
 		<data>
-		WrVBGyY6R10ElSzIeACwHzt86V8=
+		81quIJEuBhQeJAeT49COjDp9V+8=
 		</data>
 		<key>flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf</key>
 		<data>
-		gnvEaLTwqnpHGmF1lizfQNP/HPg=
+		P0CZcIU8VoKS4eqgHZLsdx4tErE=
 		</data>
 		<key>flutter_assets/packages/linkedin_login/assets/linked_in_logo.png</key>
 		<data>
@@ -1219,6 +1227,10 @@
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>
 		<data>
 		VoVnsu58hN7wrwazX0nyAopiB0Q=
+		</data>
+		<key>flutter_assets/vm_snapshot_data</key>
+		<data>
+		ituzZzkouVPX475mGIvTzzeOnk8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -3236,7 +3248,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vEiXtrmJKIK0HZaqFb70FLQhxgrP0iTmplmn4qcJBiM=
+			2YZbZxoJ1oPROoYwidiCXg9ho3aWzl19RIvIAjqmJFM=
 			</data>
 		</dict>
 		<key>flutter_assets/fonts/Merriweather-Bold.ttf</key>
@@ -3246,11 +3258,25 @@
 			HAQ8fk4xvvE3UfjBSlW2zXMRMFAetybN+HNU2oxMPEY=
 			</data>
 		</dict>
+		<key>flutter_assets/isolate_snapshot_data</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			y3IETU0f7aPVGlpyw59O5lGbzyZ9Ro7gfazfyi9v0bU=
+			</data>
+		</dict>
+		<key>flutter_assets/kernel_blob.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1jCVeCAucyhzpZkjIaQ0/CyCGd33K/0J/c3JjoZ/1+4=
+			</data>
+		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3egVYtc1pxpCVD6zylxVRNx/93QF2iYL149M/2U3xIc=
+			Z8RP6Rg7AC553ef2l34piGYcmj5KPF/OloeH79vtgjw=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.css</key>
@@ -3278,28 +3304,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			m3/N/MfCdUtNmeP1zWgpEe+OKPvDVGaZl9GY79L7Tso=
+			oHQgRJWLms2t2358HiG0NIl1vLDFJqybnCTZfxfeszs=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W+nUc2rRrMfCMteqNOJpfecDuAbc+60eRvXDfWDzTj0=
+			NCokbUhf77D/zQwBLqdXx/daGmIInl+zWSIBfUUJYRM=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VIst8ohywarQY6BBjfOZNm1bEolYq7PzoEGjBLcHh7c=
+			kHMjrzXlByDvcrCd78+Giu2GvPWoYe5lhk9GryQe6wY=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			I/Vs2ol5xA0OwtYzxdkMxiOIcl0UWVL4iU8bqMuowpg=
+			DyeV1cl3UtjVlESO1xJZY3qp8Yx44o8b+19kBxC2GN8=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/linkedin_login/assets/linked_in_logo.png</key>
@@ -3321,6 +3347,13 @@
 			<key>hash2</key>
 			<data>
 			4PC1vOWKHlNOnW4dGwFfD4TPwBCllniPCsOy7+1X5co=
+			</data>
+		</dict>
+		<key>flutter_assets/vm_snapshot_data</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			L8Ll/5LQYd/uiFbt7jD8B17se0Auql4jpiImNFSyl6A=
 			</data>
 		</dict>
 	</dict>

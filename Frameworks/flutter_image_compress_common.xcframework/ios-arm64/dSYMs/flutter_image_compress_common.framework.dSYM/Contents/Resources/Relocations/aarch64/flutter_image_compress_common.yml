@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-frameworks/Release/iphoneos/Release-iphoneos/flutter_image_compress_common/flutter_image_compress_common.framework/flutter_image_compress_common'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/flutter_image_compress_common/flutter_image_compress_common.framework/flutter_image_compress_common'
 relocations:
   - { offset: 0x8F24C, size: 0x8, addend: 0x0, symName: _flutter_image_compress_commonVersionString, symObjAddr: 0x0, symBinAddr: 0x133E8, symSize: 0x0 }
   - { offset: 0x8F281, size: 0x8, addend: 0x0, symName: _flutter_image_compress_commonVersionNumber, symObjAddr: 0x40, symBinAddr: 0x13428, symSize: 0x0 }
@@ -17,8 +17,8 @@ relocations:
   - { offset: 0x9112B, size: 0x8, addend: 0x0, symName: '-[CompressListHandler handleMethodCall:result:]', symObjAddr: 0x0, symBinAddr: 0x500C, symSize: 0x270 }
   - { offset: 0x9114A, size: 0x8, addend: 0x0, symName: '-[CompressListHandler handleMethodCall:result:]', symObjAddr: 0x0, symBinAddr: 0x500C, symSize: 0x270 }
   - { offset: 0x92698, size: 0x8, addend: 0x0, symName: '+[ImageCompressPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x527C, symSize: 0xD0 }
-  - { offset: 0x926B2, size: 0x8, addend: 0x0, symName: _showLog, symObjAddr: 0x417D, symBinAddr: 0x27B88, symSize: 0x0 }
-  - { offset: 0x926CF, size: 0x8, addend: 0x0, symName: _serial_queue, symObjAddr: 0x4180, symBinAddr: 0x27B90, symSize: 0x0 }
+  - { offset: 0x926B2, size: 0x8, addend: 0x0, symName: _showLog, symObjAddr: 0x4175, symBinAddr: 0x27B88, symSize: 0x0 }
+  - { offset: 0x926CF, size: 0x8, addend: 0x0, symName: _serial_queue, symObjAddr: 0x4178, symBinAddr: 0x27B90, symSize: 0x0 }
   - { offset: 0x926EF, size: 0x8, addend: 0x0, symName: '+[ImageCompressPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x527C, symSize: 0xD0 }
   - { offset: 0x9278F, size: 0x8, addend: 0x0, symName: '-[ImageCompressPlugin handleMethodCall:result:]', symObjAddr: 0xD0, symBinAddr: 0x534C, symSize: 0xC0 }
   - { offset: 0x92820, size: 0x8, addend: 0x0, symName: '___47-[ImageCompressPlugin handleMethodCall:result:]_block_invoke', symObjAddr: 0x190, symBinAddr: 0x540C, symSize: 0x21C }
@@ -31,8 +31,8 @@ relocations:
   - { offset: 0x92C9F, size: 0x8, addend: 0x0, symName: '-[NSDictionary(SY) sy_allKeypaths]', symObjAddr: 0x47C, symBinAddr: 0x5B28, symSize: 0x2A4 }
   - { offset: 0x92DE9, size: 0x8, addend: 0x0, symName: '+[SYMetadata metadataWithDictionary:]', symObjAddr: 0x0, symBinAddr: 0x5DCC, symSize: 0xF0 }
   - { offset: 0x92DF7, size: 0x8, addend: 0x0, symName: '+[SYMetadata JSONTransformerForKey:]', symObjAddr: 0xF50, symBinAddr: 0x6D1C, symSize: 0xB0 }
-  - { offset: 0x92E21, size: 0x8, addend: 0x0, symName: '_JSONTransformerForKey:.onceToken', symObjAddr: 0xF990, symBinAddr: 0x27B98, symSize: 0x0 }
-  - { offset: 0x92E37, size: 0x8, addend: 0x0, symName: '_JSONTransformerForKey:.classMappings', symObjAddr: 0xF998, symBinAddr: 0x27BA0, symSize: 0x0 }
+  - { offset: 0x92E21, size: 0x8, addend: 0x0, symName: '_JSONTransformerForKey:.onceToken', symObjAddr: 0xF980, symBinAddr: 0x27B98, symSize: 0x0 }
+  - { offset: 0x92E37, size: 0x8, addend: 0x0, symName: '_JSONTransformerForKey:.classMappings', symObjAddr: 0xF988, symBinAddr: 0x27BA0, symSize: 0x0 }
   - { offset: 0x94338, size: 0x8, addend: 0x0, symName: '+[SYMetadata metadataWithDictionary:]', symObjAddr: 0x0, symBinAddr: 0x5DCC, symSize: 0xF0 }
   - { offset: 0x943F1, size: 0x8, addend: 0x0, symName: '+[SYMetadata metadataWithAsset:]', symObjAddr: 0xF0, symBinAddr: 0x5EBC, symSize: 0x74 }
   - { offset: 0x94448, size: 0x8, addend: 0x0, symName: '+[SYMetadata metadataWithAssetURL:]', symObjAddr: 0x164, symBinAddr: 0x5F30, symSize: 0x50 }
