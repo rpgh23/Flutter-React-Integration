@@ -37,4 +37,7 @@ s.source_files = 'Sources/FlutterBridge/**/*.{swift,h,m}'
   s.dependency 'FBSDKCoreKit', '~> 16.3.1'
   s.dependency 'FBSDKLoginKit', '~> 16.3.1'
   s.dependency 'FBSDKShareKit', '~> 16.3.1'
+
+  # ✅ Intercom — required by intercom_flutter (bundled in Frameworks/*.xcframework)
+  s.dependency 'Intercom', '16.6.1'
 end
