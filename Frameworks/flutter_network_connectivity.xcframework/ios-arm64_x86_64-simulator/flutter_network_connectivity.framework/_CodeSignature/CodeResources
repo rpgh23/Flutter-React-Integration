@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/flutter_network_connectivity.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		+LEDxHhdIKo3n0dYu8ehFLSp7m4=
+		vyBZnTgyJqzDQW6cm53JPuZUyE4=
 		</data>
 		<key>Modules/flutter_network_connectivity.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		JUb9BhUwsutljttYe2W9YsVQ7QU=
+		OCgGkRGtdarRDRcTMIWOhOMYiX4=
 		</data>
 		<key>Modules/flutter_network_connectivity.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/flutter_network_connectivity.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		QVBEZL29UV6uRf3fZyS+tG8aDdM=
+		xiI3KGshoC9bR2W3f7FZge2Jg/g=
 		</data>
 		<key>Modules/flutter_network_connectivity.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Modules/flutter_network_connectivity.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vVEjU6DCazfYWvz2ZfvQ1Pxsc5M=
+		CQdYhIJaPGT4UHZ/mp5QCxlJ/RU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -100,14 +100,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aGY1dSxySOtO0E03P+cxX/OAmj9rFDDDM0rJ6qYO0Eo=
+			hHUXlWtyYG+Vaf3hsJrPtYsR6/9fomYSFvDAnToa7AA=
 			</data>
 		</dict>
 		<key>Modules/flutter_network_connectivity.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kd35XeKv+XJ7GNw/def7yMLHckbhBkKJkoqk3+0IFPc=
+			qQO/oeTx8BwV9YYi2UR8nOQKFdO26G3WtYpncOKj7OE=
 			</data>
 		</dict>
 		<key>Modules/flutter_network_connectivity.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -142,7 +142,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			p1lrpDtaTnzz2ufCvET6xcZQjSrkv4FGVROrjSJUmFs=
+			vEqurNDcR9K/hxdt1765aOlAZDSOVf7NI1o7k+ek6iM=
 			</data>
 		</dict>
 		<key>Modules/flutter_network_connectivity.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -177,7 +177,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+/LH1ANn167kr4hRuQjSmUi6e6V6zBKLfAXHW5efQPo=
+			volPuCyrh3V0+HQP4/dmf3MSCzix2k2GtySwqJ/FM7k=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

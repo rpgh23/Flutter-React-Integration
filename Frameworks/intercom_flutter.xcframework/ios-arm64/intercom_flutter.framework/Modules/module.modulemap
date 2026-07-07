@@ -1,0 +1,6 @@
+framework module intercom_flutter {
+  umbrella header "intercom_flutter-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/DKImagePickerController/DKImagePickerController.framework/DKImagePickerController'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-frameworks/Release/iphoneos/Release-iphoneos/DKImagePickerController/DKImagePickerController.framework/DKImagePickerController'
 relocations:
   - { offset: 0x99154, size: 0x8, addend: 0x0, symName: _DKImagePickerControllerVersionString, symObjAddr: 0x0, symBinAddr: 0x4DBC0, symSize: 0x0 }
   - { offset: 0x9918B, size: 0x8, addend: 0x0, symName: _DKImagePickerControllerVersionNumber, symObjAddr: 0x38, symBinAddr: 0x4DBF8, symSize: 0x0 }
@@ -485,10 +485,10 @@ relocations:
   - { offset: 0xADD9B, size: 0x8, addend: 0x0, symName: '_$s23DKImagePickerController18DKAssetGroupListVCC5coderACSgSo7NSCoderC_tcfcTf4dn_n', symObjAddr: 0x3244, symBinAddr: 0x1A0D8, symSize: 0xE0 }
   - { offset: 0xADE45, size: 0x8, addend: 0x0, symName: '_$s23DKImagePickerController18DKAssetGroupListVCC9tableView_14didSelectRowAtySo07UITableI0C_10Foundation9IndexPathVtFTf4dnn_n', symObjAddr: 0x3324, symBinAddr: 0x1A1B8, symSize: 0x46C }
   - { offset: 0xAE105, size: 0x8, addend: 0x0, symName: '_$s23DKImagePickerController18DKAssetGroupListVCC14groupDidUpdate0H2IdySS_tFTf4dn_n', symObjAddr: 0x3790, symBinAddr: 0x1A624, symSize: 0x218 }
-  - { offset: 0xAE2F9, size: 0x8, addend: 0x0, symName: '_$s23DKImagePickerController0A15AssetDiskPurgerC14sharedInstanceACvpZ', symObjAddr: 0x3BD80, symBinAddr: 0x712E0, symSize: 0x0 }
+  - { offset: 0xAE2F9, size: 0x8, addend: 0x0, symName: '_$s23DKImagePickerController0A15AssetDiskPurgerC14sharedInstanceACvpZ', symObjAddr: 0x3BD88, symBinAddr: 0x712E0, symSize: 0x0 }
   - { offset: 0xAE3FF, size: 0x8, addend: 0x0, symName: '_$s23DKImagePickerController0A13AssetExporterC14sharedInstanceACvpZ', symObjAddr: 0xD270, symBinAddr: 0x6E250, symSize: 0x0 }
   - { offset: 0xAE8D4, size: 0x8, addend: 0x0, symName: '_$s23DKImagePickerController0A13AssetExporterC4seed33_FC2A8FD923B997FDB14611761CFFBC6ELLs5Int32VvpZ', symObjAddr: 0xD278, symBinAddr: 0x6E258, symSize: 0x0 }
-  - { offset: 0xAE8F9, size: 0x8, addend: 0x0, symName: '_$s23DKImagePickerController0A13AssetExporterC7ioQueueSo17OS_dispatch_queueCvpZ', symObjAddr: 0x3BD88, symBinAddr: 0x712E8, symSize: 0x0 }
+  - { offset: 0xAE8F9, size: 0x8, addend: 0x0, symName: '_$s23DKImagePickerController0A13AssetExporterC7ioQueueSo17OS_dispatch_queueCvpZ', symObjAddr: 0x3BD90, symBinAddr: 0x712E8, symSize: 0x0 }
   - { offset: 0xAE907, size: 0x8, addend: 0x0, symName: '_$s23DKImagePickerController0A15AssetDiskPurgerC14sharedInstance_WZ', symObjAddr: 0x0, symBinAddr: 0x1A8E4, symSize: 0xC8 }
   - { offset: 0xAE9CE, size: 0x8, addend: 0x0, symName: '_$s23DKImagePickerController0A27AssetExportInvalidRequestIDs5Int32Vvg', symObjAddr: 0x5C4, symBinAddr: 0x1ADA8, symSize: 0x8 }
   - { offset: 0xAE9EC, size: 0x8, addend: 0x0, symName: '_$s23DKImagePickerController0A19AssetExporterDomainSSvg', symObjAddr: 0x5CC, symBinAddr: 0x1ADB0, symSize: 0x1C }
@@ -667,7 +667,7 @@ relocations:
   - { offset: 0xB6623, size: 0x8, addend: 0x0, symName: '_$s23DKImagePickerController0A11BaseManagerCACycfc', symObjAddr: 0x618, symBinAddr: 0x27A40, symSize: 0x64 }
   - { offset: 0xB6656, size: 0x8, addend: 0x0, symName: '_$s23DKImagePickerController0A11BaseManagerCACycfcTo', symObjAddr: 0x69C, symBinAddr: 0x27AC4, symSize: 0x68 }
   - { offset: 0xB668B, size: 0x8, addend: 0x0, symName: '_$s23DKImagePickerController0A11BaseManagerCfD', symObjAddr: 0x704, symBinAddr: 0x27B2C, symSize: 0x30 }
-  - { offset: 0xB67FC, size: 0x8, addend: 0x0, symName: '_$s23DKImagePickerController0A11DataManagerC14sharedInstanceACvpZ', symObjAddr: 0x168A0, symBinAddr: 0x712F0, symSize: 0x0 }
+  - { offset: 0xB67FC, size: 0x8, addend: 0x0, symName: '_$s23DKImagePickerController0A11DataManagerC14sharedInstanceACvpZ', symObjAddr: 0x168A8, symBinAddr: 0x712F0, symSize: 0x0 }
   - { offset: 0xB6C6E, size: 0x8, addend: 0x0, symName: '_$s23DKImagePickerController19getImageDataManagerAA0afG0CyF', symObjAddr: 0x0, symBinAddr: 0x27BE8, symSize: 0x40 }
   - { offset: 0xB6CA5, size: 0x8, addend: 0x0, symName: '_$sSo21PHAuthorizationStatusVIegy_ABIeyBy_TR', symObjAddr: 0x3D4, symBinAddr: 0x27F3C, symSize: 0x3C }
   - { offset: 0xB6CBD, size: 0x8, addend: 0x0, symName: '_$s23DKImagePickerController0A11DataManagerC14sharedInstance_WZ', symObjAddr: 0x410, symBinAddr: 0x27F78, symSize: 0x38 }
