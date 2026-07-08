@@ -88,14 +88,14 @@ public class FlutterMethodChannelModule: NSObject {
   }
 
   @objc
-  func callFlutterMethodChannel(_ pageKey: String, id: String, token: String, resolver resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) {
+  func callFlutterMethodChannel(_ pageKey: String, id: String, token: String,mode: String, resolver resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) {
     DispatchQueue.main.async {
       guard let engine = FlutterMethodChannelModule.getOrCreateEngine() else {
         reject("NO_ENGINE", "Failed to create Flutter engine", nil)
         return
       }
 
-      let deepLink = "sp://\(pageKey)//\(id)//\(token)//debug//moamc"
+      let deepLink = "sp://\(pageKey)//\(id)//\(token)//\(mode)//moamc"
       resolve(["success": true, "deepLink": deepLink])
 
       // Reset state for this session

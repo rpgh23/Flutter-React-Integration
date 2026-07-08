@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'MyPrivateSDK'
-  s.version      = '2.0.6'
+  s.version      = '2.0.7'
   s.summary      = 'Internal Flutter based SDK'
   s.description  = 'Private SDK wrapping Flutter engine and plugins'
   s.homepage     = 'https://github.com/rpgh23/Flutter-React-Integration'
