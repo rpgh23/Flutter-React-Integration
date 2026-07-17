@@ -32,11 +32,11 @@ class RNFlutterContainerView: UIView {
   }
   
   func setupFlutterView() {
-    guard flutterVC == nil else { 
+    guard flutterVC == nil else {
       print("⚠️ RNFlutterViewManager: Flutter view already set up")
-      return 
+      return
     }
-    
+
     print("🚀 RNFlutterViewManager: Setting up Flutter view using shared engine...")
     
     // Use the shared engine from FlutterMethodChannelModule
@@ -51,7 +51,7 @@ class RNFlutterContainerView: UIView {
     // This prevents race conditions and freezing issues
     DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [weak self] in
       guard let self = self, self.flutterVC == nil else { return }
-      
+
       // Create FlutterViewController with the shared engine
       let vc = FlutterViewController(
         engine: engine,
@@ -65,13 +65,33 @@ class RNFlutterContainerView: UIView {
       vc.view.backgroundColor = .white
       vc.view.isHidden = false
       self.addSubview(vc.view)
-      print("📐 RNFlutterContainerView: Added Flutter view with frame: \(self.bounds)")
-      
+
       // Keep references
       self.flutterVC = vc
       self.flutterEngine = engine
-      
+
       print("✅ RNFlutterViewManager: Flutter view created using shared engine")
+
+      // Proper UIViewController containment: without this, the FlutterViewController
+      // is a detached controller floating behind an RN UIView, and Flutter plugins that
+      // need to present UI on top of it (e.g. flutter_web_auth_2 for Twitter OAuth) can
+      // fail to acquire a root/presenting view controller (ACQUIRE_ROOT_VIEW_CONTROLLER_FAILED).
+      //
+      // addChild/didMove(toParent:) synchronously fires viewDidAppear, which kicks off
+      // Flutter engine + plugin activity. Doing that while the RN bridge is still mid-flight
+      // sending the deeplink (FlutterMethodChannelModule.callFlutterMethodChannel) has caused
+      // a TurboModule NSInvocation argument-corruption crash (-[__NSMallocBlock__ length]).
+      // Deferring it further, off the same tick, avoids the overlap.
+      DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self, weak vc] in
+        guard let self = self, let vc = vc, vc.parent == nil else { return }
+        if let parentVC = self.reactViewController() {
+          parentVC.addChild(vc)
+          vc.didMove(toParent: parentVC)
+          print("📐 RNFlutterContainerView: Added Flutter view as child of \(parentVC) with frame: \(self.bounds)")
+        } else {
+          print("⚠️ RNFlutterViewManager: No host UIViewController found via reactViewController(); adding Flutter view without containment")
+        }
+      }
     }
   }
   
