@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-frameworks/Release/iphoneos/Release-iphoneos/flutter_contacts/flutter_contacts.framework/flutter_contacts'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/flutter_contacts/flutter_contacts.framework/flutter_contacts'
 relocations:
   - { offset: 0x93500, size: 0x8, addend: 0x0, symName: _flutter_contactsVersionString, symObjAddr: 0x0, symBinAddr: 0x211A0, symSize: 0x0 }
   - { offset: 0x93535, size: 0x8, addend: 0x0, symName: _flutter_contactsVersionNumber, symObjAddr: 0x30, symBinAddr: 0x211D0, symSize: 0x0 }
@@ -17,7 +17,7 @@ relocations:
   - { offset: 0x9374D, size: 0x8, addend: 0x0, symName: '_$s16flutter_contacts7AccountVwst', symObjAddr: 0x1EC, symBinAddr: 0x41F8, symSize: 0x4C }
   - { offset: 0x93761, size: 0x8, addend: 0x0, symName: '_$s16flutter_contacts7AccountVMa', symObjAddr: 0x238, symBinAddr: 0x4244, symSize: 0x10 }
   - { offset: 0x9385F, size: 0x8, addend: 0x0, symName: '_$s16flutter_contacts7AddressV16addressFormatter_WZ', symObjAddr: 0x0, symBinAddr: 0x4254, symSize: 0x30 }
-  - { offset: 0x93883, size: 0x8, addend: 0x0, symName: '_$s16flutter_contacts7AddressV16addressFormatterSo08CNPostalcE0CvpZ', symObjAddr: 0x8B70, symBinAddr: 0x2DAE8, symSize: 0x0 }
+  - { offset: 0x93883, size: 0x8, addend: 0x0, symName: '_$s16flutter_contacts7AddressV16addressFormatterSo08CNPostalcE0CvpZ', symObjAddr: 0x8B68, symBinAddr: 0x2DAE8, symSize: 0x0 }
   - { offset: 0x93891, size: 0x8, addend: 0x0, symName: '_$s16flutter_contacts7AddressV16addressFormatter_WZ', symObjAddr: 0x0, symBinAddr: 0x4254, symSize: 0x30 }
   - { offset: 0x93983, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledNameV2, symObjAddr: 0x364, symBinAddr: 0x45B8, symSize: 0x44 }
   - { offset: 0x93A26, size: 0x8, addend: 0x0, symName: '_$sSSWOc', symObjAddr: 0x968, symBinAddr: 0x4BBC, symSize: 0x3C }

@@ -1,11 +1,11 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-frameworks/Release/iphoneos/Release-iphoneos/PromisesObjC/FBLPromises.framework/FBLPromises'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/PromisesObjC/FBLPromises.framework/FBLPromises'
 relocations:
   - { offset: 0x341E5, size: 0x8, addend: 0x0, symName: _FBLPromisesVersionString, symObjAddr: 0x0, symBinAddr: 0xBFE0, symSize: 0x0 }
   - { offset: 0x3421A, size: 0x8, addend: 0x0, symName: _FBLPromisesVersionNumber, symObjAddr: 0x30, symBinAddr: 0xC010, symSize: 0x0 }
   - { offset: 0x34257, size: 0x8, addend: 0x0, symName: '+[FBLPromise initialize]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x4C }
-  - { offset: 0x34271, size: 0x8, addend: 0x0, symName: _gFBLPromiseDefaultDispatchQueue, symObjAddr: 0x7FC0, symBinAddr: 0x122C8, symSize: 0x0 }
+  - { offset: 0x34271, size: 0x8, addend: 0x0, symName: _gFBLPromiseDefaultDispatchQueue, symObjAddr: 0x7FB8, symBinAddr: 0x122C8, symSize: 0x0 }
   - { offset: 0x34349, size: 0x8, addend: 0x0, symName: '+[FBLPromise initialize]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x4C }
   - { offset: 0x3437C, size: 0x8, addend: 0x0, symName: '+[FBLPromise defaultDispatchQueue]', symObjAddr: 0x4C, symBinAddr: 0x404C, symSize: 0x48 }
   - { offset: 0x343B3, size: 0x8, addend: 0x0, symName: '+[FBLPromise setDefaultDispatchQueue:]', symObjAddr: 0x94, symBinAddr: 0x4094, symSize: 0x54 }

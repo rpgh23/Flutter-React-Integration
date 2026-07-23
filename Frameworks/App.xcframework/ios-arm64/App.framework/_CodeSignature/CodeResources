@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		5tRmXV1Orw+EncxQZpFI4IT585U=
+		XPIWjWvfsAXjcdGMD+6ul2729Dk=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		IUwuggUgcw4O+py9R4yWmPMmBjQ=
+		5ca1TlsI0cmJQsW15aRhqsB19BM=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		xABNqwR8oobpjkfmOlzW0gcZELE=
+		4p/4sfHyz4nngJe4otpkYWZ5png=
 		</data>
 		<key>flutter_assets/assets/.DS_Store</key>
 		<data>
@@ -766,7 +766,7 @@
 		</data>
 		<key>flutter_assets/assets/moamc/.DS_Store</key>
 		<data>
-		Y6P/WGqbhmD+C+gpbFnijOtpyc8=
+		3y++sUAKzaCQmjLBz2v0kvESHgc=
 		</data>
 		<key>flutter_assets/assets/moamc/digiicon.png</key>
 		<data>
@@ -1068,6 +1068,10 @@
 		<data>
 		sBrauGKOcbgKVo64LUIRUk//CTc=
 		</data>
+		<key>flutter_assets/assets/tickgif.gif</key>
+		<data>
+		Gq7JpyhD4/zWE3HDNfszPY9OPiM=
+		</data>
 		<key>flutter_assets/assets/translate.png</key>
 		<data>
 		NRUe5AZoF7A0CODpPerjGp3WmBM=
@@ -1231,14 +1235,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TmLt6xU7XXICdpdUMNsaUIlpx6pFQnCK3ksYXkSRmlU=
+			erJe0pRX6raj202y4+fKMJdwJ+GNVPWCP4geRQu9Dyw=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HNU2ipjzszP8LU6J0DLngQHT0SDRE4XXmevpFq0X0Fo=
+			zm1ahmKOqn1kwI8vd5URXPByr2V2BaSCyfJ8aFRhz0U=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -1252,7 +1256,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xLPKSdu4SEiovqKmQqK8gxskeby84u7OIi07Fh/B4LE=
+			FsX+o+KtyCa24erYnziBkp7tY1t8ZlwUHNjGku5rlEk=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/2.0x/NewWhatsapp.png</key>
@@ -3059,6 +3063,13 @@
 			<key>hash2</key>
 			<data>
 			fNI1aDdRTlvumQ96jeWaHl8p9x1N74oMLRZuW7cBhr8=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/tickgif.gif</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			N3J/F97XyI93JAjudY9w2OM7bkRnYFaE9A0Mp4Kdeao=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/translate.png</key>

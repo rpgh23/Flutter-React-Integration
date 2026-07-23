@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		mugd2g9cnr7pOFqqBBdBu7qR2sM=
+		V0Lbzq8mZ8YE64Wp0UtZeDBne2Y=
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		YokBUb5Mpy3FWVVVT43YfNbFM58=
+		WUyb1mRiwDR7+XbWwqQ2whPEOPA=
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ljvU6W/4Xm6TgihywMYbSgV67jk=
+		aIOAjCpxXHiRvM0YuN/8hq1Z8zE=
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dTkwLdd7DwIJf11XyY2nFt66lqQ=
+		XGDgYBWechDN3ZCLa7uRUnhc5wI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -100,14 +100,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FOfPAx+RgL296HYg/LtqQMYiEOtn+OrzOpR0ocvcRd4=
+			NVGbYv5c9wtpLwAizlPwghT1F97euURA+3m5xkC1TP0=
 			</data>
 		</dict>
 		<key>Modules/flutter_facebook_auth.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QsofNbWKIXQvLNLU2JcnuYRGPsrfGM4UcOp88h579qY=
+			A8vBjyXUOoFA8PLGUa1AHTAiVT5wdQaTEvaYRjRGN0o=
 			</data>
 		</dict>
 		<key>Modules/flutter_facebook_auth.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -142,7 +142,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uUVLy8fLP8+q+UbtQm0KDVo90J+6urb+bMm4RvySZ88=
+			swW4oD+bAh6oM9XtLN/roUXOI00MWGoaPDrrAPtAYLI=
 			</data>
 		</dict>
 		<key>Modules/flutter_facebook_auth.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -177,7 +177,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oDCZkpcQ//XiCyt6rlt9UqpCFUcPVYq6Ht1G15Si6sE=
+			580IGhVEKZBFy5Tsqt7ktbAHLmmSgMbKHbv7bN9zSqk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

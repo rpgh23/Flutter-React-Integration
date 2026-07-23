@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios-frameworks/Release/iphoneos/Release-iphoneos/DKPhotoGallery/DKPhotoGallery.framework/DKPhotoGallery'
+binary-path:     '/Users/salespanda/rahul_work_space/sp-sdk/flutter-new-sdk/build/ios/framework/Release/iphoneos/Release-iphoneos/DKPhotoGallery/DKPhotoGallery.framework/DKPhotoGallery'
 relocations:
   - { offset: 0xA06A5, size: 0x8, addend: 0x0, symName: _DKPhotoGalleryVersionString, symObjAddr: 0x0, symBinAddr: 0x3E7D0, symSize: 0x0 }
   - { offset: 0xA06DC, size: 0x8, addend: 0x0, symName: _DKPhotoGalleryVersionNumber, symObjAddr: 0x30, symBinAddr: 0x3E800, symSize: 0x0 }
@@ -708,7 +708,7 @@ relocations:
   - { offset: 0xBE20E, size: 0x8, addend: 0x0, symName: '_$s14DKPhotoGallery0A20ImageAssetDownloaderCAA0acE0A2aDP08downloadC04with13progressBlock08completeI0yyp_ySfcSgySo7UIImageCSg_10Foundation4DataVSgs5Error_pSgtctFTW', symObjAddr: 0x1084, symBinAddr: 0x25234, symSize: 0x4 }
   - { offset: 0xBE226, size: 0x8, addend: 0x0, symName: '_$s14DKPhotoGallery0A20ImageAssetDownloaderCAA0acE0A2aDP08downloadC04with13progressBlock08completeI0yyp_ySfcSgySo7UIImageCSg_10Foundation4DataVSgs5Error_pSgtctFTW', symObjAddr: 0x1084, symBinAddr: 0x25234, symSize: 0x4 }
   - { offset: 0xBE2C7, size: 0x8, addend: 0x0, symName: '_$s14DKPhotoGallery0A20ImageAssetDownloaderC08downloadC04with13progressBlock08completeI0yyp_ySfcSgySo7UIImageCSg_10Foundation4DataVSgs5Error_pSgtctFTf4nnnd_n', symObjAddr: 0x1088, symBinAddr: 0x25238, symSize: 0x594 }
-  - { offset: 0xBE65C, size: 0x8, addend: 0x0, symName: '_$s14DKPhotoGallery0A14ImagePreviewVCC7ioQueueSo17OS_dispatch_queueCvpZ', symObjAddr: 0x17390, symBinAddr: 0x58DE8, symSize: 0x0 }
+  - { offset: 0xBE65C, size: 0x8, addend: 0x0, symName: '_$s14DKPhotoGallery0A14ImagePreviewVCC7ioQueueSo17OS_dispatch_queueCvpZ', symObjAddr: 0x17380, symBinAddr: 0x58DE8, symSize: 0x0 }
   - { offset: 0xBEA9A, size: 0x8, addend: 0x0, symName: '_$s14DKPhotoGallery0A14ImagePreviewVCC7ioQueue_WZ', symObjAddr: 0x10D8, symBinAddr: 0x269A0, symSize: 0x1B4 }
   - { offset: 0xBEB3B, size: 0x8, addend: 0x0, symName: '_$sSo7UIImageCSg10Foundation4DataVSgSo16SDImageCacheTypeVIegggy_ACSo6NSDataCSgAIIeyByyy_TR', symObjAddr: 0x1D00, symBinAddr: 0x275C8, symSize: 0xB8 }
   - { offset: 0xBEB53, size: 0x8, addend: 0x0, symName: '_$s14DKPhotoGallery0A14ImagePreviewVCCfE', symObjAddr: 0x3B8C, symBinAddr: 0x29454, symSize: 0x5C }

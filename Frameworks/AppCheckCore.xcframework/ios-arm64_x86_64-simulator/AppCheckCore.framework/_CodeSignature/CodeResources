@@ -4,13 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/AppCheckCore-Swift.h</key>
+		<data>
+		DTa0rDWSKxE/+ZxyjGL+Ij5bSN8=
+		</data>
 		<key>Headers/AppCheckCore-umbrella.h</key>
 		<data>
-		io6m/zoNImB0vwDk2p2uPRnW2MM=
+		+EgU0tnRidO7qmHrq8DKknHZpXk=
 		</data>
 		<key>Headers/AppCheckCore.h</key>
 		<data>
-		aPlnxK0s7N//HPGiQQ/QfhVg2yI=
+		jZ9qy13rMug2RcoEwwsJ/yaDu94=
 		</data>
 		<key>Headers/GACAppAttestProvider.h</key>
 		<data>
@@ -30,7 +34,7 @@
 		</data>
 		<key>Headers/GACAppCheckErrors.h</key>
 		<data>
-		uk1nlK658zjfXxvSCLCy2Bs//C0=
+		3m9I/LOdv9SQpKO8xb321CGylx8=
 		</data>
 		<key>Headers/GACAppCheckLogger.h</key>
 		<data>
@@ -60,29 +64,100 @@
 		<data>
 		6bSVwfSlB0z/9enIh/YOAvD7URU=
 		</data>
+		<key>Headers/_GACAppCheckAPIService.h</key>
+		<data>
+		I1R085C5KAXmTad3erVAw8R8lrE=
+		</data>
+		<key>Headers/_GACAppCheckBackoffWrapper.h</key>
+		<data>
+		2ptBeMZFUoC1yh8PxCw+78SvTq8=
+		</data>
+		<key>Headers/_GACAppCheckErrorUtil.h</key>
+		<data>
+		AxKdwaTbVkl8fNKdRYPWCKhSHOI=
+		</data>
+		<key>Headers/_GACURLSessionDataResponse.h</key>
+		<data>
+		zM9kjKlcRVrb8GutuLdRGaF+bFM=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		5tVOCQCxlfTGrb+Fayev3luqgV0=
+		bAPxDnVV+wjFHGfkmj0DMiRCBqY=
+		</data>
+		<key>Modules/AppCheckCore.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
+		<data>
+		gAMmXQbTFLrWnxkNgvarF28LVbU=
+		</data>
+		<key>Modules/AppCheckCore.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<data>
+		J816qJpdMvW+TSMBqhXOts9o9no=
+		</data>
+		<key>Modules/AppCheckCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		48MXJu9KkLYcUHzi2qooWd5n/6w=
+		</data>
+		<key>Modules/AppCheckCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		uucUB5NXTvWB29q99Vwr6TcQKWA=
+		</data>
+		<key>Modules/AppCheckCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		oa5/er4R0H5slhaSv99NdF3/+LA=
+		</data>
+		<key>Modules/AppCheckCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		uucUB5NXTvWB29q99Vwr6TcQKWA=
+		</data>
+		<key>Modules/AppCheckCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		J2XYg9eB3XRcWlLK8qinp8pAYbQ=
+		</data>
+		<key>Modules/AppCheckCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		48MXJu9KkLYcUHzi2qooWd5n/6w=
+		</data>
+		<key>Modules/AppCheckCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		TnxG+gnmQCtQvpZ7+6/swmEaS7o=
+		</data>
+		<key>Modules/AppCheckCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		brwTlXalTlwmywoAakxZIQ0Tflc=
+		</data>
+		<key>Modules/AppCheckCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		TnxG+gnmQCtQvpZ7+6/swmEaS7o=
+		</data>
+		<key>Modules/AppCheckCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		bfkKYbRPZh5ulSYiQkSpdiyX8Pg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		SHz6JdNenM83d2kwYbx+QjXUjeg=
+		IK+RM94CFztfsBLmVhpV2PpfJfc=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/AppCheckCore-Swift.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5dyxJsfvhbv6ahCk9u8fQWrjzsqmqLNVi4Zv7WaT2GY=
+			</data>
+		</dict>
 		<key>Headers/AppCheckCore-umbrella.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ODq0bWeFLej7WX8mFZx3VE5hmnQ3OiS0EujGmOHhGRE=
+			UyGFhIurWBnxgEQKmxtpKWVU28v5jFIo/OVxLvOolHo=
 			</data>
 		</dict>
 		<key>Headers/AppCheckCore.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ul2Yz9IdQWfkM517ColMkCWkFU4f24P47g1ukh9GRiQ=
+			UU6dsI/05zKC8BPBv3BUXUpygxvkdA1PzStSfQoQzQM=
 			</data>
 		</dict>
 		<key>Headers/GACAppAttestProvider.h</key>
@@ -117,7 +192,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tea7EucVmldf1jdv2kSg/0qAHANq0/PyCQtdZiOvI4k=
+			1UHYEZGRbLkdKxH8xpmSdBOyiWmdhxF2AQ7Emtxu0j8=
 			</data>
 		</dict>
 		<key>Headers/GACAppCheckLogger.h</key>
@@ -169,11 +244,123 @@
 			AG4gN3L0skthMgK5SQ+CJzsiYCajmBLyqFCppURGttM=
 			</data>
 		</dict>
+		<key>Headers/_GACAppCheckAPIService.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pzyf+xgwKB5uCd9u1ZtI9wJ9sLuR0LLoBQXONijhNJg=
+			</data>
+		</dict>
+		<key>Headers/_GACAppCheckBackoffWrapper.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sO/Ib2lBSRWlgK/0kkjN1b8AYQ6IsaFeAid8L6Dszkk=
+			</data>
+		</dict>
+		<key>Headers/_GACAppCheckErrorUtil.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7cvsNBOW8cH3dfnLIoe0HS8tci/kal1NFGJVRYjZpnY=
+			</data>
+		</dict>
+		<key>Headers/_GACURLSessionDataResponse.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RPCB/xS48MLTPrmBBu37OsYfIFOwDDiHrDT4suGfPgo=
+			</data>
+		</dict>
+		<key>Modules/AppCheckCore.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XmN3SnInvXbX9c6aPDQciKu/fpXJpgZx6lNfqcAqgpQ=
+			</data>
+		</dict>
+		<key>Modules/AppCheckCore.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			f3P4932lFvOpWF8JkVqkjdesQx7o7G2jKNJVRqHZgAM=
+			</data>
+		</dict>
+		<key>Modules/AppCheckCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			owg7yvh6eo7dnp1Gw4of72g49UviVGvT3QWaoM/jfc0=
+			</data>
+		</dict>
+		<key>Modules/AppCheckCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3guyJIj3Dxae+TBShGNEFNbY/qORXOluNTepxCPDyTk=
+			</data>
+		</dict>
+		<key>Modules/AppCheckCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gziOt8zWYqEC1IAa0I7Ax0wU1xBXroGGjrfEb+Qhf64=
+			</data>
+		</dict>
+		<key>Modules/AppCheckCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3guyJIj3Dxae+TBShGNEFNbY/qORXOluNTepxCPDyTk=
+			</data>
+		</dict>
+		<key>Modules/AppCheckCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jrvEamDCYAIfAJECrT+bmIva9xJRN5MYxom1eKF2Ob0=
+			</data>
+		</dict>
+		<key>Modules/AppCheckCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			owg7yvh6eo7dnp1Gw4of72g49UviVGvT3QWaoM/jfc0=
+			</data>
+		</dict>
+		<key>Modules/AppCheckCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/rVEG9pS8OhlbAjPmxTnqhN4msRV9OIgcDwxrjg92Pg=
+			</data>
+		</dict>
+		<key>Modules/AppCheckCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			V03a056w7KFn9VW+fQzQJ1EYZXxoKf1ygdoKBkKnJ6w=
+			</data>
+		</dict>
+		<key>Modules/AppCheckCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/rVEG9pS8OhlbAjPmxTnqhN4msRV9OIgcDwxrjg92Pg=
+			</data>
+		</dict>
+		<key>Modules/AppCheckCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EWFIhD6IhIZUuyLkOPHZR09rSYyj0vkk0bNMzKvfR14=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MnQlVKUggD0ZiESNDK5Qja2zslxr3lLly0FO29lCRGY=
+			mR3420yRIQyNpsN7L0SbDPSITdR7u4a9PE+f/ASCwQ8=
 			</data>
 		</dict>
 	</dict>
