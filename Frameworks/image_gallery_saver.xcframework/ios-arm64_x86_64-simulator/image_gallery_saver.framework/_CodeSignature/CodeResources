@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		nRWF6sDZ/xTzEX6He+G6V7BtIxo=
+		b2q0srY0KLLV3kJw/g5gQ7+614Q=
 		</data>
 		<key>Modules/image_gallery_saver.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		eIZJTIlom0YdFykE01sdQeKlXUk=
+		7OUfWfKMrUsoy1Xijt2fm4I8ryc=
 		</data>
 		<key>Modules/image_gallery_saver.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		vLOz6alkvuNsBaVjaSU/SBUCx7E=
+		dgLaTaxfjNIc3YuST2n7nj6724E=
 		</data>
 		<key>Modules/image_gallery_saver.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/image_gallery_saver.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		yVs9soSPbZfOYdLoeY5mVItra1w=
+		Qzsm3SN6IT1MCmirnYP7lV8ujtA=
 		</data>
 		<key>Modules/image_gallery_saver.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		fVTy6YliP27zjHsOjGK0z0PKfYw=
+		pdM8gdvTNgNSdyFhpt5Bi1LQvMI=
 		</data>
 		<key>Modules/image_gallery_saver.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		yVs9soSPbZfOYdLoeY5mVItra1w=
+		Qzsm3SN6IT1MCmirnYP7lV8ujtA=
 		</data>
 		<key>Modules/image_gallery_saver.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ngTadJTXF1TarbQN+QXW+If44as=
+		jeYFbYaTvQ1lqkSPV35qBl7Ekc0=
 		</data>
 		<key>Modules/image_gallery_saver.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -54,19 +54,19 @@
 		</data>
 		<key>Modules/image_gallery_saver.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		/PJX2kavvcrIM+ysV2lv5fC350I=
+		8ijGr8dIM1oOPF77ZSx2t9SYhc8=
 		</data>
 		<key>Modules/image_gallery_saver.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		xDrtSWdKXoVRsL7iYg7zj7cVMaw=
+		ZyUeeMiqe/0pK2DobD/KPsyhyc8=
 		</data>
 		<key>Modules/image_gallery_saver.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/PJX2kavvcrIM+ysV2lv5fC350I=
+		8ijGr8dIM1oOPF77ZSx2t9SYhc8=
 		</data>
 		<key>Modules/image_gallery_saver.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tUNIo+5hVzEwMQWhYBK/ZSPqt/U=
+		NZ+/sI3vQvCsyODgqvssbtMgSs4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -100,14 +100,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yzTheiKTV0/gw7xfLQk3zEb5loCPu+5AF5BqC5FIYzk=
+			fITrw55jWAbp2bpcF7ab/4FwXQE/28qXY8lUzi2uAc4=
 			</data>
 		</dict>
 		<key>Modules/image_gallery_saver.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			77lXG9XYVf+Ovpcw7F2oVTwK9q9BmC4ge5nwopfNhkI=
+			MfPOsLovBphf87/0NVrvqKLSS7iNyGZMlL1Mqimabpk=
 			</data>
 		</dict>
 		<key>Modules/image_gallery_saver.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -121,28 +121,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5XSLoFhB4tXDMElsMZjZ6KhSXbXgeAxTK058iJeW5/s=
+			fsxvXoRfgl4N7edE01Hudmlp+8fIQ8PcNa76Vu9fzA8=
 			</data>
 		</dict>
 		<key>Modules/image_gallery_saver.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xrJ1CUrcoFyBnojs3UXlmSiH1Cmv/mr6CrOup6S7FUU=
+			M/nDUPWQcvfdqzLp8xvuWXQ6NMdMRVV9v0s2XiGdEr0=
 			</data>
 		</dict>
 		<key>Modules/image_gallery_saver.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5XSLoFhB4tXDMElsMZjZ6KhSXbXgeAxTK058iJeW5/s=
+			fsxvXoRfgl4N7edE01Hudmlp+8fIQ8PcNa76Vu9fzA8=
 			</data>
 		</dict>
 		<key>Modules/image_gallery_saver.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xWu3nkxTchZ2kipJgJwE9XxyxWnVCOs1NfipoXbC4zY=
+			kVbcEY7iYcR4C11SNGcRI2bgfP1UMRWrBJoAhmazgjQ=
 			</data>
 		</dict>
 		<key>Modules/image_gallery_saver.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -156,28 +156,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UlnzysIuxPpYD+KxBWVGISAHJdMgO4XSoG+4u2Q7PuU=
+			VfpXEM9TkBhB7Ac68thAFOouPV2n0guGxaZYqYG2a+I=
 			</data>
 		</dict>
 		<key>Modules/image_gallery_saver.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rfLfVbcERTvJcUIUiEHXVrYjcd7J9llh9XItgBxnQBA=
+			DU0w0Q6AQKUJqTnQ3h9OEKDz4S/Blla8jiv4gIZZdCo=
 			</data>
 		</dict>
 		<key>Modules/image_gallery_saver.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UlnzysIuxPpYD+KxBWVGISAHJdMgO4XSoG+4u2Q7PuU=
+			VfpXEM9TkBhB7Ac68thAFOouPV2n0guGxaZYqYG2a+I=
 			</data>
 		</dict>
 		<key>Modules/image_gallery_saver.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1RIlQSK7Ngkn3DkN/0C52CoeRl08/0ZAhMioBA3ZdTw=
+			r5ky9SRCAacHyRGxr/c10izfBBHi6cD+l6DoXZa45D4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

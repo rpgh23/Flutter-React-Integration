@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'MyPrivateSDK'
-  s.version      = '2.0.7.4'
+  s.version      = '2.0.7.5'
   s.summary      = 'Internal Flutter based SDK'
   s.description  = 'Private SDK wrapping Flutter engine and plugins'
   s.homepage     = 'https://github.com/rpgh23/Flutter-React-Integration'
@@ -40,4 +40,10 @@ s.source_files = 'Sources/FlutterBridge/**/*.{swift,h,m}'
 
   # ✅ Intercom — required by intercom_flutter (bundled in Frameworks/*.xcframework)
   s.dependency 'Intercom', '16.6.1'
+
+  # ✅ GoogleMLKit — required by google_mlkit_text_recognition / google_mlkit_commons
+  # (bundled in Frameworks/*.xcframework); version matches the Flutter module's
+  # own Podfile.lock (GoogleMLKit/TextRecognition 7.0.0 -> MLKitCommon 12.0.0,
+  # MLKitTextRecognition 5.0.0, MLKitTextRecognitionCommon 4.0.0, MLKitVision 8.0.0)
+  s.dependency 'GoogleMLKit/TextRecognition', '~> 7.0.0'
 end

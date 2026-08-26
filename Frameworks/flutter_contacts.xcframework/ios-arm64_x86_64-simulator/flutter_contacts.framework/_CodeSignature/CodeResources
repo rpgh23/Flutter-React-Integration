@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		RaX+oxfD4Qokp8BpbZ6PT0ZnBXU=
+		oXLfxms5GF9sZPMSB2ieSf0i+JI=
 		</data>
 		<key>Modules/flutter_contacts.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		feGZ3LgWGok/V8yVhHTCGgCWSPs=
+		htypgbF99+GtL0F9vKtH++UjrqE=
 		</data>
 		<key>Modules/flutter_contacts.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		g7EG0QCoAjwBzWPpD41fORNsqFw=
+		XzklY2Rr2x1lj8kEjUqqEy8wUs0=
 		</data>
 		<key>Modules/flutter_contacts.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/flutter_contacts.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		tjZW3Y5FK1+e0JB93Ku6zzEb7SY=
+		nxxgYWv8u3mBUVgcCno/Xn4WJUU=
 		</data>
 		<key>Modules/flutter_contacts.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		jKWEePYs0tl4KrJlNnqOa4GtLTk=
+		HX3FFsaApSQ+gCBeX96R/3WGp6g=
 		</data>
 		<key>Modules/flutter_contacts.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		tjZW3Y5FK1+e0JB93Ku6zzEb7SY=
+		nxxgYWv8u3mBUVgcCno/Xn4WJUU=
 		</data>
 		<key>Modules/flutter_contacts.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		G9Bi3gK2e0lTPfXIhBeM+6lI87s=
+		Sp7/s+4Y/aV5+MdAbKAxukcc2CI=
 		</data>
 		<key>Modules/flutter_contacts.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -54,19 +54,19 @@
 		</data>
 		<key>Modules/flutter_contacts.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		9nefG3mrP1hawdlfVGwtLbolT4c=
+		41PnjMmEI542U3hWOTVVydiAV/c=
 		</data>
 		<key>Modules/flutter_contacts.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		yABSGr2+6MPxx4RarqJcCj8t3Ko=
+		+2jajT3lE9onCMd4fmAezGIU1yQ=
 		</data>
 		<key>Modules/flutter_contacts.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		9nefG3mrP1hawdlfVGwtLbolT4c=
+		41PnjMmEI542U3hWOTVVydiAV/c=
 		</data>
 		<key>Modules/flutter_contacts.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		aiPtK9Z8ke5qblJcej+/dCLjBkc=
+		/xT1OPuMsW/0sIA5lYU+Wf75scw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -100,14 +100,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zYh7p2oGSwZ3UlXp5miUU9NUH+NgU+w/DUI2WfR7sUc=
+			xs6lGcdkndUT35GoPa7nEscO0EJoXwTKOZ+XVaunLqk=
 			</data>
 		</dict>
 		<key>Modules/flutter_contacts.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aeZc6AqO++yIAPjWUEFrBvUOMykx72+R92sfFSUp2eM=
+			MlYpknnITWqnpthHhsOeL8BVEpELe3GlQOnD9SZrpSw=
 			</data>
 		</dict>
 		<key>Modules/flutter_contacts.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -121,28 +121,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wHnfTnoZTT0FF6Z96LcVy/AvbIZZEPnvpN/ADrnURJY=
+			Wfn1eOOA6SlUPWmYdKCGmq3sSBr5xZkTQvTDFmUWBNI=
 			</data>
 		</dict>
 		<key>Modules/flutter_contacts.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X5OZMbAnHdnick354EwnwjWcf/4k8kkipeFSEBKdCtk=
+			80mi7RCT6LBFDSuPLP838unUA7C3TwNiNqtU5gaPRbY=
 			</data>
 		</dict>
 		<key>Modules/flutter_contacts.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wHnfTnoZTT0FF6Z96LcVy/AvbIZZEPnvpN/ADrnURJY=
+			Wfn1eOOA6SlUPWmYdKCGmq3sSBr5xZkTQvTDFmUWBNI=
 			</data>
 		</dict>
 		<key>Modules/flutter_contacts.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TSMUYGggGFczNjMm9eMQr8U+fw4Wem6HUIHSLe8M/1Y=
+			YYaNvtZDBGelC84SS8zyYjwq724hCmYV7VCvVdb+AZE=
 			</data>
 		</dict>
 		<key>Modules/flutter_contacts.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -156,28 +156,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RXUgwpc4Wzbq2w3b48dInAOkMnEKoRJMa/cj6eZcQCg=
+			zxRdKdZ/S8VGO/E3yH/g1K+YCqNp0wD9PNyFgRcXkUU=
 			</data>
 		</dict>
 		<key>Modules/flutter_contacts.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q6zU189LdZ94IbMveajp3ij/fNyTSulKkSVaexddhn8=
+			kVTpNbcfBcijPymWVQRswZD5SwMj3nx95J9AbQnLBB8=
 			</data>
 		</dict>
 		<key>Modules/flutter_contacts.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RXUgwpc4Wzbq2w3b48dInAOkMnEKoRJMa/cj6eZcQCg=
+			zxRdKdZ/S8VGO/E3yH/g1K+YCqNp0wD9PNyFgRcXkUU=
 			</data>
 		</dict>
 		<key>Modules/flutter_contacts.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1AcWFR4RqUBv2QTIpQSvSMVMhnMB26XtqYHHiPX3BN8=
+			S0tkggrd0i6j79oknvnxfNYEObip32oBuCIhtQLXSto=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

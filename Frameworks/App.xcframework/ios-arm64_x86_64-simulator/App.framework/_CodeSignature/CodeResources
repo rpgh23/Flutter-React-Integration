@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		XPIWjWvfsAXjcdGMD+6ul2729Dk=
+		IPQ1OzEQEqO7dLvaGmUYeqQ3OSw=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		5ca1TlsI0cmJQsW15aRhqsB19BM=
+		Kw+y0aGqRD3JGapdXXPZwVgSjYU=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		4p/4sfHyz4nngJe4otpkYWZ5png=
+		CC6aVPy6x9RKkoI2OEUv9TLloWQ=
 		</data>
 		<key>flutter_assets/assets/.DS_Store</key>
 		<data>
@@ -352,6 +352,10 @@
 		<data>
 		fOZVydz1WRP5cRs2073tfh6QxjM=
 		</data>
+		<key>flutter_assets/assets/arnistrip.png</key>
+		<data>
+		QbCicTgYu+U365wA4oWcLdtdsWE=
+		</data>
 		<key>flutter_assets/assets/award.png</key>
 		<data>
 		vIJsnI488uoR3ni30toomNjQVnM=
@@ -471,6 +475,10 @@
 		<key>flutter_assets/assets/callcdetails.png</key>
 		<data>
 		0maK0XkjDHWyoQJjuwyfuTsZF+s=
+		</data>
+		<key>flutter_assets/assets/canara/smart_logo.png</key>
+		<data>
+		ZcU1j6Ggh6KL2NQst2EU29XK768=
 		</data>
 		<key>flutter_assets/assets/casethree.png</key>
 		<data>
@@ -1144,6 +1152,10 @@
 		<data>
 		Ththk4EEDiilNJzofrDTkXLQlnI=
 		</data>
+		<key>flutter_assets/assets/wbusiness.png</key>
+		<data>
+		uqKEIhpOxadgtaTE2SKuGisWwew=
+		</data>
 		<key>flutter_assets/assets/whatsapapp2.png</key>
 		<data>
 		VjENPVkfNNLPjlWLrxTwGqC+ICg=
@@ -1190,7 +1202,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		avWxnUkff8yvjeoMkYXuPrZ+3B4=
+		Q9Q79LMpXehMozH9Kz4RGBUjfZs=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -1247,14 +1259,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			erJe0pRX6raj202y4+fKMJdwJ+GNVPWCP4geRQu9Dyw=
+			5ajIDB8YxxONPZMHLBXJPpmfU0RZ87YluUhdgJl8JrA=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zm1ahmKOqn1kwI8vd5URXPByr2V2BaSCyfJ8aFRhz0U=
+			gJtx6fdZBzsSYEwQJa9Cz4AOVXCui3NDbr+KBGuEYwc=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -1268,7 +1280,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FsX+o+KtyCa24erYnziBkp7tY1t8ZlwUHNjGku5rlEk=
+			YWVG4v2DsquEvF3bHkn3PypEykmUU2n1nu90U6raeUo=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/2.0x/NewWhatsapp.png</key>
@@ -1838,6 +1850,13 @@
 			HbYMQRIcfoTu6SB97rL/uaBnZ8X/AGpppmJoEoXzgE4=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/arnistrip.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eeXcH1yBX3dyE4LaRcX+bW0RFfr4qCPz9TCgGdYHTvA=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/award.png</key>
 		<dict>
 			<key>hash2</key>
@@ -2046,6 +2065,13 @@
 			<key>hash2</key>
 			<data>
 			pQJNqt8sDuZ1jH5Q1+SBhg2C5iIzQMom1d23nrC4m6k=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/canara/smart_logo.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YLnsEL2qxExMPmaFT1/8eYcjiumJ6YWj58jSH0oTZHU=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/casethree.png</key>
@@ -3210,6 +3236,13 @@
 			VW0yCVFpyiLWXs5XUOAkY9SCdX9ldeSonax6NkC0s7Q=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/wbusiness.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oGvdYC8qzWB2znGiFWRB2uZP/jHVEiLAwyXdcEfn9LQ=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/whatsapapp2.png</key>
 		<dict>
 			<key>hash2</key>
@@ -3291,7 +3324,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xkmm68rWPj2GeLuKUrj57Qi2K5K46OCqYPWJhlCXq5o=
+			hpdc6wNnseGhj2ca6CIjr+Y4HXku9njpsw8cK6HnXx4=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
