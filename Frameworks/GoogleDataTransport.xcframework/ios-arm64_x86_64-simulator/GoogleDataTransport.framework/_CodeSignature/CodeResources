@@ -6,7 +6,7 @@
 	<dict>
 		<key>GoogleDataTransport_Privacy.bundle/Info.plist</key>
 		<data>
-		sV8oMalJ6qBN8fzqSxjl4Rb9oxY=
+		+c6adtWFKtsAQghXlZ/ClP8HFpQ=
 		</data>
 		<key>GoogleDataTransport_Privacy.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		FMd51LH23YK/MmvYjWu0I2aR0WU=
+		QR7Kzv9c4ZCz74ts5cBaJmc5yao=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -69,13 +69,21 @@
 	<dict>
 		<key>GoogleDataTransport_Privacy.bundle/Info.plist</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			+c6adtWFKtsAQghXlZ/ClP8HFpQ=
+			</data>
 			<key>hash2</key>
 			<data>
-			zv6VVijMaP3HcLl/k+Tc9cy4XdBe+fyepsciAYK8CmI=
+			URjQbOFNdcuwL0tRKJbBkB3kpp7EsvgoguMo5yqtRf0=
 			</data>
 		</dict>
 		<key>GoogleDataTransport_Privacy.bundle/PrivacyInfo.xcprivacy</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			WXQUJr75eMRgiVnLGyf8Gr3uLUU=
+			</data>
 			<key>hash2</key>
 			<data>
 			z7s8T3ambVNpi66R9xEMAPIUjm5vE619MlkpCbwBDlE=
@@ -83,6 +91,10 @@
 		</dict>
 		<key>Headers/GDTCORClock.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			sG7akfwMxggtOPYkuBxhbh+65R8=
+			</data>
 			<key>hash2</key>
 			<data>
 			lx/hxUkZt3ZDN/2YP9J5pUop4/mY6bf/tVj9xne+dJ0=
@@ -90,6 +102,10 @@
 		</dict>
 		<key>Headers/GDTCORConsoleLogger.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			5tNgiWX/xiU2swa4Af3bK23iwm0=
+			</data>
 			<key>hash2</key>
 			<data>
 			ssKoNg/ccbyAO0kqq4cUeJ8107WEcyrdtYFaXn3yEus=
@@ -97,6 +113,10 @@
 		</dict>
 		<key>Headers/GDTCOREndpoints.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			5R3RBi2CXt2Vnl/f5TbeUPxrHMM=
+			</data>
 			<key>hash2</key>
 			<data>
 			y9LRys8ZN91npfXwSeRe1S/u4oecWwuVcz8pSscFhGs=
@@ -104,6 +124,10 @@
 		</dict>
 		<key>Headers/GDTCOREvent.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			1kP78/AO1klhimTpfyTJlxnpkJ4=
+			</data>
 			<key>hash2</key>
 			<data>
 			POtci9aa1asCWcF+T5ybo5/eZK7HezhShytNogHH1tE=
@@ -111,6 +135,10 @@
 		</dict>
 		<key>Headers/GDTCOREventDataObject.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			sQLFncr+5wJyRtrxRWbLjqPCFLw=
+			</data>
 			<key>hash2</key>
 			<data>
 			0KitKPy/jmxA/wwV/oInKPbDOss1xYrSuUNMV7bCRNA=
@@ -118,6 +146,10 @@
 		</dict>
 		<key>Headers/GDTCOREventTransformer.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			tsQzP2WITwX2qWxqDS0Up4o9dsc=
+			</data>
 			<key>hash2</key>
 			<data>
 			FMek5nZ3soQdr7qoap5WuzUgzf5AQGrckQ2x3X3885g=
@@ -125,6 +157,10 @@
 		</dict>
 		<key>Headers/GDTCORProductData.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			OUZAGmE499ozBGNS0n54PoujgA0=
+			</data>
 			<key>hash2</key>
 			<data>
 			juQ2uLJj6n07fMr6uBe4+oo3S8PCqEXe2gQ/g5U2jms=
@@ -132,6 +168,10 @@
 		</dict>
 		<key>Headers/GDTCORTargets.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			yWmpjb7JMf9899liL6TGu9aMrSU=
+			</data>
 			<key>hash2</key>
 			<data>
 			mDFTzZ4TPX5IQh2Cn7WK3zU/Rgu/S3Ky0ld2i0p0Qpw=
@@ -139,6 +179,10 @@
 		</dict>
 		<key>Headers/GDTCORTransport.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			3iIgaT+pJUNpl/dAe1KnmmcltkQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			CuJit8z9EQTpBOJBEZyQ3t4krpbeCDhwNvSYj5UQet4=
@@ -146,6 +190,10 @@
 		</dict>
 		<key>Headers/GoogleDataTransport-umbrella.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			NltCDrI+KBL8nKhX4tC+1mDKOgE=
+			</data>
 			<key>hash2</key>
 			<data>
 			mEkFeoMw9nr+MEtSgoIwSVsN4FDE/snLfBiPspGOxZQ=
@@ -153,6 +201,10 @@
 		</dict>
 		<key>Headers/GoogleDataTransport.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			K4CNz6MJd4QLhemtWfECpdYIejg=
+			</data>
 			<key>hash2</key>
 			<data>
 			NTfeW0hD2AxVJ9NTK3p6mEhSkJKhzdklCHkDZiNYoco=
@@ -160,6 +212,10 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			j0NufvJe8xgrgCjT9J02PJmqYcU=
+			</data>
 			<key>hash2</key>
 			<data>
 			8vLrUl+sfNbDFOOT4aLdjyton88PHl3Bgh3AMv4wfs8=
