@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		IPQ1OzEQEqO7dLvaGmUYeqQ3OSw=
+		b3lrp6NIUeVE1vqWA13M4585tHM=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		Kw+y0aGqRD3JGapdXXPZwVgSjYU=
+		qSxWH9h5AQhrm/bbl1vybdbCtMo=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -475,6 +475,30 @@
 		<key>flutter_assets/assets/callcdetails.png</key>
 		<data>
 		0maK0XkjDHWyoQJjuwyfuTsZF+s=
+		</data>
+		<key>flutter_assets/assets/canara/canaradigibg.png</key>
+		<data>
+		kagUhlJhXd3tSHX7BwPP7WnCLG4=
+		</data>
+		<key>flutter_assets/assets/canara/canaratemplate.jpg</key>
+		<data>
+		2Nhv3sG2gpFOZKR/Merl0fTW35c=
+		</data>
+		<key>flutter_assets/assets/canara/debt_fund.png</key>
+		<data>
+		c6Ji2LzM0iuffcnV9ePWT60DrjQ=
+		</data>
+		<key>flutter_assets/assets/canara/elss.png</key>
+		<data>
+		TgpxlLixEAkWl5VD8i2uyttBMLI=
+		</data>
+		<key>flutter_assets/assets/canara/equity_fund.png</key>
+		<data>
+		1j6uC4cIPiKTENLBfv6FbZbayJg=
+		</data>
+		<key>flutter_assets/assets/canara/hybrid_fund.png</key>
+		<data>
+		bqdBL4G3kuNk8XCfAd6tl0jXaJM=
 		</data>
 		<key>flutter_assets/assets/canara/smart_logo.png</key>
 		<data>
@@ -1222,7 +1246,7 @@
 		</data>
 		<key>flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf</key>
 		<data>
-		WrVBGyY6R10ElSzIeACwHzt86V8=
+		CCxQ7jIZDHuWH0fUREm3/8pQDnM=
 		</data>
 		<key>flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf</key>
 		<data>
@@ -1247,14 +1271,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5ajIDB8YxxONPZMHLBXJPpmfU0RZ87YluUhdgJl8JrA=
+			CCG72wdJWD5RDKmHwJtmhmuyo/HhBYROr7JqTNIlhrY=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gJtx6fdZBzsSYEwQJa9Cz4AOVXCui3NDbr+KBGuEYwc=
+			n7ym+XjSz1dYnSUtlLLxjylE21PVPDtEs2AyGIovL0w=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -2053,6 +2077,48 @@
 			<key>hash2</key>
 			<data>
 			pQJNqt8sDuZ1jH5Q1+SBhg2C5iIzQMom1d23nrC4m6k=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/canara/canaradigibg.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			moOT3AMI3/aPQXw60A/4+Md28LjYs2Tq7rB52ztwfHE=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/canara/canaratemplate.jpg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			35WmOiY+CxFtTGQP5hCqMPXFp2Vcpcwd48TcXpgV50M=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/canara/debt_fund.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Vwe3QbhDreUMCupjW8EUKzjlHzBTGb1ZBce9BN1xnf0=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/canara/elss.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			By917USnZ4ngHmUHF1ylkk1sWbZa47EQVpqUm/+r+74=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/canara/equity_fund.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			n79i6/xfnHHccMWfWAMVQVKXUqNJZSivPh3e1Y5h6as=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/canara/hybrid_fund.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5JuWEhYypjxYgnM2uRSMCt+QCNbWU3yU9YrUU69Kvqs=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/canara/smart_logo.png</key>
@@ -3347,7 +3413,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VIst8ohywarQY6BBjfOZNm1bEolYq7PzoEGjBLcHh7c=
+			y5CxaZ0h8tchPLYey/lKN/H5eEmC3a5lAyldQNadNYM=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf</key>

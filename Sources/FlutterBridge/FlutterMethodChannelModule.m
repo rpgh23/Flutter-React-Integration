@@ -9,6 +9,7 @@ RCT_EXTERN_METHOD(callFlutterMethodChannel:(NSString *)pageKey
                   id:(NSString *)id
                   token:(NSString *)token
                   mode:(NSString *)mode
+                  client:(NSString *)client
                   resolver:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject)
 
