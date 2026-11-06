@@ -48,12 +48,9 @@ s.source_files = 'Sources/FlutterBridge/**/*.{swift,h,m}'
   s.dependency 'Intercom', '16.6.1'
 
   # ✅ GoogleMLKit — required by google_mlkit_text_recognition / google_mlkit_commons
-  # (bundled in Frameworks/*.xcframework). Must match the native chain that the
-  # Flutter module's google_mlkit_text_recognition version pulls in — pubspec.yaml
-  # pins it to 0.13.1, whose own podspec depends on 'GoogleMLKit/TextRecognition', '~> 6.0.0'
-  # (GoogleUtilities < 8.0). Pinning this any higher (e.g. ~> 7.0.0, which needs
-  # GoogleUtilities ~> 8.0 and ships its own copy of MLKitCommon) causes two
-  # incompatible copies of GoogleMLKit's GULCC* classes to be linked at once —
-  # "duplicate symbol '_OBJC_CLASS_$_GULCCComponent'" etc. at build time.
-  s.dependency 'GoogleMLKit/TextRecognition', '~> 6.0.0'
+  # (bundled in Frameworks/*.xcframework). Must match the native chain of the Flutter
+  # module's google_mlkit_text_recognition version. pubspec.yaml uses 0.15.0, whose
+  # podspec depends on 'GoogleMLKit/TextRecognition', '~> 7.0.0' (GoogleUtilities ~> 8.0),
+  # which is compatible with Firebase 12.
+  s.dependency 'GoogleMLKit/TextRecognition', '~> 7.0.0'
 end
